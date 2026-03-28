@@ -1,0 +1,9 @@
+dokatouch_a\system_stm32l0xx.o: ../Src/system_stm32l0xx.c
+dokatouch_a\system_stm32l0xx.o: ../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h
+dokatouch_a\system_stm32l0xx.o: ../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h
+dokatouch_a\system_stm32l0xx.o: ../Drivers/CMSIS/Include/core_cm0plus.h
+dokatouch_a\system_stm32l0xx.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u6\Bin\..\include\stdint.h
+dokatouch_a\system_stm32l0xx.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+dokatouch_a\system_stm32l0xx.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+dokatouch_a\system_stm32l0xx.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+dokatouch_a\system_stm32l0xx.o: ../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h

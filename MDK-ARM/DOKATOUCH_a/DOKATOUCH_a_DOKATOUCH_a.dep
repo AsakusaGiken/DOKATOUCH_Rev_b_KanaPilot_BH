@@ -1,0 +1,476 @@
+Dependencies for Project 'DOKATOUCH_a', Target 'DOKATOUCH_a': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARM_Compiler_5.06u6
+F (../Src/system_stm32l0xx.c)(0x596D6702)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\system_stm32l0xx.o --omf_browse dokatouch_a\system_stm32l0xx.crf --depend dokatouch_a\system_stm32l0xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+F (startup_stm32l071xx.s)(0x66FB6189)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include--pd "__UVISION_VERSION SETA 537" --pd "_RTE_ SETA 1" --pd "STM32L071xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32l071xx.lst --xref -o dokatouch_a\startup_stm32l071xx.o --depend dokatouch_a\startup_stm32l071xx.d)
+F (.\myIwdg.c)(0x6909E686)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\myiwdg.o --omf_browse dokatouch_a\myiwdg.crf --depend dokatouch_a\myiwdg.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (.\myllUart.c)(0x608265A2)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\mylluart.o --omf_browse dokatouch_a\mylluart.crf --depend dokatouch_a\mylluart.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (.\AZD_KRD_Message.c)(0x6737F65B)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\azd_krd_message.o --omf_browse dokatouch_a\azd_krd_message.crf --depend dokatouch_a\azd_krd_message.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (.\mySub.c)(0x66FB43E7)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\mysub.o --omf_browse dokatouch_a\mysub.crf --depend dokatouch_a\mysub.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (.\myWait16MHz.c)(0x67381F20)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\mywait16mhz.o --omf_browse dokatouch_a\mywait16mhz.crf --depend dokatouch_a\mywait16mhz.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (.\myCrc16.c)(0x691EE0B9)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\mycrc16.o --omf_browse dokatouch_a\mycrc16.crf --depend dokatouch_a\mycrc16.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (.\wa30.c)(0x696A28C8)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\wa30.o --omf_browse dokatouch_a\wa30.crf --depend dokatouch_a\wa30.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdio.h)(0x599EBF1C)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\string.h)(0x599EBF1C)
+F (.\ACM_Incoming.c)(0x6909CD1B)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\acm_incoming.o --omf_browse dokatouch_a\acm_incoming.crf --depend dokatouch_a\acm_incoming.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (.\ACM_Sensors.c)(0x6969FBF2)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\acm_sensors.o --omf_browse dokatouch_a\acm_sensors.crf --depend dokatouch_a\acm_sensors.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdio.h)(0x599EBF1C)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\string.h)(0x599EBF1C)
+F (../Src/main.c)(0x6966FC5D)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\main.o --omf_browse dokatouch_a\main.crf --depend dokatouch_a\main.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (../Src/stm32l0xx_it.c)(0x691EE906)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_it.o --omf_browse dokatouch_a\stm32l0xx_it.crf --depend dokatouch_a\stm32l0xx_it.d)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Inc/stm32l0xx_it.h)(0x66F0C311)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+F (.\CAT725_Drive.c)(0x691FB8DA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\cat725_drive.o --omf_browse dokatouch_a\cat725_drive.crf --depend dokatouch_a\cat725_drive.d)
+I (../Inc/main.h)(0x691EE928)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crs.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_cortex.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdbool.h)(0x599EBF1E)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\string.h)(0x599EBF1C)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_utils.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_utils.o --omf_browse dokatouch_a\stm32l0xx_ll_utils.crf --depend dokatouch_a\stm32l0xx_ll_utils.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_utils.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_system.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_exti.o --omf_browse dokatouch_a\stm32l0xx_ll_exti.crf --depend dokatouch_a\stm32l0xx_ll_exti.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_gpio.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_gpio.o --omf_browse dokatouch_a\stm32l0xx_ll_gpio.crf --depend dokatouch_a\stm32l0xx_ll_gpio.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_adc.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_adc.o --omf_browse dokatouch_a\stm32l0xx_ll_adc.crf --depend dokatouch_a\stm32l0xx_ll_adc.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_adc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_dma.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_dma.o --omf_browse dokatouch_a\stm32l0xx_ll_dma.crf --depend dokatouch_a\stm32l0xx_ll_dma.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_dma.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_crc.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_crc.o --omf_browse dokatouch_a\stm32l0xx_ll_crc.crf --depend dokatouch_a\stm32l0xx_ll_crc.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_crc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_i2c.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_i2c.o --omf_browse dokatouch_a\stm32l0xx_ll_i2c.crf --depend dokatouch_a\stm32l0xx_ll_i2c.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_i2c.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_spi.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_spi.o --omf_browse dokatouch_a\stm32l0xx_ll_spi.crf --depend dokatouch_a\stm32l0xx_ll_spi.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_spi.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_pwr.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_pwr.o --omf_browse dokatouch_a\stm32l0xx_ll_pwr.crf --depend dokatouch_a\stm32l0xx_ll_pwr.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_pwr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_tim.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_tim.o --omf_browse dokatouch_a\stm32l0xx_ll_tim.crf --depend dokatouch_a\stm32l0xx_ll_tim.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_tim.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_usart.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_usart.o --omf_browse dokatouch_a\stm32l0xx_ll_usart.crf --depend dokatouch_a\stm32l0xx_ll_usart.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_bus.h)(0x634A39EA)
+F (../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_rcc.c)(0x634A39EA)(-c --cpu Cortex-M0+ -D__MICROLIB -g -O1 -Otime --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32L0xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32L0xx/Include -I ../Drivers/CMSIS/Include --C99-I.\RTE\_DOKATOUCH_a-IC:\Users\ishii\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include-D__UVISION_VERSION="537" -D_RTE_ -DSTM32L071xx -D_RTE_ -DSTM32L071xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DMSI_VALUE="2097000" -DHSI_VALUE="16000000" -DLSI_VALUE="37000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dokatouch_a\stm32l0xx_ll_rcc.o --omf_browse dokatouch_a\stm32l0xx_ll_rcc.crf --depend dokatouch_a\stm32l0xx_ll_rcc.d)
+I (../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_rcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h)(0x634A39E9)
+I (../Drivers/CMSIS/Include/core_cm0plus.h)(0x634A39EA)
+I (C:\Keil_v5\ARM\ARM_Compiler_5.06u6\include\stdint.h)(0x599EBF1E)
+I (../Drivers/CMSIS/Include/core_cmInstr.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Include/core_cmFunc.h)(0x634A39EA)
+I (../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h)(0x634A39E9)

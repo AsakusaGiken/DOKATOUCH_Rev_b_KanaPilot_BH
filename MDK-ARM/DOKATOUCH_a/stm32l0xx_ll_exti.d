@@ -1,0 +1,10 @@
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/STM32L0xx_HAL_Driver/Src/stm32l0xx_ll_exti.c
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_exti.h
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l0xx.h
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32L0xx/Include/stm32l071xx.h
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/CMSIS/Include/core_cm0plus.h
+dokatouch_a\stm32l0xx_ll_exti.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u6\Bin\..\include\stdint.h
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/CMSIS/Include/core_cmInstr.h
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/CMSIS/Include/core_cmFunc.h
+dokatouch_a\stm32l0xx_ll_exti.o: ../Drivers/CMSIS/Device/ST/STM32L0xx/Include/system_stm32l0xx.h
