@@ -395,10 +395,10 @@ ARM Macro Assembler    Page 7
 
 
 9.0\CMSIS\Core\Include -IC:\Users\ishii\AppData\Local\Arm\Packs\Keil\STM32L0xx_
-DFP\2.2.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include --predefine="__MICROLIB SET
-A 1" --predefine="__UVISION_VERSION SETA 537" --predefine="_RTE_ SETA 1" --pred
-efine="STM32L071xx SETA 1" --predefine="_RTE_ SETA 1" --list=startup_stm32l071x
-x.lst startup_stm32l071xx.s
+DFP\3.1.0\Drivers\CMSIS\Device\ST\STM32L0xx\Include --predefine="__EVAL SETA 1"
+ --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 537" --pre
+define="_RTE_ SETA 1" --predefine="STM32L071xx SETA 1" --predefine="_RTE_ SETA 
+1" --list=startup_stm32l071xx.lst startup_stm32l071xx.s
 
 
 
@@ -916,4 +916,4 @@ Symbol: __main
       At line 139 in file startup_stm32l071xx.s
 Comment: __main used once
 2 symbols
-387 symbols in table
+388 symbols in table

@@ -16,8 +16,8 @@
         <TargetCommonOption>
           <Device>STM32L071V8Tx</Device>
           <Vendor>STMicroelectronics</Vendor>
-          <PackID>Keil.STM32L0xx_DFP.2.2.0</PackID>
-          <PackURL>http://www.keil.com/pack/</PackURL>
+          <PackID>Keil.STM32L0xx_DFP.3.1.0</PackID>
+          <PackURL>https://www.keil.com/pack/</PackURL>
           <Cpu>IRAM(0x20000000,0x00005000) IROM(0x08000000,0x00010000) CPUTYPE("Cortex-M0+") CLOCK(12000000) ELITTLE</Cpu>
           <FlashUtilSpec></FlashUtilSpec>
           <StartupFile></StartupFile>
@@ -435,21 +435,6 @@
               <FilePath>.\myCrc16.c</FilePath>
             </File>
             <File>
-              <FileName>wa30.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\wa30.c</FilePath>
-            </File>
-            <File>
-              <FileName>ACM_Incoming.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\ACM_Incoming.c</FilePath>
-            </File>
-            <File>
-              <FileName>ACM_Sensors.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\ACM_Sensors.c</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>../Src/main.c</FilePath>
@@ -460,9 +445,24 @@
               <FilePath>../Src/stm32l0xx_it.c</FilePath>
             </File>
             <File>
-              <FileName>CAT725_Drive.c</FileName>
+              <FileName>KanaPilot_BH.c</FileName>
               <FileType>1</FileType>
-              <FilePath>.\CAT725_Drive.c</FilePath>
+              <FilePath>.\KanaPilot_BH.c</FilePath>
+            </File>
+            <File>
+              <FileName>BackHoe_Drive.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\BackHoe_Drive.c</FilePath>
+            </File>
+            <File>
+              <FileName>KanaPilot_PcCom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\KanaPilot_PcCom.c</FilePath>
+            </File>
+            <File>
+              <FileName>KanaPilot_SensCom.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\KanaPilot_SensCom.c</FilePath>
             </File>
           </Files>
         </Group>

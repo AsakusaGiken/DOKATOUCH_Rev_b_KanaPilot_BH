@@ -1,2 +1,2 @@
 # DOKATOUCH_Rev_b_CAT725_ACM
-DOKATOUCH-PCB programm for ACM, CAT725
+DOKATOUCH-PCB programm for KanaPilot, BH

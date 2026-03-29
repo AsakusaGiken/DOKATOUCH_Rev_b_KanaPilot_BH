@@ -62,64 +62,6 @@ Section Cross References
     mywait16mhz.o(i.wait1s) refers to mywait16mhz.o(i.wait100ms) for wait100ms
     mywait16mhz.o(i.wait_ms) refers to mywait16mhz.o(i.wait1ms) for wait1ms
     mycrc16.o(i.CRC16) refers to mycrc16.o(.constdata) for .constdata
-    wa30.o(i.T2_Callback) refers to wa30.o(.data) for .data
-    wa30.o(i.sendSensData) refers to mysub.o(i.u2RxLedOn) for u2RxLedOn
-    wa30.o(i.sendSensData) refers to mylluart.o(i.sendUart2Packet) for sendUart2Packet
-    wa30.o(i.sendSensData) refers to mysub.o(i.u2RxLedOff) for u2RxLedOff
-    wa30.o(i.sendSensData) refers to wa30.o(.bss) for .bss
-    wa30.o(i.sendSensData) refers to wa30.o(.data) for .data
-    wa30.o(i.wa30Init) refers to mylluart.o(i.u2RxInterruptEnable) for u2RxInterruptEnable
-    wa30.o(i.wa30Init) refers to mysub.o(i.pato1Off) for pato1Off
-    wa30.o(i.wa30Init) refers to mysub.o(i.pato2Off) for pato2Off
-    wa30.o(i.wa30Init) refers to mysub.o(i.pato3Off) for pato3Off
-    wa30.o(i.wa30Init) refers to azd_krd_message.o(i.setContinuousSpeed) for setContinuousSpeed
-    wa30.o(i.wa30Init) refers to wa30.o(.bss) for .bss
-    wa30.o(i.wa30Init) refers to wa30.o(.data) for .data
-    wa30.o(i.wa30_main) refers to myiwdg.o(i.resetWDT) for resetWDT
-    wa30.o(i.wa30_main) refers to mysub.o(i.ledOff) for ledOff
-    wa30.o(i.wa30_main) refers to wa30.o(i.sendSensData) for sendSensData
-    wa30.o(i.wa30_main) refers to acm_incoming.o(i.checkAcmIncomming) for checkAcmIncomming
-    wa30.o(i.wa30_main) refers to acm_sensors.o(i.sensorsRead) for sensorsRead
-    wa30.o(i.wa30_main) refers to mysub.o(i.ledOn) for ledOn
-    wa30.o(i.wa30_main) refers to cat725_drive.o(i.stopAllControlAndResetStatus) for stopAllControlAndResetStatus
-    wa30.o(i.wa30_main) refers to mywait16mhz.o(i.wait10ms) for wait10ms
-    wa30.o(i.wa30_main) refers to wa30.o(.data) for .data
-    acm_incoming.o(i.U2RX_Callback) refers to mysub.o(i.u2RxLedOn) for u2RxLedOn
-    acm_incoming.o(i.U2RX_Callback) refers to mysub.o(i.u2RxLedOff) for u2RxLedOff
-    acm_incoming.o(i.U2RX_Callback) refers to acm_incoming.o(.bss) for .bss
-    acm_incoming.o(i.U2RX_Callback) refers to acm_incoming.o(.data) for .data
-    acm_incoming.o(i.checkAcmIncomming) refers to myiwdg.o(i.resetWDT) for resetWDT
-    acm_incoming.o(i.checkAcmIncomming) refers to acm_incoming.o(i.__ARM_common_switch8) for __ARM_common_switch8
-    acm_incoming.o(i.checkAcmIncomming) refers to acm_incoming.o(i.gamepadDrive) for gamepadDrive
-    acm_incoming.o(i.checkAcmIncomming) refers to cat725_drive.o(i.cat725DirectServoDrive) for cat725DirectServoDrive
-    acm_incoming.o(i.checkAcmIncomming) refers to mysub.o(i.pato2On) for pato2On
-    acm_incoming.o(i.checkAcmIncomming) refers to acm_incoming.o(.data) for .data
-    acm_incoming.o(i.checkAcmIncomming) refers to acm_incoming.o(.bss) for .bss
-    acm_incoming.o(i.checkAcmIncomming) refers to wa30.o(.data) for comTimeCnt
-    acm_incoming.o(i.gamepadDrive) refers to cat725_drive.o(i.cat725GamepadDrive) for cat725GamepadDrive
-    acm_incoming.o(i.gamepadDrive) refers to acm_incoming.o(.data) for .data
-    acm_sensors.o(i.U1RX_Callback) refers to mysub.o(i.u1RxLedOn) for u1RxLedOn
-    acm_sensors.o(i.U1RX_Callback) refers to mysub.o(i.u1RxLedOff) for u1RxLedOff
-    acm_sensors.o(i.U1RX_Callback) refers to acm_sensors.o(.bss) for .bss
-    acm_sensors.o(i.U1RX_Callback) refers to acm_sensors.o(.data) for .data
-    acm_sensors.o(i.checkSensorIncomming) refers to myiwdg.o(i.resetWDT) for resetWDT
-    acm_sensors.o(i.checkSensorIncomming) refers to acm_incoming.o(i.__ARM_common_switch8) for __ARM_common_switch8
-    acm_sensors.o(i.checkSensorIncomming) refers to ffltui.o(.text) for __aeabi_ui2f
-    acm_sensors.o(i.checkSensorIncomming) refers to acm_sensors.o(.data) for .data
-    acm_sensors.o(i.checkSensorIncomming) refers to acm_sensors.o(.bss) for .bss
-    acm_sensors.o(i.checkSensorIncomming) refers to wa30.o(.data) for isRearRadarDetected
-    acm_sensors.o(i.checkSensorIncomming) refers to wa30.o(.bss) for sens_data
-    acm_sensors.o(i.sensorRequest) refers to mysub.o(i.u1TxLedOn) for u1TxLedOn
-    acm_sensors.o(i.sensorRequest) refers to mysub.o(i.u1TxEnable) for u1TxEnable
-    acm_sensors.o(i.sensorRequest) refers to mywait16mhz.o(i.wait10us) for wait10us
-    acm_sensors.o(i.sensorRequest) refers to mylluart.o(i.sendUart1Packet) for sendUart1Packet
-    acm_sensors.o(i.sensorRequest) refers to mysub.o(i.u1TxDisable) for u1TxDisable
-    acm_sensors.o(i.sensorRequest) refers to mysub.o(i.u1TxLedOff) for u1TxLedOff
-    acm_sensors.o(i.sensorRequest) refers to acm_sensors.o(.data) for .data
-    acm_sensors.o(i.sensorsRead) refers to acm_incoming.o(i.__ARM_common_switch8) for __ARM_common_switch8
-    acm_sensors.o(i.sensorsRead) refers to acm_sensors.o(i.sensorRequest) for sensorRequest
-    acm_sensors.o(i.sensorsRead) refers to acm_sensors.o(i.checkSensorIncomming) for checkSensorIncomming
-    acm_sensors.o(i.sensorsRead) refers to acm_sensors.o(.data) for .data
     main.o(i.MX_ADC_Init) refers to main.o(i.LL_APB2_GRP1_EnableClock) for LL_APB2_GRP1_EnableClock
     main.o(i.MX_ADC_Init) refers to stm32l0xx_ll_gpio.o(i.LL_GPIO_Init) for LL_GPIO_Init
     main.o(i.MX_ADC_Init) refers to stm32l0xx_ll_adc.o(i.LL_ADC_Init) for LL_ADC_Init
@@ -188,105 +130,160 @@ Section Cross References
     main.o(i.main) refers to mylluart.o(i.u4RxInterruptEnable) for u4RxInterruptEnable
     main.o(i.main) refers to mylluart.o(i.u2RxInterruptEnable) for u2RxInterruptEnable
     main.o(i.main) refers to mylluart.o(i.u1RxInterruptEnable) for u1RxInterruptEnable
-    main.o(i.main) refers to wa30.o(i.initTimers) for initTimers
-    main.o(i.main) refers to myiwdg.o(i.initIwdg) for initIwdg
-    main.o(i.main) refers to wa30.o(i.wa30Init) for wa30Init
+    main.o(i.main) refers to kanapilot_bh.o(i.initTimers) for initTimers
+    main.o(i.main) refers to kanapilot_bh.o(i.initKanaPilotBH) for initKanaPilotBH
     main.o(i.main) refers to mysub.o(i.pato1Off) for pato1Off
     main.o(i.main) refers to mysub.o(i.blink) for blink
     main.o(i.main) refers to mysub.o(i.pato1On) for pato1On
     main.o(i.main) refers to myiwdg.o(i.resetWDT) for resetWDT
-    main.o(i.main) refers to wa30.o(i.wa30_main) for wa30_main
-    stm32l0xx_it.o(i.TIM2_IRQHandler) refers to wa30.o(i.T2_Callback) for T2_Callback
-    stm32l0xx_it.o(i.USART1_IRQHandler) refers to acm_sensors.o(i.U1RX_Callback) for U1RX_Callback
-    stm32l0xx_it.o(i.USART2_IRQHandler) refers to acm_incoming.o(i.U2RX_Callback) for U2RX_Callback
-    stm32l0xx_it.o(i.USART4_5_IRQHandler) refers to cat725_drive.o(i.U4RX_Callback) for U4RX_Callback
-    cat725_drive.o(i.U4RX_Callback) refers to cat725_drive.o(.bss) for .bss
-    cat725_drive.o(i.U4RX_Callback) refers to cat725_drive.o(.data) for .data
-    cat725_drive.o(i.allFreeOff) refers to azd_krd_message.o(i.queWriteRegister) for queWriteRegister
-    cat725_drive.o(i.allFreeOff) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.allFreeOn) refers to azd_krd_message.o(i.queFreeRequest) for queFreeRequest
-    cat725_drive.o(i.allFreeOn) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.allZhome) refers to azd_krd_message.o(i.queZhomeRequest) for queZhomeRequest
-    cat725_drive.o(i.allZhome) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.allZhome) refers to mywait16mhz.o(i.wait1s) for wait1s
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(i.rxBufferPositionReset) for rxBufferPositionReset
-    cat725_drive.o(i.cat725DirectServoDrive) refers to acm_incoming.o(i.__ARM_common_switch8) for __ARM_common_switch8
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(i.setBrake) for setBrake
-    cat725_drive.o(i.cat725DirectServoDrive) refers to memcpya.o(.text) for __aeabi_memcpy
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(i.setHandle) for setHandle
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(i.setAccel) for setAccel
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(i.setGear) for setGear
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(i.setArticulate) for setArticulate
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(i.setDump) for setDump
-    cat725_drive.o(i.cat725DirectServoDrive) refers to azd_krd_message.o(i.queAlarmReset) for queAlarmReset
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(.data) for .data
-    cat725_drive.o(i.cat725DirectServoDrive) refers to cat725_drive.o(.bss) for .bss
-    cat725_drive.o(i.cat725GamepadDrive) refers to myiwdg.o(i.resetWDT) for resetWDT
-    cat725_drive.o(i.cat725GamepadDrive) refers to ffltui.o(.text) for __aeabi_ui2f
-    cat725_drive.o(i.cat725GamepadDrive) refers to fadd.o(.text) for __aeabi_fsub
-    cat725_drive.o(i.cat725GamepadDrive) refers to f2d.o(.text) for __aeabi_f2d
-    cat725_drive.o(i.cat725GamepadDrive) refers to ddiv.o(.text) for __aeabi_ddiv
-    cat725_drive.o(i.cat725GamepadDrive) refers to d2f.o(.text) for __aeabi_d2f
-    cat725_drive.o(i.cat725GamepadDrive) refers to dadd.o(.text) for __aeabi_dadd
-    cat725_drive.o(i.cat725GamepadDrive) refers to cdcmple.o(.text) for __aeabi_cdcmple
-    cat725_drive.o(i.cat725GamepadDrive) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
-    cat725_drive.o(i.cat725GamepadDrive) refers to azd_krd_message.o(i.setRelativePosAndReadStatus) for setRelativePosAndReadStatus
-    cat725_drive.o(i.cat725GamepadDrive) refers to cat725_drive.o(i.spanChk) for spanChk
-    cat725_drive.o(i.cat725GamepadDrive) refers to idiv.o(.text) for __aeabi_idivmod
-    cat725_drive.o(i.cat725GamepadDrive) refers to dfltui.o(.text) for __aeabi_ui2d
-    cat725_drive.o(i.cat725GamepadDrive) refers to dmul.o(.text) for __aeabi_dmul
-    cat725_drive.o(i.cat725GamepadDrive) refers to cat725_drive.o(i.rxBufferPositionReset) for rxBufferPositionReset
-    cat725_drive.o(i.cat725GamepadDrive) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.cat725GamepadDrive) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
-    cat725_drive.o(i.cat725GamepadDrive) refers to azd_krd_message.o(i.queAlarmReset) for queAlarmReset
-    cat725_drive.o(i.cat725GamepadDrive) refers to cat725_drive.o(.data) for .data
-    cat725_drive.o(i.cat725GamepadDrive) refers to wa30.o(.bss) for sens_data
-    cat725_drive.o(i.cat725GamepadDrive) refers to wa30.o(.data) for DIO
-    cat725_drive.o(i.cat725GamepadDrive) refers to cat725_drive.o(.bss) for .bss
-    cat725_drive.o(i.convToStep) refers to fflti.o(.text) for __aeabi_i2f
-    cat725_drive.o(i.convToStep) refers to fdiv.o(.text) for __aeabi_fdiv
-    cat725_drive.o(i.convToStep) refers to fmul.o(.text) for __aeabi_fmul
-    cat725_drive.o(i.convToStep) refers to ffixi.o(.text) for __aeabi_f2iz
-    cat725_drive.o(i.dumpUp) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
-    cat725_drive.o(i.dumpUp) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.emgStopPosition) refers to cat725_drive.o(i.rxBufferPositionReset) for rxBufferPositionReset
-    cat725_drive.o(i.emgStopPosition) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
-    cat725_drive.o(i.emgStopPosition) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.emgStopPosition) refers to mywait16mhz.o(i.wait1s) for wait1s
-    cat725_drive.o(i.emgStopPosition) refers to cat725_drive.o(.data) for .data
-    cat725_drive.o(i.packetWait) refers to myiwdg.o(i.resetWDT) for resetWDT
-    cat725_drive.o(i.packetWait) refers to mywait16mhz.o(i.wait1ms) for wait1ms
-    cat725_drive.o(i.rxBufferPositionReset) refers to cat725_drive.o(.data) for .data
-    cat725_drive.o(i.rxBufferPositionReset) refers to cat725_drive.o(.bss) for .bss
-    cat725_drive.o(i.setAccel) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
-    cat725_drive.o(i.setAccel) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.setArticulate) refers to fadd.o(.text) for __aeabi_fsub
-    cat725_drive.o(i.setArticulate) refers to fdiv.o(.text) for __aeabi_fdiv
-    cat725_drive.o(i.setArticulate) refers to fmul.o(.text) for __aeabi_fmul
-    cat725_drive.o(i.setArticulate) refers to ffixi.o(.text) for __aeabi_f2iz
-    cat725_drive.o(i.setArticulate) refers to azd_krd_message.o(i.setRelativePosAndReadStatus) for setRelativePosAndReadStatus
-    cat725_drive.o(i.setArticulate) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.setArticulate) refers to wa30.o(.bss) for sens_data
-    cat725_drive.o(i.setArticulate) refers to cat725_drive.o(.data) for .data
-    cat725_drive.o(i.setBrake) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
-    cat725_drive.o(i.setBrake) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.setDump) refers to fmul.o(.text) for __aeabi_fmul
-    cat725_drive.o(i.setDump) refers to ffixi.o(.text) for __aeabi_f2iz
-    cat725_drive.o(i.setDump) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
-    cat725_drive.o(i.setDump) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.setGear) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
-    cat725_drive.o(i.setGear) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.setHandle) refers to fdiv.o(.text) for __aeabi_fdiv
-    cat725_drive.o(i.setHandle) refers to fadd.o(.text) for __aeabi_fadd
-    cat725_drive.o(i.setHandle) refers to fmul.o(.text) for __aeabi_fmul
-    cat725_drive.o(i.setHandle) refers to ffixi.o(.text) for __aeabi_f2iz
-    cat725_drive.o(i.setHandle) refers to azd_krd_message.o(i.setRelativePosAndReadStatus) for setRelativePosAndReadStatus
-    cat725_drive.o(i.setHandle) refers to cat725_drive.o(i.packetWait) for packetWait
-    cat725_drive.o(i.setHandle) refers to wa30.o(.bss) for sens_data
-    cat725_drive.o(i.setHandle) refers to cat725_drive.o(.data) for .data
-    cat725_drive.o(i.stopAllControlAndResetStatus) refers to cat725_drive.o(i.emgStopPosition) for emgStopPosition
-    cat725_drive.o(i.stopAllControlAndResetStatus) refers to mysub.o(i.pato2Off) for pato2Off
+    main.o(i.main) refers to kanapilot_bh.o(i.mainKanaPilotBH) for mainKanaPilotBH
+    stm32l0xx_it.o(i.TIM2_IRQHandler) refers to kanapilot_bh.o(i.T2_Callback) for T2_Callback
+    stm32l0xx_it.o(i.USART1_IRQHandler) refers to kanapilot_senscom.o(i.U1RX_Callback) for U1RX_Callback
+    stm32l0xx_it.o(i.USART2_IRQHandler) refers to kanapilot_pccom.o(i.U2RX_Callback) for U2RX_Callback
+    stm32l0xx_it.o(i.USART4_5_IRQHandler) refers to backhoe_drive.o(i.U4RX_Callback) for U4RX_Callback
+    kanapilot_bh.o(i.T2_Callback) refers to kanapilot_bh.o(.data) for .data
+    kanapilot_bh.o(i.initKanaPilotBH) refers to mylluart.o(i.u2RxInterruptEnable) for u2RxInterruptEnable
+    kanapilot_bh.o(i.initKanaPilotBH) refers to mysub.o(i.pato1Off) for pato1Off
+    kanapilot_bh.o(i.initKanaPilotBH) refers to mysub.o(i.pato2Off) for pato2Off
+    kanapilot_bh.o(i.initKanaPilotBH) refers to mysub.o(i.pato3Off) for pato3Off
+    kanapilot_bh.o(i.initKanaPilotBH) refers to azd_krd_message.o(i.setContinuousSpeed) for setContinuousSpeed
+    kanapilot_bh.o(i.initKanaPilotBH) refers to kanapilot_bh.o(.bss) for .bss
+    kanapilot_bh.o(i.initKanaPilotBH) refers to kanapilot_bh.o(.data) for .data
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to myiwdg.o(i.resetWDT) for resetWDT
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to mysub.o(i.ledOff) for ledOff
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to kanapilot_bh.o(i.sendSensData) for sendSensData
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to kanapilot_pccom.o(i.checkPcCom) for checkPcCom
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to kanapilot_senscom.o(i.sensorsRead) for sensorsRead
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to mysub.o(i.ledOn) for ledOn
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to backhoe_drive.o(i.stopAllControlAndResetStatus) for stopAllControlAndResetStatus
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to mywait16mhz.o(i.wait10ms) for wait10ms
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to kanapilot_bh.o(.data) for .data
+    kanapilot_bh.o(i.mainKanaPilotBH) refers to kanapilot_senscom.o(.data) for isRearRadarDetected
+    kanapilot_bh.o(i.sendSensData) refers to mysub.o(i.u2RxLedOn) for u2RxLedOn
+    kanapilot_bh.o(i.sendSensData) refers to mylluart.o(i.sendUart2Packet) for sendUart2Packet
+    kanapilot_bh.o(i.sendSensData) refers to mysub.o(i.u2RxLedOff) for u2RxLedOff
+    kanapilot_bh.o(i.sendSensData) refers to kanapilot_bh.o(.bss) for .bss
+    kanapilot_bh.o(i.sendSensData) refers to kanapilot_bh.o(.data) for .data
+    backhoe_drive.o(i.U4RX_Callback) refers to backhoe_drive.o(.bss) for .bss
+    backhoe_drive.o(i.U4RX_Callback) refers to backhoe_drive.o(.data) for .data
+    backhoe_drive.o(i.allFreeOff) refers to azd_krd_message.o(i.queWriteRegister) for queWriteRegister
+    backhoe_drive.o(i.allFreeOff) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.allFreeOn) refers to azd_krd_message.o(i.queFreeRequest) for queFreeRequest
+    backhoe_drive.o(i.allFreeOn) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.allZhome) refers to azd_krd_message.o(i.queZhomeRequest) for queZhomeRequest
+    backhoe_drive.o(i.allZhome) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.allZhome) refers to mywait16mhz.o(i.wait1s) for wait1s
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.rxBufferPositionReset) for rxBufferPositionReset
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.setBrake) for setBrake
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to memcpya.o(.text) for __aeabi_memcpy
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.setHandle) for setHandle
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.setAccel) for setAccel
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.setGear) for setGear
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.setArticulate) for setArticulate
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.setDump) for setDump
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to azd_krd_message.o(i.queAlarmReset) for queAlarmReset
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(.data) for .data
+    backhoe_drive.o(i.cat725DirectServoDrive) refers to backhoe_drive.o(.bss) for .bss
+    backhoe_drive.o(i.cat725GamepadDrive) refers to myiwdg.o(i.resetWDT) for resetWDT
+    backhoe_drive.o(i.cat725GamepadDrive) refers to ffltui.o(.text) for __aeabi_ui2f
+    backhoe_drive.o(i.cat725GamepadDrive) refers to fadd.o(.text) for __aeabi_fsub
+    backhoe_drive.o(i.cat725GamepadDrive) refers to f2d.o(.text) for __aeabi_f2d
+    backhoe_drive.o(i.cat725GamepadDrive) refers to ddiv.o(.text) for __aeabi_ddiv
+    backhoe_drive.o(i.cat725GamepadDrive) refers to d2f.o(.text) for __aeabi_d2f
+    backhoe_drive.o(i.cat725GamepadDrive) refers to dadd.o(.text) for __aeabi_dadd
+    backhoe_drive.o(i.cat725GamepadDrive) refers to cdcmple.o(.text) for __aeabi_cdcmple
+    backhoe_drive.o(i.cat725GamepadDrive) refers to cdrcmple.o(.text) for __aeabi_cdrcmple
+    backhoe_drive.o(i.cat725GamepadDrive) refers to azd_krd_message.o(i.setRelativePosAndReadStatus) for setRelativePosAndReadStatus
+    backhoe_drive.o(i.cat725GamepadDrive) refers to backhoe_drive.o(i.spanChk) for spanChk
+    backhoe_drive.o(i.cat725GamepadDrive) refers to idiv.o(.text) for __aeabi_idivmod
+    backhoe_drive.o(i.cat725GamepadDrive) refers to dfltui.o(.text) for __aeabi_ui2d
+    backhoe_drive.o(i.cat725GamepadDrive) refers to dmul.o(.text) for __aeabi_dmul
+    backhoe_drive.o(i.cat725GamepadDrive) refers to backhoe_drive.o(i.rxBufferPositionReset) for rxBufferPositionReset
+    backhoe_drive.o(i.cat725GamepadDrive) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.cat725GamepadDrive) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
+    backhoe_drive.o(i.cat725GamepadDrive) refers to azd_krd_message.o(i.queAlarmReset) for queAlarmReset
+    backhoe_drive.o(i.cat725GamepadDrive) refers to backhoe_drive.o(.data) for .data
+    backhoe_drive.o(i.cat725GamepadDrive) refers to kanapilot_bh.o(.bss) for sens_data
+    backhoe_drive.o(i.cat725GamepadDrive) refers to kanapilot_bh.o(.data) for DIO
+    backhoe_drive.o(i.cat725GamepadDrive) refers to backhoe_drive.o(.bss) for .bss
+    backhoe_drive.o(i.convToStep) refers to fflti.o(.text) for __aeabi_i2f
+    backhoe_drive.o(i.convToStep) refers to fdiv.o(.text) for __aeabi_fdiv
+    backhoe_drive.o(i.convToStep) refers to fmul.o(.text) for __aeabi_fmul
+    backhoe_drive.o(i.convToStep) refers to ffixi.o(.text) for __aeabi_f2iz
+    backhoe_drive.o(i.dumpUp) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
+    backhoe_drive.o(i.dumpUp) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.emgStopPosition) refers to backhoe_drive.o(i.rxBufferPositionReset) for rxBufferPositionReset
+    backhoe_drive.o(i.emgStopPosition) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
+    backhoe_drive.o(i.emgStopPosition) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.emgStopPosition) refers to mywait16mhz.o(i.wait1s) for wait1s
+    backhoe_drive.o(i.emgStopPosition) refers to backhoe_drive.o(.data) for .data
+    backhoe_drive.o(i.packetWait) refers to myiwdg.o(i.resetWDT) for resetWDT
+    backhoe_drive.o(i.packetWait) refers to mywait16mhz.o(i.wait1ms) for wait1ms
+    backhoe_drive.o(i.rxBufferPositionReset) refers to backhoe_drive.o(.data) for .data
+    backhoe_drive.o(i.rxBufferPositionReset) refers to backhoe_drive.o(.bss) for .bss
+    backhoe_drive.o(i.setAccel) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
+    backhoe_drive.o(i.setAccel) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.setArticulate) refers to fadd.o(.text) for __aeabi_fsub
+    backhoe_drive.o(i.setArticulate) refers to fdiv.o(.text) for __aeabi_fdiv
+    backhoe_drive.o(i.setArticulate) refers to fmul.o(.text) for __aeabi_fmul
+    backhoe_drive.o(i.setArticulate) refers to ffixi.o(.text) for __aeabi_f2iz
+    backhoe_drive.o(i.setArticulate) refers to azd_krd_message.o(i.setRelativePosAndReadStatus) for setRelativePosAndReadStatus
+    backhoe_drive.o(i.setArticulate) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.setArticulate) refers to kanapilot_bh.o(.bss) for sens_data
+    backhoe_drive.o(i.setArticulate) refers to backhoe_drive.o(.data) for .data
+    backhoe_drive.o(i.setBrake) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
+    backhoe_drive.o(i.setBrake) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.setDump) refers to fmul.o(.text) for __aeabi_fmul
+    backhoe_drive.o(i.setDump) refers to ffixi.o(.text) for __aeabi_f2iz
+    backhoe_drive.o(i.setDump) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
+    backhoe_drive.o(i.setDump) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.setGear) refers to azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting) for setPosAndReadStatusByDefaultSetting
+    backhoe_drive.o(i.setGear) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.setHandle) refers to fdiv.o(.text) for __aeabi_fdiv
+    backhoe_drive.o(i.setHandle) refers to fadd.o(.text) for __aeabi_fadd
+    backhoe_drive.o(i.setHandle) refers to fmul.o(.text) for __aeabi_fmul
+    backhoe_drive.o(i.setHandle) refers to ffixi.o(.text) for __aeabi_f2iz
+    backhoe_drive.o(i.setHandle) refers to azd_krd_message.o(i.setRelativePosAndReadStatus) for setRelativePosAndReadStatus
+    backhoe_drive.o(i.setHandle) refers to backhoe_drive.o(i.packetWait) for packetWait
+    backhoe_drive.o(i.setHandle) refers to kanapilot_bh.o(.bss) for sens_data
+    backhoe_drive.o(i.setHandle) refers to backhoe_drive.o(.data) for .data
+    backhoe_drive.o(i.stopAllControlAndResetStatus) refers to backhoe_drive.o(i.emgStopPosition) for emgStopPosition
+    backhoe_drive.o(i.stopAllControlAndResetStatus) refers to mysub.o(i.pato2Off) for pato2Off
+    kanapilot_pccom.o(i.U2RX_Callback) refers to mysub.o(i.u2RxLedOn) for u2RxLedOn
+    kanapilot_pccom.o(i.U2RX_Callback) refers to mysub.o(i.u2RxLedOff) for u2RxLedOff
+    kanapilot_pccom.o(i.U2RX_Callback) refers to kanapilot_pccom.o(.bss) for .bss
+    kanapilot_pccom.o(i.U2RX_Callback) refers to kanapilot_pccom.o(.data) for .data
+    kanapilot_pccom.o(i.checkPcCom) refers to myiwdg.o(i.resetWDT) for resetWDT
+    kanapilot_pccom.o(i.checkPcCom) refers to backhoe_drive.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    kanapilot_pccom.o(i.checkPcCom) refers to kanapilot_pccom.o(i.gamepadDrive) for gamepadDrive
+    kanapilot_pccom.o(i.checkPcCom) refers to backhoe_drive.o(i.cat725DirectServoDrive) for cat725DirectServoDrive
+    kanapilot_pccom.o(i.checkPcCom) refers to mysub.o(i.pato2On) for pato2On
+    kanapilot_pccom.o(i.checkPcCom) refers to kanapilot_pccom.o(.data) for .data
+    kanapilot_pccom.o(i.checkPcCom) refers to kanapilot_pccom.o(.bss) for .bss
+    kanapilot_pccom.o(i.checkPcCom) refers to kanapilot_bh.o(.data) for comTimeCnt
+    kanapilot_pccom.o(i.gamepadDrive) refers to backhoe_drive.o(i.cat725GamepadDrive) for cat725GamepadDrive
+    kanapilot_pccom.o(i.gamepadDrive) refers to kanapilot_pccom.o(.data) for .data
+    kanapilot_senscom.o(i.U1RX_Callback) refers to mysub.o(i.u1RxLedOn) for u1RxLedOn
+    kanapilot_senscom.o(i.U1RX_Callback) refers to mysub.o(i.u1RxLedOff) for u1RxLedOff
+    kanapilot_senscom.o(i.U1RX_Callback) refers to kanapilot_senscom.o(.bss) for .bss
+    kanapilot_senscom.o(i.U1RX_Callback) refers to kanapilot_senscom.o(.data) for .data
+    kanapilot_senscom.o(i.checkSensorIncomming) refers to myiwdg.o(i.resetWDT) for resetWDT
+    kanapilot_senscom.o(i.checkSensorIncomming) refers to backhoe_drive.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    kanapilot_senscom.o(i.checkSensorIncomming) refers to kanapilot_senscom.o(.data) for .data
+    kanapilot_senscom.o(i.checkSensorIncomming) refers to kanapilot_senscom.o(.bss) for .bss
+    kanapilot_senscom.o(i.sensorRequest) refers to mysub.o(i.u1TxLedOn) for u1TxLedOn
+    kanapilot_senscom.o(i.sensorRequest) refers to mysub.o(i.u1TxEnable) for u1TxEnable
+    kanapilot_senscom.o(i.sensorRequest) refers to mywait16mhz.o(i.wait10us) for wait10us
+    kanapilot_senscom.o(i.sensorRequest) refers to mylluart.o(i.sendUart1Packet) for sendUart1Packet
+    kanapilot_senscom.o(i.sensorRequest) refers to mysub.o(i.u1TxDisable) for u1TxDisable
+    kanapilot_senscom.o(i.sensorRequest) refers to mysub.o(i.u1TxLedOff) for u1TxLedOff
+    kanapilot_senscom.o(i.sensorRequest) refers to kanapilot_senscom.o(.data) for .data
+    kanapilot_senscom.o(i.sensorsRead) refers to backhoe_drive.o(i.__ARM_common_switch8) for __ARM_common_switch8
+    kanapilot_senscom.o(i.sensorsRead) refers to kanapilot_senscom.o(i.sensorRequest) for sensorRequest
+    kanapilot_senscom.o(i.sensorsRead) refers to kanapilot_senscom.o(i.checkSensorIncomming) for checkSensorIncomming
+    kanapilot_senscom.o(i.sensorsRead) refers to kanapilot_senscom.o(.data) for .data
     stm32l0xx_ll_utils.o(i.LL_Init1msTick) refers to uidiv.o(.text) for __aeabi_uidivmod
     stm32l0xx_ll_utils.o(i.LL_PLL_ConfigSystemClock_HSE) refers to stm32l0xx_ll_utils.o(i.UTILS_PLL_IsBusy) for UTILS_PLL_IsBusy
     stm32l0xx_ll_utils.o(i.LL_PLL_ConfigSystemClock_HSE) refers to stm32l0xx_ll_utils.o(i.UTILS_GetPLLOutputFrequency) for UTILS_GetPLLOutputFrequency
@@ -395,6 +392,7 @@ Removing Unused input sections from the image.
     Removing startup_stm32l071xx.o(HEAP), (512 bytes).
     Removing myiwdg.o(.rev16_text), (4 bytes).
     Removing myiwdg.o(.revsh_text), (4 bytes).
+    Removing myiwdg.o(i.initIwdg), (72 bytes).
     Removing mylluart.o(.rev16_text), (4 bytes).
     Removing mylluart.o(.revsh_text), (4 bytes).
     Removing mylluart.o(i.u1RxInterruptDisable), (16 bytes).
@@ -424,49 +422,44 @@ Removing Unused input sections from the image.
     Removing mywait16mhz.o(i.wait_ms), (20 bytes).
     Removing mycrc16.o(.rev16_text), (4 bytes).
     Removing mycrc16.o(.revsh_text), (4 bytes).
-    Removing wa30.o(.rev16_text), (4 bytes).
-    Removing wa30.o(.revsh_text), (4 bytes).
-    Removing wa30.o(.data), (1 bytes).
-    Removing wa30.o(.data), (1 bytes).
-    Removing acm_incoming.o(.rev16_text), (4 bytes).
-    Removing acm_incoming.o(.revsh_text), (4 bytes).
-    Removing acm_incoming.o(i.acmCommandCheck), (2 bytes).
-    Removing acm_incoming.o(.data), (1 bytes).
-    Removing acm_incoming.o(.data), (4 bytes).
-    Removing acm_incoming.o(.data), (4 bytes).
-    Removing acm_incoming.o(.data), (1 bytes).
-    Removing acm_incoming.o(.data), (1 bytes).
-    Removing acm_incoming.o(.data), (1 bytes).
-    Removing acm_sensors.o(.rev16_text), (4 bytes).
-    Removing acm_sensors.o(.revsh_text), (4 bytes).
-    Removing acm_sensors.o(.bss), (4000 bytes).
-    Removing acm_sensors.o(.data), (2 bytes).
-    Removing acm_sensors.o(.data), (1 bytes).
-    Removing acm_sensors.o(.data), (4 bytes).
-    Removing acm_sensors.o(.data), (4 bytes).
-    Removing acm_sensors.o(.data), (4 bytes).
     Removing main.o(.rev16_text), (4 bytes).
     Removing main.o(.revsh_text), (4 bytes).
     Removing main.o(i._Error_Handler), (2 bytes).
     Removing stm32l0xx_it.o(.rev16_text), (4 bytes).
     Removing stm32l0xx_it.o(.revsh_text), (4 bytes).
-    Removing cat725_drive.o(.rev16_text), (4 bytes).
-    Removing cat725_drive.o(.revsh_text), (4 bytes).
-    Removing cat725_drive.o(i.allFreeOff), (100 bytes).
-    Removing cat725_drive.o(i.allFreeOn), (76 bytes).
-    Removing cat725_drive.o(i.allZhome), (60 bytes).
-    Removing cat725_drive.o(i.convToStep), (56 bytes).
-    Removing cat725_drive.o(i.dumpUp), (56 bytes).
-    Removing cat725_drive.o(i.isHandleLimit), (4 bytes).
-    Removing cat725_drive.o(i.spanChk2), (16 bytes).
-    Removing cat725_drive.o(i.spanChk3), (28 bytes).
-    Removing cat725_drive.o(.data), (4 bytes).
-    Removing cat725_drive.o(.data), (1 bytes).
-    Removing cat725_drive.o(.data), (1 bytes).
-    Removing cat725_drive.o(.data), (4 bytes).
-    Removing cat725_drive.o(.data), (4 bytes).
-    Removing cat725_drive.o(.data), (1 bytes).
-    Removing cat725_drive.o(.data), (1 bytes).
+    Removing kanapilot_bh.o(.rev16_text), (4 bytes).
+    Removing kanapilot_bh.o(.revsh_text), (4 bytes).
+    Removing kanapilot_bh.o(.data), (1 bytes).
+    Removing kanapilot_bh.o(.data), (1 bytes).
+    Removing backhoe_drive.o(.rev16_text), (4 bytes).
+    Removing backhoe_drive.o(.revsh_text), (4 bytes).
+    Removing backhoe_drive.o(i.allFreeOff), (100 bytes).
+    Removing backhoe_drive.o(i.allFreeOn), (76 bytes).
+    Removing backhoe_drive.o(i.allZhome), (60 bytes).
+    Removing backhoe_drive.o(i.convToStep), (56 bytes).
+    Removing backhoe_drive.o(i.dumpUp), (56 bytes).
+    Removing backhoe_drive.o(i.isHandleLimit), (4 bytes).
+    Removing backhoe_drive.o(i.spanChk2), (16 bytes).
+    Removing backhoe_drive.o(i.spanChk3), (28 bytes).
+    Removing backhoe_drive.o(.data), (4 bytes).
+    Removing backhoe_drive.o(.data), (1 bytes).
+    Removing backhoe_drive.o(.data), (1 bytes).
+    Removing backhoe_drive.o(.data), (4 bytes).
+    Removing backhoe_drive.o(.data), (4 bytes).
+    Removing backhoe_drive.o(.data), (1 bytes).
+    Removing backhoe_drive.o(.data), (1 bytes).
+    Removing kanapilot_pccom.o(.rev16_text), (4 bytes).
+    Removing kanapilot_pccom.o(.revsh_text), (4 bytes).
+    Removing kanapilot_pccom.o(i.acmCommandCheck), (2 bytes).
+    Removing kanapilot_pccom.o(.data), (1 bytes).
+    Removing kanapilot_pccom.o(.data), (4 bytes).
+    Removing kanapilot_pccom.o(.data), (4 bytes).
+    Removing kanapilot_pccom.o(.data), (1 bytes).
+    Removing kanapilot_pccom.o(.data), (1 bytes).
+    Removing kanapilot_pccom.o(.data), (1 bytes).
+    Removing kanapilot_senscom.o(.rev16_text), (4 bytes).
+    Removing kanapilot_senscom.o(.revsh_text), (4 bytes).
+    Removing kanapilot_senscom.o(.data), (1 bytes).
     Removing stm32l0xx_ll_utils.o(.rev16_text), (4 bytes).
     Removing stm32l0xx_ll_utils.o(.revsh_text), (4 bytes).
     Removing stm32l0xx_ll_utils.o(i.LL_PLL_ConfigSystemClock_HSE), (116 bytes).
@@ -548,7 +541,7 @@ Removing Unused input sections from the image.
     Removing stm32l0xx_ll_rcc.o(i.LL_RCC_GetLPUARTClockFreq), (88 bytes).
     Removing fflti.o(.text), (22 bytes).
 
-158 unused section(s) (total 9762 bytes) removed from the image.
+154 unused section(s) (total 5820 bytes) removed from the image.
 
 ==============================================================================
 
@@ -575,33 +568,33 @@ Image Symbol Table
     ../Src/system_stm32l0xx.c                0x00000000   Number         0  system_stm32l0xx.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
-    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
+    ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
-    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
     ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
     ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
-    ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
-    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
+    ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
-    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
+    ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixi.o ABSOLUTE
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltui.o ABSOLUTE
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
@@ -623,14 +616,16 @@ Image Symbol Table
     ..\Src\main.c                            0x00000000   Number         0  main.o ABSOLUTE
     ..\Src\stm32l0xx_it.c                    0x00000000   Number         0  stm32l0xx_it.o ABSOLUTE
     ..\Src\system_stm32l0xx.c                0x00000000   Number         0  system_stm32l0xx.o ABSOLUTE
-    ACM_Incoming.c                           0x00000000   Number         0  acm_incoming.o ABSOLUTE
-    ACM_Incoming.c                           0x00000000   Number         0  acm_incoming.o ABSOLUTE
-    ACM_Sensors.c                            0x00000000   Number         0  acm_sensors.o ABSOLUTE
-    ACM_Sensors.c                            0x00000000   Number         0  acm_sensors.o ABSOLUTE
     AZD_KRD_Message.c                        0x00000000   Number         0  azd_krd_message.o ABSOLUTE
     AZD_KRD_Message.c                        0x00000000   Number         0  azd_krd_message.o ABSOLUTE
-    CAT725_Drive.c                           0x00000000   Number         0  cat725_drive.o ABSOLUTE
-    CAT725_Drive.c                           0x00000000   Number         0  cat725_drive.o ABSOLUTE
+    BackHoe_Drive.c                          0x00000000   Number         0  backhoe_drive.o ABSOLUTE
+    BackHoe_Drive.c                          0x00000000   Number         0  backhoe_drive.o ABSOLUTE
+    KanaPilot_BH.c                           0x00000000   Number         0  kanapilot_bh.o ABSOLUTE
+    KanaPilot_BH.c                           0x00000000   Number         0  kanapilot_bh.o ABSOLUTE
+    KanaPilot_PcCom.c                        0x00000000   Number         0  kanapilot_pccom.o ABSOLUTE
+    KanaPilot_PcCom.c                        0x00000000   Number         0  kanapilot_pccom.o ABSOLUTE
+    KanaPilot_SensCom.c                      0x00000000   Number         0  kanapilot_senscom.o ABSOLUTE
+    KanaPilot_SensCom.c                      0x00000000   Number         0  kanapilot_senscom.o ABSOLUTE
     cdcmple.s                                0x00000000   Number         0  cdcmple.o ABSOLUTE
     cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
@@ -647,8 +642,6 @@ Image Symbol Table
     myllUart.c                               0x00000000   Number         0  mylluart.o ABSOLUTE
     myllUart.c                               0x00000000   Number         0  mylluart.o ABSOLUTE
     startup_stm32l071xx.s                    0x00000000   Number         0  startup_stm32l071xx.o ABSOLUTE
-    wa30.c                                   0x00000000   Number         0  wa30.o ABSOLUTE
-    wa30.c                                   0x00000000   Number         0  wa30.o ABSOLUTE
     RESET                                    0x08000000   Section      192  startup_stm32l071xx.o(RESET)
     .ARM.Collect$$$$00000000                 0x080000c0   Section        0  entry.o(.ARM.Collect$$$$00000000)
     .ARM.Collect$$$$00000001                 0x080000c0   Section        4  entry2.o(.ARM.Collect$$$$00000001)
@@ -749,102 +742,101 @@ Image Symbol Table
     i.SysTick_Handler                        0x0800195e   Section        0  stm32l0xx_it.o(i.SysTick_Handler)
     i.SystemClock_Config                     0x08001960   Section        0  main.o(i.SystemClock_Config)
     i.SystemInit                             0x08001a30   Section        0  system_stm32l0xx.o(i.SystemInit)
-    i.T2_Callback                            0x08001a84   Section        0  wa30.o(i.T2_Callback)
+    i.T2_Callback                            0x08001a84   Section        0  kanapilot_bh.o(i.T2_Callback)
     i.TIM2_IRQHandler                        0x08001a90   Section        0  stm32l0xx_it.o(i.TIM2_IRQHandler)
-    i.U1RX_Callback                          0x08001aac   Section        0  acm_sensors.o(i.U1RX_Callback)
-    i.U2RX_Callback                          0x08001ae0   Section        0  acm_incoming.o(i.U2RX_Callback)
-    i.U4RX_Callback                          0x08001b14   Section        0  cat725_drive.o(i.U4RX_Callback)
+    i.U1RX_Callback                          0x08001aac   Section        0  kanapilot_senscom.o(i.U1RX_Callback)
+    i.U2RX_Callback                          0x08001ae0   Section        0  kanapilot_pccom.o(i.U2RX_Callback)
+    i.U4RX_Callback                          0x08001b14   Section        0  backhoe_drive.o(i.U4RX_Callback)
     i.USART1_IRQHandler                      0x08001b34   Section        0  stm32l0xx_it.o(i.USART1_IRQHandler)
     i.USART2_IRQHandler                      0x08001b54   Section        0  stm32l0xx_it.o(i.USART2_IRQHandler)
     i.USART4_5_IRQHandler                    0x08001b74   Section        0  stm32l0xx_it.o(i.USART4_5_IRQHandler)
     i.__ARM_clz                              0x08001b94   Section        0  depilogue.o(i.__ARM_clz)
-    i.__ARM_common_switch8                   0x08001bc2   Section        0  acm_incoming.o(i.__ARM_common_switch8)
+    i.__ARM_common_switch8                   0x08001bc2   Section        0  backhoe_drive.o(i.__ARM_common_switch8)
     i.__scatterload_copy                     0x08001bdc   Section       14  handlers.o(i.__scatterload_copy)
     i.__scatterload_null                     0x08001bea   Section        2  handlers.o(i.__scatterload_null)
     i.__scatterload_zeroinit                 0x08001bec   Section       14  handlers.o(i.__scatterload_zeroinit)
     i.blink                                  0x08001bfa   Section        0  mysub.o(i.blink)
-    i.cat725DirectServoDrive                 0x08001c1c   Section        0  cat725_drive.o(i.cat725DirectServoDrive)
-    i.cat725GamepadDrive                     0x08001d18   Section        0  cat725_drive.o(i.cat725GamepadDrive)
-    i.checkAcmIncomming                      0x0800202c   Section        0  acm_incoming.o(i.checkAcmIncomming)
-    i.checkSensorIncomming                   0x08002144   Section        0  acm_sensors.o(i.checkSensorIncomming)
-    i.emgStopPosition                        0x080022ac   Section        0  cat725_drive.o(i.emgStopPosition)
-    i.gamepadDrive                           0x0800232c   Section        0  acm_incoming.o(i.gamepadDrive)
-    i.initIwdg                               0x08002364   Section        0  myiwdg.o(i.initIwdg)
-    i.initTimers                             0x080023ac   Section        0  wa30.o(i.initTimers)
-    i.ledOff                                 0x080023d4   Section        0  mysub.o(i.ledOff)
-    i.ledOn                                  0x080023e4   Section        0  mysub.o(i.ledOn)
-    i.main                                   0x080023f4   Section        0  main.o(i.main)
-    i.packetWait                             0x080024b8   Section        0  cat725_drive.o(i.packetWait)
-    i.pato1Off                               0x080024f0   Section        0  mysub.o(i.pato1Off)
-    i.pato1On                                0x08002504   Section        0  mysub.o(i.pato1On)
-    i.pato2Off                               0x08002518   Section        0  mysub.o(i.pato2Off)
-    i.pato2On                                0x0800252c   Section        0  mysub.o(i.pato2On)
-    i.pato3Off                               0x08002540   Section        0  mysub.o(i.pato3Off)
-    i.queAlarmReset                          0x08002554   Section        0  azd_krd_message.o(i.queAlarmReset)
-    i.queReadWriteRegisterSeq                0x08002570   Section        0  azd_krd_message.o(i.queReadWriteRegisterSeq)
-    i.queSetposAndReadStatus                 0x080025dc   Section        0  azd_krd_message.o(i.queSetposAndReadStatus)
-    i.queWriteRegisterSeq                    0x08002640   Section        0  azd_krd_message.o(i.queWriteRegisterSeq)
-    i.resetWDT                               0x0800269c   Section        0  myiwdg.o(i.resetWDT)
-    i.rxBufferPositionReset                  0x080026ac   Section        0  cat725_drive.o(i.rxBufferPositionReset)
-    i.sendQuery                              0x080026c8   Section        0  azd_krd_message.o(i.sendQuery)
-    i.sendSensData                           0x0800272c   Section        0  wa30.o(i.sendSensData)
-    i.sendUart1Byte                          0x08002798   Section        0  mylluart.o(i.sendUart1Byte)
-    i.sendUart1Packet                        0x080027b4   Section        0  mylluart.o(i.sendUart1Packet)
-    i.sendUart2Byte                          0x080027d4   Section        0  mylluart.o(i.sendUart2Byte)
-    i.sendUart2Packet                        0x080027f0   Section        0  mylluart.o(i.sendUart2Packet)
-    i.sendUart4Byte                          0x08002810   Section        0  mylluart.o(i.sendUart4Byte)
-    i.sendUart4Packet                        0x0800282c   Section        0  mylluart.o(i.sendUart4Packet)
-    i.sendUart5Byte                          0x0800284c   Section        0  mylluart.o(i.sendUart5Byte)
-    i.sendUart5Packet                        0x08002868   Section        0  mylluart.o(i.sendUart5Packet)
-    i.sensorRequest                          0x08002888   Section        0  acm_sensors.o(i.sensorRequest)
-    i.sensorsRead                            0x080028f4   Section        0  acm_sensors.o(i.sensorsRead)
-    i.setAccel                               0x0800292c   Section        0  cat725_drive.o(i.setAccel)
-    i.setArticulate                          0x08002944   Section        0  cat725_drive.o(i.setArticulate)
-    i.setBrake                               0x080029b4   Section        0  cat725_drive.o(i.setBrake)
-    i.setContinuousSpeed                     0x080029ca   Section        0  azd_krd_message.o(i.setContinuousSpeed)
-    i.setDump                                0x080029e8   Section        0  cat725_drive.o(i.setDump)
-    i.setGear                                0x08002a24   Section        0  cat725_drive.o(i.setGear)
-    i.setHandle                              0x08002a78   Section        0  cat725_drive.o(i.setHandle)
-    i.setPosAndReadStatusByDefaultSetting    0x08002b28   Section        0  azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting)
-    i.setRelativePosAndReadStatus            0x08002b58   Section        0  azd_krd_message.o(i.setRelativePosAndReadStatus)
-    i.spanChk                                0x08002b7c   Section        0  cat725_drive.o(i.spanChk)
-    i.stopAllControlAndResetStatus           0x08002b98   Section        0  cat725_drive.o(i.stopAllControlAndResetStatus)
-    i.u1RxInterruptEnable                    0x08002ba4   Section        0  mylluart.o(i.u1RxInterruptEnable)
-    i.u1RxLedOff                             0x08002bb4   Section        0  mysub.o(i.u1RxLedOff)
-    i.u1RxLedOn                              0x08002bc4   Section        0  mysub.o(i.u1RxLedOn)
-    i.u1TxDisable                            0x08002bd4   Section        0  mysub.o(i.u1TxDisable)
-    i.u1TxEnable                             0x08002be4   Section        0  mysub.o(i.u1TxEnable)
-    i.u1TxLedOff                             0x08002bf4   Section        0  mysub.o(i.u1TxLedOff)
-    i.u1TxLedOn                              0x08002c04   Section        0  mysub.o(i.u1TxLedOn)
-    i.u2RxInterruptEnable                    0x08002c14   Section        0  mylluart.o(i.u2RxInterruptEnable)
-    i.u2RxLedOff                             0x08002c24   Section        0  mysub.o(i.u2RxLedOff)
-    i.u2RxLedOn                              0x08002c34   Section        0  mysub.o(i.u2RxLedOn)
-    i.u4RxInterruptEnable                    0x08002c44   Section        0  mylluart.o(i.u4RxInterruptEnable)
-    i.u4TxDisable                            0x08002c54   Section        0  mysub.o(i.u4TxDisable)
-    i.u4TxEnable                             0x08002c68   Section        0  mysub.o(i.u4TxEnable)
-    i.u5TxDisable                            0x08002c7c   Section        0  mysub.o(i.u5TxDisable)
-    i.u5TxEnable                             0x08002c90   Section        0  mysub.o(i.u5TxEnable)
-    i.wa30Init                               0x08002ca4   Section        0  wa30.o(i.wa30Init)
-    i.wa30_main                              0x08002ce4   Section        0  wa30.o(i.wa30_main)
-    i.wait100ms                              0x08002d84   Section        0  mywait16mhz.o(i.wait100ms)
-    i.wait10ms                               0x08002db4   Section        0  mywait16mhz.o(i.wait10ms)
-    i.wait10us                               0x08002de0   Section        0  mywait16mhz.o(i.wait10us)
-    i.wait1ms                                0x08002dea   Section        0  mywait16mhz.o(i.wait1ms)
-    i.wait1s                                 0x08002df6   Section        0  mywait16mhz.o(i.wait1s)
-    .constdata                               0x08002e22   Section       25  system_stm32l0xx.o(.constdata)
-    .constdata                               0x08002e3b   Section        8  system_stm32l0xx.o(.constdata)
-    .constdata                               0x08002e44   Section      512  mycrc16.o(.constdata)
-    wCRCTable                                0x08002e44   Data         512  mycrc16.o(.constdata)
+    i.cat725DirectServoDrive                 0x08001c1c   Section        0  backhoe_drive.o(i.cat725DirectServoDrive)
+    i.cat725GamepadDrive                     0x08001d18   Section        0  backhoe_drive.o(i.cat725GamepadDrive)
+    i.checkPcCom                             0x0800202c   Section        0  kanapilot_pccom.o(i.checkPcCom)
+    i.checkSensorIncomming                   0x08002144   Section        0  kanapilot_senscom.o(i.checkSensorIncomming)
+    i.emgStopPosition                        0x08002300   Section        0  backhoe_drive.o(i.emgStopPosition)
+    i.gamepadDrive                           0x08002380   Section        0  kanapilot_pccom.o(i.gamepadDrive)
+    i.initKanaPilotBH                        0x080023b8   Section        0  kanapilot_bh.o(i.initKanaPilotBH)
+    i.initTimers                             0x080023f8   Section        0  kanapilot_bh.o(i.initTimers)
+    i.ledOff                                 0x08002420   Section        0  mysub.o(i.ledOff)
+    i.ledOn                                  0x08002430   Section        0  mysub.o(i.ledOn)
+    i.main                                   0x08002440   Section        0  main.o(i.main)
+    i.mainKanaPilotBH                        0x08002500   Section        0  kanapilot_bh.o(i.mainKanaPilotBH)
+    i.packetWait                             0x080025a8   Section        0  backhoe_drive.o(i.packetWait)
+    i.pato1Off                               0x080025e0   Section        0  mysub.o(i.pato1Off)
+    i.pato1On                                0x080025f4   Section        0  mysub.o(i.pato1On)
+    i.pato2Off                               0x08002608   Section        0  mysub.o(i.pato2Off)
+    i.pato2On                                0x0800261c   Section        0  mysub.o(i.pato2On)
+    i.pato3Off                               0x08002630   Section        0  mysub.o(i.pato3Off)
+    i.queAlarmReset                          0x08002644   Section        0  azd_krd_message.o(i.queAlarmReset)
+    i.queReadWriteRegisterSeq                0x08002660   Section        0  azd_krd_message.o(i.queReadWriteRegisterSeq)
+    i.queSetposAndReadStatus                 0x080026cc   Section        0  azd_krd_message.o(i.queSetposAndReadStatus)
+    i.queWriteRegisterSeq                    0x08002730   Section        0  azd_krd_message.o(i.queWriteRegisterSeq)
+    i.resetWDT                               0x0800278c   Section        0  myiwdg.o(i.resetWDT)
+    i.rxBufferPositionReset                  0x0800279c   Section        0  backhoe_drive.o(i.rxBufferPositionReset)
+    i.sendQuery                              0x080027b8   Section        0  azd_krd_message.o(i.sendQuery)
+    i.sendSensData                           0x0800281c   Section        0  kanapilot_bh.o(i.sendSensData)
+    i.sendUart1Byte                          0x08002888   Section        0  mylluart.o(i.sendUart1Byte)
+    i.sendUart1Packet                        0x080028a4   Section        0  mylluart.o(i.sendUart1Packet)
+    i.sendUart2Byte                          0x080028c4   Section        0  mylluart.o(i.sendUart2Byte)
+    i.sendUart2Packet                        0x080028e0   Section        0  mylluart.o(i.sendUart2Packet)
+    i.sendUart4Byte                          0x08002900   Section        0  mylluart.o(i.sendUart4Byte)
+    i.sendUart4Packet                        0x0800291c   Section        0  mylluart.o(i.sendUart4Packet)
+    i.sendUart5Byte                          0x0800293c   Section        0  mylluart.o(i.sendUart5Byte)
+    i.sendUart5Packet                        0x08002958   Section        0  mylluart.o(i.sendUart5Packet)
+    i.sensorRequest                          0x08002978   Section        0  kanapilot_senscom.o(i.sensorRequest)
+    i.sensorsRead                            0x080029e4   Section        0  kanapilot_senscom.o(i.sensorsRead)
+    i.setAccel                               0x08002a3c   Section        0  backhoe_drive.o(i.setAccel)
+    i.setArticulate                          0x08002a54   Section        0  backhoe_drive.o(i.setArticulate)
+    i.setBrake                               0x08002ac4   Section        0  backhoe_drive.o(i.setBrake)
+    i.setContinuousSpeed                     0x08002ada   Section        0  azd_krd_message.o(i.setContinuousSpeed)
+    i.setDump                                0x08002af8   Section        0  backhoe_drive.o(i.setDump)
+    i.setGear                                0x08002b34   Section        0  backhoe_drive.o(i.setGear)
+    i.setHandle                              0x08002b88   Section        0  backhoe_drive.o(i.setHandle)
+    i.setPosAndReadStatusByDefaultSetting    0x08002c38   Section        0  azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting)
+    i.setRelativePosAndReadStatus            0x08002c68   Section        0  azd_krd_message.o(i.setRelativePosAndReadStatus)
+    i.spanChk                                0x08002c8c   Section        0  backhoe_drive.o(i.spanChk)
+    i.stopAllControlAndResetStatus           0x08002ca8   Section        0  backhoe_drive.o(i.stopAllControlAndResetStatus)
+    i.u1RxInterruptEnable                    0x08002cb4   Section        0  mylluart.o(i.u1RxInterruptEnable)
+    i.u1RxLedOff                             0x08002cc4   Section        0  mysub.o(i.u1RxLedOff)
+    i.u1RxLedOn                              0x08002cd4   Section        0  mysub.o(i.u1RxLedOn)
+    i.u1TxDisable                            0x08002ce4   Section        0  mysub.o(i.u1TxDisable)
+    i.u1TxEnable                             0x08002cf4   Section        0  mysub.o(i.u1TxEnable)
+    i.u1TxLedOff                             0x08002d04   Section        0  mysub.o(i.u1TxLedOff)
+    i.u1TxLedOn                              0x08002d14   Section        0  mysub.o(i.u1TxLedOn)
+    i.u2RxInterruptEnable                    0x08002d24   Section        0  mylluart.o(i.u2RxInterruptEnable)
+    i.u2RxLedOff                             0x08002d34   Section        0  mysub.o(i.u2RxLedOff)
+    i.u2RxLedOn                              0x08002d44   Section        0  mysub.o(i.u2RxLedOn)
+    i.u4RxInterruptEnable                    0x08002d54   Section        0  mylluart.o(i.u4RxInterruptEnable)
+    i.u4TxDisable                            0x08002d64   Section        0  mysub.o(i.u4TxDisable)
+    i.u4TxEnable                             0x08002d78   Section        0  mysub.o(i.u4TxEnable)
+    i.u5TxDisable                            0x08002d8c   Section        0  mysub.o(i.u5TxDisable)
+    i.u5TxEnable                             0x08002da0   Section        0  mysub.o(i.u5TxEnable)
+    i.wait100ms                              0x08002db4   Section        0  mywait16mhz.o(i.wait100ms)
+    i.wait10ms                               0x08002de4   Section        0  mywait16mhz.o(i.wait10ms)
+    i.wait10us                               0x08002e10   Section        0  mywait16mhz.o(i.wait10us)
+    i.wait1ms                                0x08002e1a   Section        0  mywait16mhz.o(i.wait1ms)
+    i.wait1s                                 0x08002e26   Section        0  mywait16mhz.o(i.wait1s)
+    .constdata                               0x08002e52   Section       25  system_stm32l0xx.o(.constdata)
+    .constdata                               0x08002e6b   Section        8  system_stm32l0xx.o(.constdata)
+    .constdata                               0x08002e74   Section      512  mycrc16.o(.constdata)
+    wCRCTable                                0x08002e74   Data         512  mycrc16.o(.constdata)
     .data                                    0x20000000   Section        4  system_stm32l0xx.o(.data)
-    .data                                    0x20000004   Section       20  wa30.o(.data)
-    .data                                    0x20000018   Section       20  acm_incoming.o(.data)
-    .data                                    0x2000002c   Section       24  acm_sensors.o(.data)
-    .data                                    0x20000044   Section       91  cat725_drive.o(.data)
-    .bss                                     0x200000a0   Section       54  wa30.o(.bss)
-    .bss                                     0x200000d6   Section      550  acm_incoming.o(.bss)
-    .bss                                     0x200002fc   Section      330  acm_sensors.o(.bss)
-    .bss                                     0x20000446   Section      100  cat725_drive.o(.bss)
-    STACK                                    0x200004b0   Section     1024  startup_stm32l071xx.o(STACK)
+    .data                                    0x20000004   Section       20  kanapilot_bh.o(.data)
+    .data                                    0x20000018   Section       91  backhoe_drive.o(.data)
+    .data                                    0x20000074   Section       20  kanapilot_pccom.o(.data)
+    .data                                    0x20000088   Section       64  kanapilot_senscom.o(.data)
+    .bss                                     0x200000c8   Section       54  kanapilot_bh.o(.bss)
+    .bss                                     0x200000fe   Section      256  backhoe_drive.o(.bss)
+    .bss                                     0x200001fe   Section      550  kanapilot_pccom.o(.bss)
+    .bss                                     0x20000424   Section      330  kanapilot_senscom.o(.bss)
+    STACK                                    0x20000570   Section     1024  startup_stm32l071xx.o(STACK)
 
     Global Symbols
 
@@ -957,153 +949,165 @@ Image Symbol Table
     SysTick_Handler                          0x0800195f   Thumb Code     2  stm32l0xx_it.o(i.SysTick_Handler)
     SystemClock_Config                       0x08001961   Thumb Code   186  main.o(i.SystemClock_Config)
     SystemInit                               0x08001a31   Thumb Code    66  system_stm32l0xx.o(i.SystemInit)
-    T2_Callback                              0x08001a85   Thumb Code     8  wa30.o(i.T2_Callback)
+    T2_Callback                              0x08001a85   Thumb Code     8  kanapilot_bh.o(i.T2_Callback)
     TIM2_IRQHandler                          0x08001a91   Thumb Code    26  stm32l0xx_it.o(i.TIM2_IRQHandler)
-    U1RX_Callback                            0x08001aad   Thumb Code    40  acm_sensors.o(i.U1RX_Callback)
-    U2RX_Callback                            0x08001ae1   Thumb Code    40  acm_incoming.o(i.U2RX_Callback)
-    U4RX_Callback                            0x08001b15   Thumb Code    18  cat725_drive.o(i.U4RX_Callback)
+    U1RX_Callback                            0x08001aad   Thumb Code    40  kanapilot_senscom.o(i.U1RX_Callback)
+    U2RX_Callback                            0x08001ae1   Thumb Code    40  kanapilot_pccom.o(i.U2RX_Callback)
+    U4RX_Callback                            0x08001b15   Thumb Code    18  backhoe_drive.o(i.U4RX_Callback)
     USART1_IRQHandler                        0x08001b35   Thumb Code    26  stm32l0xx_it.o(i.USART1_IRQHandler)
     USART2_IRQHandler                        0x08001b55   Thumb Code    26  stm32l0xx_it.o(i.USART2_IRQHandler)
     USART4_5_IRQHandler                      0x08001b75   Thumb Code    26  stm32l0xx_it.o(i.USART4_5_IRQHandler)
     __ARM_clz                                0x08001b95   Thumb Code    46  depilogue.o(i.__ARM_clz)
-    __ARM_common_switch8                     0x08001bc3   Thumb Code    26  acm_incoming.o(i.__ARM_common_switch8)
+    __ARM_common_switch8                     0x08001bc3   Thumb Code    26  backhoe_drive.o(i.__ARM_common_switch8)
     __scatterload_copy                       0x08001bdd   Thumb Code    14  handlers.o(i.__scatterload_copy)
     __scatterload_null                       0x08001beb   Thumb Code     2  handlers.o(i.__scatterload_null)
     __scatterload_zeroinit                   0x08001bed   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
     blink                                    0x08001bfb   Thumb Code    32  mysub.o(i.blink)
-    cat725DirectServoDrive                   0x08001c1d   Thumb Code   244  cat725_drive.o(i.cat725DirectServoDrive)
-    cat725GamepadDrive                       0x08001d19   Thumb Code   698  cat725_drive.o(i.cat725GamepadDrive)
-    checkAcmIncomming                        0x0800202d   Thumb Code   258  acm_incoming.o(i.checkAcmIncomming)
-    checkSensorIncomming                     0x08002145   Thumb Code   338  acm_sensors.o(i.checkSensorIncomming)
-    emgStopPosition                          0x080022ad   Thumb Code   116  cat725_drive.o(i.emgStopPosition)
-    gamepadDrive                             0x0800232d   Thumb Code    52  acm_incoming.o(i.gamepadDrive)
-    initIwdg                                 0x08002365   Thumb Code    48  myiwdg.o(i.initIwdg)
-    initTimers                               0x080023ad   Thumb Code    34  wa30.o(i.initTimers)
-    ledOff                                   0x080023d5   Thumb Code    12  mysub.o(i.ledOff)
-    ledOn                                    0x080023e5   Thumb Code    12  mysub.o(i.ledOn)
-    main                                     0x080023f5   Thumb Code   184  main.o(i.main)
-    packetWait                               0x080024b9   Thumb Code    56  cat725_drive.o(i.packetWait)
-    pato1Off                                 0x080024f1   Thumb Code    14  mysub.o(i.pato1Off)
-    pato1On                                  0x08002505   Thumb Code    14  mysub.o(i.pato1On)
-    pato2Off                                 0x08002519   Thumb Code    14  mysub.o(i.pato2Off)
-    pato2On                                  0x0800252d   Thumb Code    14  mysub.o(i.pato2On)
-    pato3Off                                 0x08002541   Thumb Code    14  mysub.o(i.pato3Off)
-    queAlarmReset                            0x08002555   Thumb Code    28  azd_krd_message.o(i.queAlarmReset)
-    queReadWriteRegisterSeq                  0x08002571   Thumb Code   108  azd_krd_message.o(i.queReadWriteRegisterSeq)
-    queSetposAndReadStatus                   0x080025dd   Thumb Code   100  azd_krd_message.o(i.queSetposAndReadStatus)
-    queWriteRegisterSeq                      0x08002641   Thumb Code    90  azd_krd_message.o(i.queWriteRegisterSeq)
-    resetWDT                                 0x0800269d   Thumb Code     8  myiwdg.o(i.resetWDT)
-    rxBufferPositionReset                    0x080026ad   Thumb Code    20  cat725_drive.o(i.rxBufferPositionReset)
-    sendQuery                                0x080026c9   Thumb Code    98  azd_krd_message.o(i.sendQuery)
-    sendSensData                             0x0800272d   Thumb Code    98  wa30.o(i.sendSensData)
-    sendUart1Byte                            0x08002799   Thumb Code    22  mylluart.o(i.sendUart1Byte)
-    sendUart1Packet                          0x080027b5   Thumb Code    30  mylluart.o(i.sendUart1Packet)
-    sendUart2Byte                            0x080027d5   Thumb Code    22  mylluart.o(i.sendUart2Byte)
-    sendUart2Packet                          0x080027f1   Thumb Code    30  mylluart.o(i.sendUart2Packet)
-    sendUart4Byte                            0x08002811   Thumb Code    22  mylluart.o(i.sendUart4Byte)
-    sendUart4Packet                          0x0800282d   Thumb Code    30  mylluart.o(i.sendUart4Packet)
-    sendUart5Byte                            0x0800284d   Thumb Code    22  mylluart.o(i.sendUart5Byte)
-    sendUart5Packet                          0x08002869   Thumb Code    30  mylluart.o(i.sendUart5Packet)
-    sensorRequest                            0x08002889   Thumb Code   104  acm_sensors.o(i.sensorRequest)
-    sensorsRead                              0x080028f5   Thumb Code    52  acm_sensors.o(i.sensorsRead)
-    setAccel                                 0x0800292d   Thumb Code    22  cat725_drive.o(i.setAccel)
-    setArticulate                            0x08002945   Thumb Code    84  cat725_drive.o(i.setArticulate)
-    setBrake                                 0x080029b5   Thumb Code    22  cat725_drive.o(i.setBrake)
-    setContinuousSpeed                       0x080029cb   Thumb Code    28  azd_krd_message.o(i.setContinuousSpeed)
-    setDump                                  0x080029e9   Thumb Code    50  cat725_drive.o(i.setDump)
-    setGear                                  0x08002a25   Thumb Code    66  cat725_drive.o(i.setGear)
-    setHandle                                0x08002a79   Thumb Code   148  cat725_drive.o(i.setHandle)
-    setPosAndReadStatusByDefaultSetting      0x08002b29   Thumb Code    38  azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting)
-    setRelativePosAndReadStatus              0x08002b59   Thumb Code    36  azd_krd_message.o(i.setRelativePosAndReadStatus)
-    spanChk                                  0x08002b7d   Thumb Code    28  cat725_drive.o(i.spanChk)
-    stopAllControlAndResetStatus             0x08002b99   Thumb Code    12  cat725_drive.o(i.stopAllControlAndResetStatus)
-    u1RxInterruptEnable                      0x08002ba5   Thumb Code    12  mylluart.o(i.u1RxInterruptEnable)
-    u1RxLedOff                               0x08002bb5   Thumb Code    12  mysub.o(i.u1RxLedOff)
-    u1RxLedOn                                0x08002bc5   Thumb Code    12  mysub.o(i.u1RxLedOn)
-    u1TxDisable                              0x08002bd5   Thumb Code    16  mysub.o(i.u1TxDisable)
-    u1TxEnable                               0x08002be5   Thumb Code    16  mysub.o(i.u1TxEnable)
-    u1TxLedOff                               0x08002bf5   Thumb Code    12  mysub.o(i.u1TxLedOff)
-    u1TxLedOn                                0x08002c05   Thumb Code    12  mysub.o(i.u1TxLedOn)
-    u2RxInterruptEnable                      0x08002c15   Thumb Code    12  mylluart.o(i.u2RxInterruptEnable)
-    u2RxLedOff                               0x08002c25   Thumb Code    12  mysub.o(i.u2RxLedOff)
-    u2RxLedOn                                0x08002c35   Thumb Code    12  mysub.o(i.u2RxLedOn)
-    u4RxInterruptEnable                      0x08002c45   Thumb Code    12  mylluart.o(i.u4RxInterruptEnable)
-    u4TxDisable                              0x08002c55   Thumb Code    14  mysub.o(i.u4TxDisable)
-    u4TxEnable                               0x08002c69   Thumb Code    14  mysub.o(i.u4TxEnable)
-    u5TxDisable                              0x08002c7d   Thumb Code    14  mysub.o(i.u5TxDisable)
-    u5TxEnable                               0x08002c91   Thumb Code    14  mysub.o(i.u5TxEnable)
-    wa30Init                                 0x08002ca5   Thumb Code    52  wa30.o(i.wa30Init)
-    wa30_main                                0x08002ce5   Thumb Code   156  wa30.o(i.wa30_main)
-    wait100ms                                0x08002d85   Thumb Code    48  mywait16mhz.o(i.wait100ms)
-    wait10ms                                 0x08002db5   Thumb Code    44  mywait16mhz.o(i.wait10ms)
-    wait10us                                 0x08002de1   Thumb Code    10  mywait16mhz.o(i.wait10us)
-    wait1ms                                  0x08002deb   Thumb Code    12  mywait16mhz.o(i.wait1ms)
-    wait1s                                   0x08002df7   Thumb Code    44  mywait16mhz.o(i.wait1s)
-    AHBPrescTable                            0x08002e22   Data          16  system_stm32l0xx.o(.constdata)
-    PLLMulTable                              0x08002e32   Data           9  system_stm32l0xx.o(.constdata)
-    APBPrescTable                            0x08002e3b   Data           8  system_stm32l0xx.o(.constdata)
-    Region$$Table$$Base                      0x08003044   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x08003064   Number         0  anon$$obj.o(Region$$Table)
+    cat725DirectServoDrive                   0x08001c1d   Thumb Code   244  backhoe_drive.o(i.cat725DirectServoDrive)
+    cat725GamepadDrive                       0x08001d19   Thumb Code   698  backhoe_drive.o(i.cat725GamepadDrive)
+    checkPcCom                               0x0800202d   Thumb Code   258  kanapilot_pccom.o(i.checkPcCom)
+    checkSensorIncomming                     0x08002145   Thumb Code   430  kanapilot_senscom.o(i.checkSensorIncomming)
+    emgStopPosition                          0x08002301   Thumb Code   116  backhoe_drive.o(i.emgStopPosition)
+    gamepadDrive                             0x08002381   Thumb Code    52  kanapilot_pccom.o(i.gamepadDrive)
+    initKanaPilotBH                          0x080023b9   Thumb Code    52  kanapilot_bh.o(i.initKanaPilotBH)
+    initTimers                               0x080023f9   Thumb Code    34  kanapilot_bh.o(i.initTimers)
+    ledOff                                   0x08002421   Thumb Code    12  mysub.o(i.ledOff)
+    ledOn                                    0x08002431   Thumb Code    12  mysub.o(i.ledOn)
+    main                                     0x08002441   Thumb Code   180  main.o(i.main)
+    mainKanaPilotBH                          0x08002501   Thumb Code   158  kanapilot_bh.o(i.mainKanaPilotBH)
+    packetWait                               0x080025a9   Thumb Code    56  backhoe_drive.o(i.packetWait)
+    pato1Off                                 0x080025e1   Thumb Code    14  mysub.o(i.pato1Off)
+    pato1On                                  0x080025f5   Thumb Code    14  mysub.o(i.pato1On)
+    pato2Off                                 0x08002609   Thumb Code    14  mysub.o(i.pato2Off)
+    pato2On                                  0x0800261d   Thumb Code    14  mysub.o(i.pato2On)
+    pato3Off                                 0x08002631   Thumb Code    14  mysub.o(i.pato3Off)
+    queAlarmReset                            0x08002645   Thumb Code    28  azd_krd_message.o(i.queAlarmReset)
+    queReadWriteRegisterSeq                  0x08002661   Thumb Code   108  azd_krd_message.o(i.queReadWriteRegisterSeq)
+    queSetposAndReadStatus                   0x080026cd   Thumb Code   100  azd_krd_message.o(i.queSetposAndReadStatus)
+    queWriteRegisterSeq                      0x08002731   Thumb Code    90  azd_krd_message.o(i.queWriteRegisterSeq)
+    resetWDT                                 0x0800278d   Thumb Code     8  myiwdg.o(i.resetWDT)
+    rxBufferPositionReset                    0x0800279d   Thumb Code    20  backhoe_drive.o(i.rxBufferPositionReset)
+    sendQuery                                0x080027b9   Thumb Code    98  azd_krd_message.o(i.sendQuery)
+    sendSensData                             0x0800281d   Thumb Code    98  kanapilot_bh.o(i.sendSensData)
+    sendUart1Byte                            0x08002889   Thumb Code    22  mylluart.o(i.sendUart1Byte)
+    sendUart1Packet                          0x080028a5   Thumb Code    30  mylluart.o(i.sendUart1Packet)
+    sendUart2Byte                            0x080028c5   Thumb Code    22  mylluart.o(i.sendUart2Byte)
+    sendUart2Packet                          0x080028e1   Thumb Code    30  mylluart.o(i.sendUart2Packet)
+    sendUart4Byte                            0x08002901   Thumb Code    22  mylluart.o(i.sendUart4Byte)
+    sendUart4Packet                          0x0800291d   Thumb Code    30  mylluart.o(i.sendUart4Packet)
+    sendUart5Byte                            0x0800293d   Thumb Code    22  mylluart.o(i.sendUart5Byte)
+    sendUart5Packet                          0x08002959   Thumb Code    30  mylluart.o(i.sendUart5Packet)
+    sensorRequest                            0x08002979   Thumb Code   104  kanapilot_senscom.o(i.sensorRequest)
+    sensorsRead                              0x080029e5   Thumb Code    82  kanapilot_senscom.o(i.sensorsRead)
+    setAccel                                 0x08002a3d   Thumb Code    22  backhoe_drive.o(i.setAccel)
+    setArticulate                            0x08002a55   Thumb Code    84  backhoe_drive.o(i.setArticulate)
+    setBrake                                 0x08002ac5   Thumb Code    22  backhoe_drive.o(i.setBrake)
+    setContinuousSpeed                       0x08002adb   Thumb Code    28  azd_krd_message.o(i.setContinuousSpeed)
+    setDump                                  0x08002af9   Thumb Code    50  backhoe_drive.o(i.setDump)
+    setGear                                  0x08002b35   Thumb Code    66  backhoe_drive.o(i.setGear)
+    setHandle                                0x08002b89   Thumb Code   148  backhoe_drive.o(i.setHandle)
+    setPosAndReadStatusByDefaultSetting      0x08002c39   Thumb Code    38  azd_krd_message.o(i.setPosAndReadStatusByDefaultSetting)
+    setRelativePosAndReadStatus              0x08002c69   Thumb Code    36  azd_krd_message.o(i.setRelativePosAndReadStatus)
+    spanChk                                  0x08002c8d   Thumb Code    28  backhoe_drive.o(i.spanChk)
+    stopAllControlAndResetStatus             0x08002ca9   Thumb Code    12  backhoe_drive.o(i.stopAllControlAndResetStatus)
+    u1RxInterruptEnable                      0x08002cb5   Thumb Code    12  mylluart.o(i.u1RxInterruptEnable)
+    u1RxLedOff                               0x08002cc5   Thumb Code    12  mysub.o(i.u1RxLedOff)
+    u1RxLedOn                                0x08002cd5   Thumb Code    12  mysub.o(i.u1RxLedOn)
+    u1TxDisable                              0x08002ce5   Thumb Code    16  mysub.o(i.u1TxDisable)
+    u1TxEnable                               0x08002cf5   Thumb Code    16  mysub.o(i.u1TxEnable)
+    u1TxLedOff                               0x08002d05   Thumb Code    12  mysub.o(i.u1TxLedOff)
+    u1TxLedOn                                0x08002d15   Thumb Code    12  mysub.o(i.u1TxLedOn)
+    u2RxInterruptEnable                      0x08002d25   Thumb Code    12  mylluart.o(i.u2RxInterruptEnable)
+    u2RxLedOff                               0x08002d35   Thumb Code    12  mysub.o(i.u2RxLedOff)
+    u2RxLedOn                                0x08002d45   Thumb Code    12  mysub.o(i.u2RxLedOn)
+    u4RxInterruptEnable                      0x08002d55   Thumb Code    12  mylluart.o(i.u4RxInterruptEnable)
+    u4TxDisable                              0x08002d65   Thumb Code    14  mysub.o(i.u4TxDisable)
+    u4TxEnable                               0x08002d79   Thumb Code    14  mysub.o(i.u4TxEnable)
+    u5TxDisable                              0x08002d8d   Thumb Code    14  mysub.o(i.u5TxDisable)
+    u5TxEnable                               0x08002da1   Thumb Code    14  mysub.o(i.u5TxEnable)
+    wait100ms                                0x08002db5   Thumb Code    48  mywait16mhz.o(i.wait100ms)
+    wait10ms                                 0x08002de5   Thumb Code    44  mywait16mhz.o(i.wait10ms)
+    wait10us                                 0x08002e11   Thumb Code    10  mywait16mhz.o(i.wait10us)
+    wait1ms                                  0x08002e1b   Thumb Code    12  mywait16mhz.o(i.wait1ms)
+    wait1s                                   0x08002e27   Thumb Code    44  mywait16mhz.o(i.wait1s)
+    AHBPrescTable                            0x08002e52   Data          16  system_stm32l0xx.o(.constdata)
+    PLLMulTable                              0x08002e62   Data           9  system_stm32l0xx.o(.constdata)
+    APBPrescTable                            0x08002e6b   Data           8  system_stm32l0xx.o(.constdata)
+    Region$$Table$$Base                      0x08003074   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08003094   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32l0xx.o(.data)
-    isRearRadarDetected                      0x20000004   Data           1  wa30.o(.data)
-    isCom                                    0x20000005   Data           1  wa30.o(.data)
-    isEmgStopRequested                       0x20000006   Data           1  wa30.o(.data)
-    RQ                                       0x20000007   Data           1  wa30.o(.data)
-    packetCount                              0x20000008   Data           1  wa30.o(.data)
-    is100msInterval                          0x20000009   Data           1  wa30.o(.data)
-    ledStat                                  0x2000000a   Data           1  wa30.o(.data)
-    ledBlinkcounter                          0x2000000b   Data           1  wa30.o(.data)
-    comTimeCnt                               0x2000000c   Data           4  wa30.o(.data)
-    rearRadarDetectCnt                       0x20000010   Data           4  wa30.o(.data)
-    DIO                                      0x20000014   Data           4  wa30.o(.data)
-    u2RxCnt                                  0x20000018   Data           1  acm_incoming.o(.data)
-    u2RxLen                                  0x20000019   Data           1  acm_incoming.o(.data)
-    u2RxSum                                  0x2000001a   Data           1  acm_incoming.o(.data)
-    acmPacketPos                             0x2000001b   Data           1  acm_incoming.o(.data)
-    U2Q                                      0x2000001c   Data           4  acm_incoming.o(.data)
-    u2RxPos                                  0x20000020   Data           4  acm_incoming.o(.data)
-    u2RxPrePos                               0x20000024   Data           4  acm_incoming.o(.data)
-    acmDio                                   0x20000028   Data           4  acm_incoming.o(.data)
-    u1RxSum                                  0x2000002c   Data           1  acm_sensors.o(.data)
-    u1RxLen                                  0x2000002d   Data           1  acm_sensors.o(.data)
-    u1RxCnt                                  0x2000002e   Data           1  acm_sensors.o(.data)
-    acmSensPos                               0x2000002f   Data           1  acm_sensors.o(.data)
-    sqCnt                                    0x20000030   Data           1  acm_sensors.o(.data)
-    u1RxPos                                  0x20000034   Data           4  acm_sensors.o(.data)
-    u1RxPrePos                               0x20000038   Data           4  acm_sensors.o(.data)
-    U1Q                                      0x2000003c   Data           4  acm_sensors.o(.data)
-    sensCnt                                  0x20000040   Data           4  acm_sensors.o(.data)
-    dBRAKE                                   0x20000044   Data           1  cat725_drive.o(.data)
-    dACCEL                                   0x20000045   Data           1  cat725_drive.o(.data)
-    u4rxPos                                  0x20000048   Data           4  cat725_drive.o(.data)
-    thisDirection                            0x2000004c   Data           4  cat725_drive.o(.data)
-    testFlg                                  0x20000050   Data           4  cat725_drive.o(.data)
-    ST                                       0x20000054   Data           4  cat725_drive.o(.data)
-    AC                                       0x20000058   Data           4  cat725_drive.o(.data)
-    BL                                       0x2000005c   Data           4  cat725_drive.o(.data)
-    FR                                       0x20000060   Data           4  cat725_drive.o(.data)
-    DP                                       0x20000064   Data           4  cat725_drive.o(.data)
-    KY                                       0x20000068   Data           4  cat725_drive.o(.data)
-    nowAngle                                 0x2000006c   Data           4  cat725_drive.o(.data)
-    distAngle                                0x20000070   Data           4  cat725_drive.o(.data)
-    dumpAngle                                0x20000074   Data           4  cat725_drive.o(.data)
-    distDumpAngle                            0x20000078   Data           4  cat725_drive.o(.data)
-    handleStep                               0x2000007c   Data           4  cat725_drive.o(.data)
-    nowArt                                   0x20000080   Data           4  cat725_drive.o(.data)
-    deltaArt                                 0x20000084   Data           4  cat725_drive.o(.data)
-    distArt                                  0x20000088   Data           4  cat725_drive.o(.data)
-    targetArt                                0x2000008c   Data           4  cat725_drive.o(.data)
-    dHANDLE                                  0x20000090   Data           4  cat725_drive.o(.data)
-    tempVal                                  0x20000094   Data           4  cat725_drive.o(.data)
-    svStatus                                 0x20000098   Data           7  cat725_drive.o(.data)
-    sens_data                                0x200000a0   Data          24  wa30.o(.bss)
-    dt                                       0x200000b8   Data          30  wa30.o(.bss)
-    u2RxBuf                                  0x200000d6   Data         500  acm_incoming.o(.bss)
-    acmPacketBuf                             0x200002ca   Data          50  acm_incoming.o(.bss)
-    u1RxBuf                                  0x200002fc   Data         300  acm_sensors.o(.bss)
-    acmSensBuf                               0x20000428   Data          30  acm_sensors.o(.bss)
-    u4RxBuf                                  0x20000446   Data         100  cat725_drive.o(.bss)
-    __initial_sp                             0x200008b0   Data           0  startup_stm32l071xx.o(STACK)
+    isCom                                    0x20000004   Data           1  kanapilot_bh.o(.data)
+    isEmgStopRequested                       0x20000005   Data           1  kanapilot_bh.o(.data)
+    RQ                                       0x20000006   Data           1  kanapilot_bh.o(.data)
+    packetCount                              0x20000007   Data           1  kanapilot_bh.o(.data)
+    is100msInterval                          0x20000008   Data           1  kanapilot_bh.o(.data)
+    ledStat                                  0x20000009   Data           1  kanapilot_bh.o(.data)
+    ledBlinkcounter                          0x2000000a   Data           1  kanapilot_bh.o(.data)
+    comTimeCnt                               0x2000000c   Data           4  kanapilot_bh.o(.data)
+    rearRadarDetectCnt                       0x20000010   Data           4  kanapilot_bh.o(.data)
+    DIO                                      0x20000014   Data           4  kanapilot_bh.o(.data)
+    dBRAKE                                   0x20000018   Data           1  backhoe_drive.o(.data)
+    dACCEL                                   0x20000019   Data           1  backhoe_drive.o(.data)
+    u4rxPos                                  0x2000001c   Data           4  backhoe_drive.o(.data)
+    thisDirection                            0x20000020   Data           4  backhoe_drive.o(.data)
+    testFlg                                  0x20000024   Data           4  backhoe_drive.o(.data)
+    ST                                       0x20000028   Data           4  backhoe_drive.o(.data)
+    AC                                       0x2000002c   Data           4  backhoe_drive.o(.data)
+    BL                                       0x20000030   Data           4  backhoe_drive.o(.data)
+    FR                                       0x20000034   Data           4  backhoe_drive.o(.data)
+    DP                                       0x20000038   Data           4  backhoe_drive.o(.data)
+    KY                                       0x2000003c   Data           4  backhoe_drive.o(.data)
+    nowAngle                                 0x20000040   Data           4  backhoe_drive.o(.data)
+    distAngle                                0x20000044   Data           4  backhoe_drive.o(.data)
+    dumpAngle                                0x20000048   Data           4  backhoe_drive.o(.data)
+    distDumpAngle                            0x2000004c   Data           4  backhoe_drive.o(.data)
+    handleStep                               0x20000050   Data           4  backhoe_drive.o(.data)
+    nowArt                                   0x20000054   Data           4  backhoe_drive.o(.data)
+    deltaArt                                 0x20000058   Data           4  backhoe_drive.o(.data)
+    distArt                                  0x2000005c   Data           4  backhoe_drive.o(.data)
+    targetArt                                0x20000060   Data           4  backhoe_drive.o(.data)
+    dHANDLE                                  0x20000064   Data           4  backhoe_drive.o(.data)
+    tempVal                                  0x20000068   Data           4  backhoe_drive.o(.data)
+    svStatus                                 0x2000006c   Data           7  backhoe_drive.o(.data)
+    u2RxCnt                                  0x20000074   Data           1  kanapilot_pccom.o(.data)
+    u2RxLen                                  0x20000075   Data           1  kanapilot_pccom.o(.data)
+    u2RxSum                                  0x20000076   Data           1  kanapilot_pccom.o(.data)
+    acmPacketPos                             0x20000077   Data           1  kanapilot_pccom.o(.data)
+    U2Q                                      0x20000078   Data           4  kanapilot_pccom.o(.data)
+    u2RxPos                                  0x2000007c   Data           4  kanapilot_pccom.o(.data)
+    u2RxPrePos                               0x20000080   Data           4  kanapilot_pccom.o(.data)
+    acmDio                                   0x20000084   Data           4  kanapilot_pccom.o(.data)
+    IsRotationInit                           0x20000088   Data           1  kanapilot_senscom.o(.data)
+    RotationDirection                        0x20000089   Data           1  kanapilot_senscom.o(.data)
+    isRearRadarDetected                      0x2000008a   Data           1  kanapilot_senscom.o(.data)
+    u1RxSum                                  0x2000008b   Data           1  kanapilot_senscom.o(.data)
+    u1RxLen                                  0x2000008c   Data           1  kanapilot_senscom.o(.data)
+    u1RxCnt                                  0x2000008d   Data           1  kanapilot_senscom.o(.data)
+    sensPos                                  0x2000008e   Data           1  kanapilot_senscom.o(.data)
+    sqCnt                                    0x2000008f   Data           1  kanapilot_senscom.o(.data)
+    BoomLength                               0x20000090   Data           2  kanapilot_senscom.o(.data)
+    ArmLength                                0x20000092   Data           2  kanapilot_senscom.o(.data)
+    BacketLength                             0x20000094   Data           2  kanapilot_senscom.o(.data)
+    u1RxPos                                  0x20000098   Data           4  kanapilot_senscom.o(.data)
+    u1RxPrePos                               0x2000009c   Data           4  kanapilot_senscom.o(.data)
+    U1Q                                      0x200000a0   Data           4  kanapilot_senscom.o(.data)
+    sensCnt                                  0x200000a4   Data           4  kanapilot_senscom.o(.data)
+    Pitch                                    0x200000a8   Data           4  kanapilot_senscom.o(.data)
+    Roll                                     0x200000ac   Data           4  kanapilot_senscom.o(.data)
+    SwingRate                                0x200000b0   Data           4  kanapilot_senscom.o(.data)
+    BoomAngle                                0x200000b4   Data           4  kanapilot_senscom.o(.data)
+    ArmAngle                                 0x200000b8   Data           4  kanapilot_senscom.o(.data)
+    BacketAngle                              0x200000bc   Data           4  kanapilot_senscom.o(.data)
+    RotationAngle                            0x200000c0   Data           4  kanapilot_senscom.o(.data)
+    SensorTemp                               0x200000c4   Data           4  kanapilot_senscom.o(.data)
+    sens_data                                0x200000c8   Data          24  kanapilot_bh.o(.bss)
+    dt                                       0x200000e0   Data          30  kanapilot_bh.o(.bss)
+    u4RxBuf                                  0x200000fe   Data         256  backhoe_drive.o(.bss)
+    u2RxBuf                                  0x200001fe   Data         500  kanapilot_pccom.o(.bss)
+    acmPacketBuf                             0x200003f2   Data          50  kanapilot_pccom.o(.bss)
+    u1RxBuf                                  0x20000424   Data         300  kanapilot_senscom.o(.bss)
+    sensBuf                                  0x20000550   Data          30  kanapilot_senscom.o(.bss)
+    __initial_sp                             0x20000970   Data           0  startup_stm32l071xx.o(STACK)
 
 
 
@@ -1113,212 +1117,211 @@ Memory Map of the image
 
   Image Entry point : 0x080000c1
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003104, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x0000315c, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003064, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003094, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x000000c0   Data   RO           61    RESET               startup_stm32l071xx.o
-    0x080000c0   0x080000c0   0x00000000   Code   RO         1813  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x080000c0   0x080000c0   0x00000004   Code   RO         1852    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
-    0x080000c4   0x080000c4   0x00000004   Code   RO         1855    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x080000c8   0x080000c8   0x00000000   Code   RO         1857    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x080000c8   0x080000c8   0x00000000   Code   RO         1859    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x080000c8   0x080000c8   0x00000008   Code   RO         1860    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x080000d0   0x080000d0   0x00000000   Code   RO         1862    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
-    0x080000d0   0x080000d0   0x00000000   Code   RO         1864    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
-    0x080000d0   0x080000d0   0x00000004   Code   RO         1853    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x080000c0   0x080000c0   0x00000000   Code   RO         1808  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x080000c0   0x080000c0   0x00000004   Code   RO         1847    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x080000c4   0x080000c4   0x00000004   Code   RO         1850    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x080000c8   0x080000c8   0x00000000   Code   RO         1852    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x080000c8   0x080000c8   0x00000000   Code   RO         1854    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x080000c8   0x080000c8   0x00000008   Code   RO         1855    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x080000d0   0x080000d0   0x00000000   Code   RO         1857    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x080000d0   0x080000d0   0x00000000   Code   RO         1859    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x080000d0   0x080000d0   0x00000004   Code   RO         1848    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
     0x080000d4   0x080000d4   0x0000001c   Code   RO           62    .text               startup_stm32l071xx.o
-    0x080000f0   0x080000f0   0x0000002c   Code   RO         1816    .text               mc_p.l(uidiv.o)
-    0x0800011c   0x0800011c   0x00000028   Code   RO         1818    .text               mc_p.l(idiv.o)
-    0x08000144   0x08000144   0x00000024   Code   RO         1820    .text               mc_p.l(memcpya.o)
-    0x08000168   0x08000168   0x000000b2   Code   RO         1824    .text               mf_p.l(fadd.o)
-    0x0800021a   0x0800021a   0x0000007a   Code   RO         1826    .text               mf_p.l(fmul.o)
-    0x08000294   0x08000294   0x0000007c   Code   RO         1828    .text               mf_p.l(fdiv.o)
-    0x08000310   0x08000310   0x00000164   Code   RO         1830    .text               mf_p.l(dadd.o)
-    0x08000474   0x08000474   0x000000d0   Code   RO         1832    .text               mf_p.l(dmul.o)
-    0x08000544   0x08000544   0x000000f0   Code   RO         1834    .text               mf_p.l(ddiv.o)
-    0x08000634   0x08000634   0x0000000e   Code   RO         1838    .text               mf_p.l(ffltui.o)
+    0x080000f0   0x080000f0   0x0000002c   Code   RO         1811    .text               mc_p.l(uidiv.o)
+    0x0800011c   0x0800011c   0x00000028   Code   RO         1813    .text               mc_p.l(idiv.o)
+    0x08000144   0x08000144   0x00000024   Code   RO         1815    .text               mc_p.l(memcpya.o)
+    0x08000168   0x08000168   0x000000b2   Code   RO         1819    .text               mf_p.l(fadd.o)
+    0x0800021a   0x0800021a   0x0000007a   Code   RO         1821    .text               mf_p.l(fmul.o)
+    0x08000294   0x08000294   0x0000007c   Code   RO         1823    .text               mf_p.l(fdiv.o)
+    0x08000310   0x08000310   0x00000164   Code   RO         1825    .text               mf_p.l(dadd.o)
+    0x08000474   0x08000474   0x000000d0   Code   RO         1827    .text               mf_p.l(dmul.o)
+    0x08000544   0x08000544   0x000000f0   Code   RO         1829    .text               mf_p.l(ddiv.o)
+    0x08000634   0x08000634   0x0000000e   Code   RO         1833    .text               mf_p.l(ffltui.o)
     0x08000642   0x08000642   0x00000002   PAD
-    0x08000644   0x08000644   0x0000001c   Code   RO         1840    .text               mf_p.l(dfltui.o)
-    0x08000660   0x08000660   0x00000032   Code   RO         1842    .text               mf_p.l(ffixi.o)
-    0x08000692   0x08000692   0x00000028   Code   RO         1844    .text               mf_p.l(f2d.o)
+    0x08000644   0x08000644   0x0000001c   Code   RO         1835    .text               mf_p.l(dfltui.o)
+    0x08000660   0x08000660   0x00000032   Code   RO         1837    .text               mf_p.l(ffixi.o)
+    0x08000692   0x08000692   0x00000028   Code   RO         1839    .text               mf_p.l(f2d.o)
     0x080006ba   0x080006ba   0x00000002   PAD
-    0x080006bc   0x080006bc   0x00000028   Code   RO         1846    .text               mf_p.l(cdcmple.o)
-    0x080006e4   0x080006e4   0x00000028   Code   RO         1848    .text               mf_p.l(cdrcmple.o)
-    0x0800070c   0x0800070c   0x00000038   Code   RO         1850    .text               mf_p.l(d2f.o)
-    0x08000744   0x08000744   0x00000020   Code   RO         1866    .text               mc_p.l(llshl.o)
-    0x08000764   0x08000764   0x00000026   Code   RO         1868    .text               mc_p.l(llsshr.o)
-    0x0800078a   0x0800078a   0x00000000   Code   RO         1870    .text               mc_p.l(iusefp.o)
-    0x0800078a   0x0800078a   0x00000082   Code   RO         1871    .text               mf_p.l(fepilogue.o)
-    0x0800080c   0x0800080c   0x000000be   Code   RO         1873    .text               mf_p.l(depilogue.o)
+    0x080006bc   0x080006bc   0x00000028   Code   RO         1841    .text               mf_p.l(cdcmple.o)
+    0x080006e4   0x080006e4   0x00000028   Code   RO         1843    .text               mf_p.l(cdrcmple.o)
+    0x0800070c   0x0800070c   0x00000038   Code   RO         1845    .text               mf_p.l(d2f.o)
+    0x08000744   0x08000744   0x00000020   Code   RO         1861    .text               mc_p.l(llshl.o)
+    0x08000764   0x08000764   0x00000026   Code   RO         1863    .text               mc_p.l(llsshr.o)
+    0x0800078a   0x0800078a   0x00000000   Code   RO         1865    .text               mc_p.l(iusefp.o)
+    0x0800078a   0x0800078a   0x00000082   Code   RO         1866    .text               mf_p.l(fepilogue.o)
+    0x0800080c   0x0800080c   0x000000be   Code   RO         1868    .text               mf_p.l(depilogue.o)
     0x080008ca   0x080008ca   0x00000002   PAD
-    0x080008cc   0x080008cc   0x00000024   Code   RO         1877    .text               mc_p.l(init.o)
-    0x080008f0   0x080008f0   0x00000022   Code   RO         1879    .text               mc_p.l(llushr.o)
+    0x080008cc   0x080008cc   0x00000024   Code   RO         1872    .text               mc_p.l(init.o)
+    0x080008f0   0x080008f0   0x00000022   Code   RO         1874    .text               mc_p.l(llushr.o)
     0x08000912   0x08000912   0x00000002   PAD
     0x08000914   0x08000914   0x00000030   Code   RO          588    i.CRC16             mycrc16.o
-    0x08000944   0x08000944   0x0000001c   Code   RO          940    i.HardFault_Handler  stm32l0xx_it.o
-    0x08000960   0x08000960   0x00000030   Code   RO         1330    i.LL_ADC_Init       stm32l0xx_ll_adc.o
-    0x08000990   0x08000990   0x00000038   Code   RO         1331    i.LL_ADC_REG_Init   stm32l0xx_ll_adc.o
-    0x080009c8   0x080009c8   0x00000018   Code   RO          769    i.LL_APB1_GRP1_EnableClock  main.o
-    0x080009e0   0x080009e0   0x00000018   Code   RO          770    i.LL_APB2_GRP1_EnableClock  main.o
-    0x080009f8   0x080009f8   0x000000b8   Code   RO         1254    i.LL_EXTI_Init      stm32l0xx_ll_exti.o
-    0x08000ab0   0x08000ab0   0x000000ae   Code   RO         1289    i.LL_GPIO_Init      stm32l0xx_ll_gpio.o
-    0x08000b5e   0x08000b5e   0x00000014   Code   RO          771    i.LL_GPIO_SetPinMode  main.o
-    0x08000b72   0x08000b72   0x00000014   Code   RO          772    i.LL_GPIO_SetPinPull  main.o
-    0x08000b86   0x08000b86   0x00000066   Code   RO         1455    i.LL_I2C_Init       stm32l0xx_ll_i2c.o
-    0x08000bec   0x08000bec   0x00000018   Code   RO          773    i.LL_IOP_GRP1_EnableClock  main.o
-    0x08000c04   0x08000c04   0x00000020   Code   RO         1177    i.LL_Init1msTick    stm32l0xx_ll_utils.o
-    0x08000c24   0x08000c24   0x00000020   Code   RO         1736    i.LL_RCC_GetSystemClocksFreq  stm32l0xx_ll_rcc.o
-    0x08000c44   0x08000c44   0x000000b4   Code   RO         1737    i.LL_RCC_GetUSARTClockFreq  stm32l0xx_ll_rcc.o
-    0x08000cf8   0x08000cf8   0x00000014   Code   RO          774    i.LL_RCC_SetUSARTClockSource  main.o
-    0x08000d0c   0x08000d0c   0x00000070   Code   RO         1497    i.LL_SPI_Init       stm32l0xx_ll_spi.o
-    0x08000d7c   0x08000d7c   0x00000020   Code   RO          775    i.LL_SYSCFG_SetEXTISource  main.o
-    0x08000d9c   0x08000d9c   0x0000000c   Code   RO         1180    i.LL_SetSystemCoreClock  stm32l0xx_ll_utils.o
-    0x08000da8   0x08000da8   0x00000064   Code   RO         1583    i.LL_TIM_Init       stm32l0xx_ll_tim.o
-    0x08000e0c   0x08000e0c   0x00000014   Code   RO          776    i.LL_USART_ConfigAsyncMode  main.o
-    0x08000e20   0x08000e20   0x000000dc   Code   RO         1688    i.LL_USART_Init     stm32l0xx_ll_usart.o
-    0x08000efc   0x08000efc   0x00000144   Code   RO          777    i.MX_ADC_Init       main.o
-    0x08001040   0x08001040   0x00000398   Code   RO          778    i.MX_GPIO_Init      main.o
-    0x080013d8   0x080013d8   0x00000094   Code   RO          779    i.MX_I2C1_Init      main.o
-    0x0800146c   0x0800146c   0x00000090   Code   RO          780    i.MX_SPI1_Init      main.o
-    0x080014fc   0x080014fc   0x00000090   Code   RO          781    i.MX_SPI2_Init      main.o
-    0x0800158c   0x0800158c   0x0000004c   Code   RO          782    i.MX_TIM2_Init      main.o
-    0x080015d8   0x080015d8   0x00000090   Code   RO          783    i.MX_USART1_UART_Init  main.o
-    0x08001668   0x08001668   0x00000088   Code   RO          784    i.MX_USART2_UART_Init  main.o
-    0x080016f0   0x080016f0   0x0000008c   Code   RO          785    i.MX_USART4_UART_Init  main.o
-    0x0800177c   0x0800177c   0x00000090   Code   RO          786    i.MX_USART5_UART_Init  main.o
-    0x0800180c   0x0800180c   0x00000002   Code   RO          941    i.NMI_Handler       stm32l0xx_it.o
+    0x08000944   0x08000944   0x0000001c   Code   RO          780    i.HardFault_Handler  stm32l0xx_it.o
+    0x08000960   0x08000960   0x00000030   Code   RO         1325    i.LL_ADC_Init       stm32l0xx_ll_adc.o
+    0x08000990   0x08000990   0x00000038   Code   RO         1326    i.LL_ADC_REG_Init   stm32l0xx_ll_adc.o
+    0x080009c8   0x080009c8   0x00000018   Code   RO          609    i.LL_APB1_GRP1_EnableClock  main.o
+    0x080009e0   0x080009e0   0x00000018   Code   RO          610    i.LL_APB2_GRP1_EnableClock  main.o
+    0x080009f8   0x080009f8   0x000000b8   Code   RO         1249    i.LL_EXTI_Init      stm32l0xx_ll_exti.o
+    0x08000ab0   0x08000ab0   0x000000ae   Code   RO         1284    i.LL_GPIO_Init      stm32l0xx_ll_gpio.o
+    0x08000b5e   0x08000b5e   0x00000014   Code   RO          611    i.LL_GPIO_SetPinMode  main.o
+    0x08000b72   0x08000b72   0x00000014   Code   RO          612    i.LL_GPIO_SetPinPull  main.o
+    0x08000b86   0x08000b86   0x00000066   Code   RO         1450    i.LL_I2C_Init       stm32l0xx_ll_i2c.o
+    0x08000bec   0x08000bec   0x00000018   Code   RO          613    i.LL_IOP_GRP1_EnableClock  main.o
+    0x08000c04   0x08000c04   0x00000020   Code   RO         1172    i.LL_Init1msTick    stm32l0xx_ll_utils.o
+    0x08000c24   0x08000c24   0x00000020   Code   RO         1731    i.LL_RCC_GetSystemClocksFreq  stm32l0xx_ll_rcc.o
+    0x08000c44   0x08000c44   0x000000b4   Code   RO         1732    i.LL_RCC_GetUSARTClockFreq  stm32l0xx_ll_rcc.o
+    0x08000cf8   0x08000cf8   0x00000014   Code   RO          614    i.LL_RCC_SetUSARTClockSource  main.o
+    0x08000d0c   0x08000d0c   0x00000070   Code   RO         1492    i.LL_SPI_Init       stm32l0xx_ll_spi.o
+    0x08000d7c   0x08000d7c   0x00000020   Code   RO          615    i.LL_SYSCFG_SetEXTISource  main.o
+    0x08000d9c   0x08000d9c   0x0000000c   Code   RO         1175    i.LL_SetSystemCoreClock  stm32l0xx_ll_utils.o
+    0x08000da8   0x08000da8   0x00000064   Code   RO         1578    i.LL_TIM_Init       stm32l0xx_ll_tim.o
+    0x08000e0c   0x08000e0c   0x00000014   Code   RO          616    i.LL_USART_ConfigAsyncMode  main.o
+    0x08000e20   0x08000e20   0x000000dc   Code   RO         1683    i.LL_USART_Init     stm32l0xx_ll_usart.o
+    0x08000efc   0x08000efc   0x00000144   Code   RO          617    i.MX_ADC_Init       main.o
+    0x08001040   0x08001040   0x00000398   Code   RO          618    i.MX_GPIO_Init      main.o
+    0x080013d8   0x080013d8   0x00000094   Code   RO          619    i.MX_I2C1_Init      main.o
+    0x0800146c   0x0800146c   0x00000090   Code   RO          620    i.MX_SPI1_Init      main.o
+    0x080014fc   0x080014fc   0x00000090   Code   RO          621    i.MX_SPI2_Init      main.o
+    0x0800158c   0x0800158c   0x0000004c   Code   RO          622    i.MX_TIM2_Init      main.o
+    0x080015d8   0x080015d8   0x00000090   Code   RO          623    i.MX_USART1_UART_Init  main.o
+    0x08001668   0x08001668   0x00000088   Code   RO          624    i.MX_USART2_UART_Init  main.o
+    0x080016f0   0x080016f0   0x0000008c   Code   RO          625    i.MX_USART4_UART_Init  main.o
+    0x0800177c   0x0800177c   0x00000090   Code   RO          626    i.MX_USART5_UART_Init  main.o
+    0x0800180c   0x0800180c   0x00000002   Code   RO          781    i.NMI_Handler       stm32l0xx_it.o
     0x0800180e   0x0800180e   0x00000002   PAD
-    0x08001810   0x08001810   0x00000014   Code   RO          787    i.NVIC_EnableIRQ    main.o
-    0x08001824   0x08001824   0x00000044   Code   RO          788    i.NVIC_SetPriority  main.o
-    0x08001868   0x08001868   0x00000002   Code   RO          942    i.PendSV_Handler    stm32l0xx_it.o
+    0x08001810   0x08001810   0x00000014   Code   RO          627    i.NVIC_EnableIRQ    main.o
+    0x08001824   0x08001824   0x00000044   Code   RO          628    i.NVIC_SetPriority  main.o
+    0x08001868   0x08001868   0x00000002   Code   RO          782    i.PendSV_Handler    stm32l0xx_it.o
     0x0800186a   0x0800186a   0x00000002   PAD
-    0x0800186c   0x0800186c   0x0000001c   Code   RO         1738    i.RCC_GetHCLKClockFreq  stm32l0xx_ll_rcc.o
-    0x08001888   0x08001888   0x0000001c   Code   RO         1739    i.RCC_GetPCLK1ClockFreq  stm32l0xx_ll_rcc.o
-    0x080018a4   0x080018a4   0x0000001c   Code   RO         1740    i.RCC_GetPCLK2ClockFreq  stm32l0xx_ll_rcc.o
-    0x080018c0   0x080018c0   0x00000054   Code   RO         1741    i.RCC_GetSystemClockFreq  stm32l0xx_ll_rcc.o
-    0x08001914   0x08001914   0x00000048   Code   RO         1742    i.RCC_PLL_GetFreqDomain_SYS  stm32l0xx_ll_rcc.o
-    0x0800195c   0x0800195c   0x00000002   Code   RO          943    i.SVC_Handler       stm32l0xx_it.o
-    0x0800195e   0x0800195e   0x00000002   Code   RO          944    i.SysTick_Handler   stm32l0xx_it.o
-    0x08001960   0x08001960   0x000000d0   Code   RO          789    i.SystemClock_Config  main.o
+    0x0800186c   0x0800186c   0x0000001c   Code   RO         1733    i.RCC_GetHCLKClockFreq  stm32l0xx_ll_rcc.o
+    0x08001888   0x08001888   0x0000001c   Code   RO         1734    i.RCC_GetPCLK1ClockFreq  stm32l0xx_ll_rcc.o
+    0x080018a4   0x080018a4   0x0000001c   Code   RO         1735    i.RCC_GetPCLK2ClockFreq  stm32l0xx_ll_rcc.o
+    0x080018c0   0x080018c0   0x00000054   Code   RO         1736    i.RCC_GetSystemClockFreq  stm32l0xx_ll_rcc.o
+    0x08001914   0x08001914   0x00000048   Code   RO         1737    i.RCC_PLL_GetFreqDomain_SYS  stm32l0xx_ll_rcc.o
+    0x0800195c   0x0800195c   0x00000002   Code   RO          783    i.SVC_Handler       stm32l0xx_it.o
+    0x0800195e   0x0800195e   0x00000002   Code   RO          784    i.SysTick_Handler   stm32l0xx_it.o
+    0x08001960   0x08001960   0x000000d0   Code   RO          629    i.SystemClock_Config  main.o
     0x08001a30   0x08001a30   0x00000054   Code   RO            4    i.SystemInit        system_stm32l0xx.o
-    0x08001a84   0x08001a84   0x0000000c   Code   RO          609    i.T2_Callback       wa30.o
-    0x08001a90   0x08001a90   0x0000001a   Code   RO          945    i.TIM2_IRQHandler   stm32l0xx_it.o
+    0x08001a84   0x08001a84   0x0000000c   Code   RO          860    i.T2_Callback       kanapilot_bh.o
+    0x08001a90   0x08001a90   0x0000001a   Code   RO          785    i.TIM2_IRQHandler   stm32l0xx_it.o
     0x08001aaa   0x08001aaa   0x00000002   PAD
-    0x08001aac   0x08001aac   0x00000034   Code   RO          720    i.U1RX_Callback     acm_sensors.o
-    0x08001ae0   0x08001ae0   0x00000034   Code   RO          666    i.U2RX_Callback     acm_incoming.o
-    0x08001b14   0x08001b14   0x00000020   Code   RO         1020    i.U4RX_Callback     cat725_drive.o
-    0x08001b34   0x08001b34   0x00000020   Code   RO          946    i.USART1_IRQHandler  stm32l0xx_it.o
-    0x08001b54   0x08001b54   0x00000020   Code   RO          947    i.USART2_IRQHandler  stm32l0xx_it.o
-    0x08001b74   0x08001b74   0x00000020   Code   RO          948    i.USART4_5_IRQHandler  stm32l0xx_it.o
-    0x08001b94   0x08001b94   0x0000002e   Code   RO         1875    i.__ARM_clz         mf_p.l(depilogue.o)
-    0x08001bc2   0x08001bc2   0x0000001a   Code   RO          709    i.__ARM_common_switch8  acm_incoming.o
-    0x08001bdc   0x08001bdc   0x0000000e   Code   RO         1883    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x08001bea   0x08001bea   0x00000002   Code   RO         1884    i.__scatterload_null  mc_p.l(handlers.o)
-    0x08001bec   0x08001bec   0x0000000e   Code   RO         1885    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x08001aac   0x08001aac   0x00000034   Code   RO         1129    i.U1RX_Callback     kanapilot_senscom.o
+    0x08001ae0   0x08001ae0   0x00000034   Code   RO         1080    i.U2RX_Callback     kanapilot_pccom.o
+    0x08001b14   0x08001b14   0x00000020   Code   RO          918    i.U4RX_Callback     backhoe_drive.o
+    0x08001b34   0x08001b34   0x00000020   Code   RO          786    i.USART1_IRQHandler  stm32l0xx_it.o
+    0x08001b54   0x08001b54   0x00000020   Code   RO          787    i.USART2_IRQHandler  stm32l0xx_it.o
+    0x08001b74   0x08001b74   0x00000020   Code   RO          788    i.USART4_5_IRQHandler  stm32l0xx_it.o
+    0x08001b94   0x08001b94   0x0000002e   Code   RO         1870    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x08001bc2   0x08001bc2   0x0000001a   Code   RO         1066    i.__ARM_common_switch8  backhoe_drive.o
+    0x08001bdc   0x08001bdc   0x0000000e   Code   RO         1878    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x08001bea   0x08001bea   0x00000002   Code   RO         1879    i.__scatterload_null  mc_p.l(handlers.o)
+    0x08001bec   0x08001bec   0x0000000e   Code   RO         1880    i.__scatterload_zeroinit  mc_p.l(handlers.o)
     0x08001bfa   0x08001bfa   0x00000020   Code   RO          381    i.blink             mysub.o
     0x08001c1a   0x08001c1a   0x00000002   PAD
-    0x08001c1c   0x08001c1c   0x000000fc   Code   RO         1024    i.cat725DirectServoDrive  cat725_drive.o
-    0x08001d18   0x08001d18   0x00000314   Code   RO         1025    i.cat725GamepadDrive  cat725_drive.o
-    0x0800202c   0x0800202c   0x00000118   Code   RO          668    i.checkAcmIncomming  acm_incoming.o
-    0x08002144   0x08002144   0x00000168   Code   RO          721    i.checkSensorIncomming  acm_sensors.o
-    0x080022ac   0x080022ac   0x00000080   Code   RO         1028    i.emgStopPosition   cat725_drive.o
-    0x0800232c   0x0800232c   0x00000038   Code   RO          669    i.gamepadDrive      acm_incoming.o
-    0x08002364   0x08002364   0x00000048   Code   RO           68    i.initIwdg          myiwdg.o
-    0x080023ac   0x080023ac   0x00000028   Code   RO          610    i.initTimers        wa30.o
-    0x080023d4   0x080023d4   0x00000010   Code   RO          382    i.ledOff            mysub.o
-    0x080023e4   0x080023e4   0x00000010   Code   RO          383    i.ledOn             mysub.o
-    0x080023f4   0x080023f4   0x000000c4   Code   RO          791    i.main              main.o
-    0x080024b8   0x080024b8   0x00000038   Code   RO         1030    i.packetWait        cat725_drive.o
-    0x080024f0   0x080024f0   0x00000014   Code   RO          384    i.pato1Off          mysub.o
-    0x08002504   0x08002504   0x00000014   Code   RO          385    i.pato1On           mysub.o
-    0x08002518   0x08002518   0x00000014   Code   RO          386    i.pato2Off          mysub.o
-    0x0800252c   0x0800252c   0x00000014   Code   RO          387    i.pato2On           mysub.o
-    0x08002540   0x08002540   0x00000014   Code   RO          388    i.pato3Off          mysub.o
-    0x08002554   0x08002554   0x0000001c   Code   RO          266    i.queAlarmReset     azd_krd_message.o
-    0x08002570   0x08002570   0x0000006c   Code   RO          270    i.queReadWriteRegisterSeq  azd_krd_message.o
-    0x080025dc   0x080025dc   0x00000064   Code   RO          271    i.queSetposAndReadStatus  azd_krd_message.o
-    0x08002640   0x08002640   0x0000005a   Code   RO          273    i.queWriteRegisterSeq  azd_krd_message.o
-    0x0800269a   0x0800269a   0x00000002   PAD
-    0x0800269c   0x0800269c   0x00000010   Code   RO           69    i.resetWDT          myiwdg.o
-    0x080026ac   0x080026ac   0x0000001c   Code   RO         1031    i.rxBufferPositionReset  cat725_drive.o
-    0x080026c8   0x080026c8   0x00000062   Code   RO          275    i.sendQuery         azd_krd_message.o
-    0x0800272a   0x0800272a   0x00000002   PAD
-    0x0800272c   0x0800272c   0x0000006c   Code   RO          611    i.sendSensData      wa30.o
-    0x08002798   0x08002798   0x0000001c   Code   RO          152    i.sendUart1Byte     mylluart.o
-    0x080027b4   0x080027b4   0x0000001e   Code   RO          153    i.sendUart1Packet   mylluart.o
-    0x080027d2   0x080027d2   0x00000002   PAD
-    0x080027d4   0x080027d4   0x0000001c   Code   RO          154    i.sendUart2Byte     mylluart.o
-    0x080027f0   0x080027f0   0x0000001e   Code   RO          155    i.sendUart2Packet   mylluart.o
-    0x0800280e   0x0800280e   0x00000002   PAD
-    0x08002810   0x08002810   0x0000001c   Code   RO          156    i.sendUart4Byte     mylluart.o
-    0x0800282c   0x0800282c   0x0000001e   Code   RO          157    i.sendUart4Packet   mylluart.o
-    0x0800284a   0x0800284a   0x00000002   PAD
-    0x0800284c   0x0800284c   0x0000001c   Code   RO          158    i.sendUart5Byte     mylluart.o
-    0x08002868   0x08002868   0x0000001e   Code   RO          159    i.sendUart5Packet   mylluart.o
-    0x08002886   0x08002886   0x00000002   PAD
-    0x08002888   0x08002888   0x0000006c   Code   RO          722    i.sensorRequest     acm_sensors.o
-    0x080028f4   0x080028f4   0x00000038   Code   RO          723    i.sensorsRead       acm_sensors.o
-    0x0800292c   0x0800292c   0x00000016   Code   RO         1032    i.setAccel          cat725_drive.o
-    0x08002942   0x08002942   0x00000002   PAD
-    0x08002944   0x08002944   0x00000070   Code   RO         1033    i.setArticulate     cat725_drive.o
-    0x080029b4   0x080029b4   0x00000016   Code   RO         1034    i.setBrake          cat725_drive.o
-    0x080029ca   0x080029ca   0x0000001c   Code   RO          276    i.setContinuousSpeed  azd_krd_message.o
-    0x080029e6   0x080029e6   0x00000002   PAD
-    0x080029e8   0x080029e8   0x0000003c   Code   RO         1035    i.setDump           cat725_drive.o
-    0x08002a24   0x08002a24   0x00000054   Code   RO         1036    i.setGear           cat725_drive.o
-    0x08002a78   0x08002a78   0x000000b0   Code   RO         1037    i.setHandle         cat725_drive.o
-    0x08002b28   0x08002b28   0x00000030   Code   RO          278    i.setPosAndReadStatusByDefaultSetting  azd_krd_message.o
-    0x08002b58   0x08002b58   0x00000024   Code   RO          281    i.setRelativePosAndReadStatus  azd_krd_message.o
-    0x08002b7c   0x08002b7c   0x0000001c   Code   RO         1038    i.spanChk           cat725_drive.o
-    0x08002b98   0x08002b98   0x0000000c   Code   RO         1041    i.stopAllControlAndResetStatus  cat725_drive.o
-    0x08002ba4   0x08002ba4   0x00000010   Code   RO          161    i.u1RxInterruptEnable  mylluart.o
-    0x08002bb4   0x08002bb4   0x00000010   Code   RO          390    i.u1RxLedOff        mysub.o
-    0x08002bc4   0x08002bc4   0x00000010   Code   RO          391    i.u1RxLedOn         mysub.o
-    0x08002bd4   0x08002bd4   0x00000010   Code   RO          392    i.u1TxDisable       mysub.o
-    0x08002be4   0x08002be4   0x00000010   Code   RO          393    i.u1TxEnable        mysub.o
-    0x08002bf4   0x08002bf4   0x00000010   Code   RO          394    i.u1TxLedOff        mysub.o
-    0x08002c04   0x08002c04   0x00000010   Code   RO          395    i.u1TxLedOn         mysub.o
-    0x08002c14   0x08002c14   0x00000010   Code   RO          163    i.u2RxInterruptEnable  mylluart.o
-    0x08002c24   0x08002c24   0x00000010   Code   RO          396    i.u2RxLedOff        mysub.o
-    0x08002c34   0x08002c34   0x00000010   Code   RO          397    i.u2RxLedOn         mysub.o
-    0x08002c44   0x08002c44   0x00000010   Code   RO          165    i.u4RxInterruptEnable  mylluart.o
-    0x08002c54   0x08002c54   0x00000014   Code   RO          400    i.u4TxDisable       mysub.o
-    0x08002c68   0x08002c68   0x00000014   Code   RO          401    i.u4TxEnable        mysub.o
-    0x08002c7c   0x08002c7c   0x00000014   Code   RO          402    i.u5TxDisable       mysub.o
-    0x08002c90   0x08002c90   0x00000014   Code   RO          403    i.u5TxEnable        mysub.o
-    0x08002ca4   0x08002ca4   0x00000040   Code   RO          612    i.wa30Init          wa30.o
-    0x08002ce4   0x08002ce4   0x000000a0   Code   RO          613    i.wa30_main         wa30.o
-    0x08002d84   0x08002d84   0x00000030   Code   RO          532    i.wait100ms         mywait16mhz.o
-    0x08002db4   0x08002db4   0x0000002c   Code   RO          534    i.wait10ms          mywait16mhz.o
-    0x08002de0   0x08002de0   0x0000000a   Code   RO          535    i.wait10us          mywait16mhz.o
-    0x08002dea   0x08002dea   0x0000000c   Code   RO          536    i.wait1ms           mywait16mhz.o
-    0x08002df6   0x08002df6   0x0000002c   Code   RO          537    i.wait1s            mywait16mhz.o
-    0x08002e22   0x08002e22   0x00000019   Data   RO            5    .constdata          system_stm32l0xx.o
-    0x08002e3b   0x08002e3b   0x00000008   Data   RO            6    .constdata          system_stm32l0xx.o
-    0x08002e43   0x08002e43   0x00000001   PAD
-    0x08002e44   0x08002e44   0x00000200   Data   RO          589    .constdata          mycrc16.o
-    0x08003044   0x08003044   0x00000020   Data   RO         1881    Region$$Table       anon$$obj.o
+    0x08001c1c   0x08001c1c   0x000000fc   Code   RO          922    i.cat725DirectServoDrive  backhoe_drive.o
+    0x08001d18   0x08001d18   0x00000314   Code   RO          923    i.cat725GamepadDrive  backhoe_drive.o
+    0x0800202c   0x0800202c   0x00000118   Code   RO         1082    i.checkPcCom        kanapilot_pccom.o
+    0x08002144   0x08002144   0x000001bc   Code   RO         1130    i.checkSensorIncomming  kanapilot_senscom.o
+    0x08002300   0x08002300   0x00000080   Code   RO          926    i.emgStopPosition   backhoe_drive.o
+    0x08002380   0x08002380   0x00000038   Code   RO         1083    i.gamepadDrive      kanapilot_pccom.o
+    0x080023b8   0x080023b8   0x00000040   Code   RO          861    i.initKanaPilotBH   kanapilot_bh.o
+    0x080023f8   0x080023f8   0x00000028   Code   RO          862    i.initTimers        kanapilot_bh.o
+    0x08002420   0x08002420   0x00000010   Code   RO          382    i.ledOff            mysub.o
+    0x08002430   0x08002430   0x00000010   Code   RO          383    i.ledOn             mysub.o
+    0x08002440   0x08002440   0x000000c0   Code   RO          631    i.main              main.o
+    0x08002500   0x08002500   0x000000a8   Code   RO          863    i.mainKanaPilotBH   kanapilot_bh.o
+    0x080025a8   0x080025a8   0x00000038   Code   RO          928    i.packetWait        backhoe_drive.o
+    0x080025e0   0x080025e0   0x00000014   Code   RO          384    i.pato1Off          mysub.o
+    0x080025f4   0x080025f4   0x00000014   Code   RO          385    i.pato1On           mysub.o
+    0x08002608   0x08002608   0x00000014   Code   RO          386    i.pato2Off          mysub.o
+    0x0800261c   0x0800261c   0x00000014   Code   RO          387    i.pato2On           mysub.o
+    0x08002630   0x08002630   0x00000014   Code   RO          388    i.pato3Off          mysub.o
+    0x08002644   0x08002644   0x0000001c   Code   RO          266    i.queAlarmReset     azd_krd_message.o
+    0x08002660   0x08002660   0x0000006c   Code   RO          270    i.queReadWriteRegisterSeq  azd_krd_message.o
+    0x080026cc   0x080026cc   0x00000064   Code   RO          271    i.queSetposAndReadStatus  azd_krd_message.o
+    0x08002730   0x08002730   0x0000005a   Code   RO          273    i.queWriteRegisterSeq  azd_krd_message.o
+    0x0800278a   0x0800278a   0x00000002   PAD
+    0x0800278c   0x0800278c   0x00000010   Code   RO           69    i.resetWDT          myiwdg.o
+    0x0800279c   0x0800279c   0x0000001c   Code   RO          929    i.rxBufferPositionReset  backhoe_drive.o
+    0x080027b8   0x080027b8   0x00000062   Code   RO          275    i.sendQuery         azd_krd_message.o
+    0x0800281a   0x0800281a   0x00000002   PAD
+    0x0800281c   0x0800281c   0x0000006c   Code   RO          864    i.sendSensData      kanapilot_bh.o
+    0x08002888   0x08002888   0x0000001c   Code   RO          152    i.sendUart1Byte     mylluart.o
+    0x080028a4   0x080028a4   0x0000001e   Code   RO          153    i.sendUart1Packet   mylluart.o
+    0x080028c2   0x080028c2   0x00000002   PAD
+    0x080028c4   0x080028c4   0x0000001c   Code   RO          154    i.sendUart2Byte     mylluart.o
+    0x080028e0   0x080028e0   0x0000001e   Code   RO          155    i.sendUart2Packet   mylluart.o
+    0x080028fe   0x080028fe   0x00000002   PAD
+    0x08002900   0x08002900   0x0000001c   Code   RO          156    i.sendUart4Byte     mylluart.o
+    0x0800291c   0x0800291c   0x0000001e   Code   RO          157    i.sendUart4Packet   mylluart.o
+    0x0800293a   0x0800293a   0x00000002   PAD
+    0x0800293c   0x0800293c   0x0000001c   Code   RO          158    i.sendUart5Byte     mylluart.o
+    0x08002958   0x08002958   0x0000001e   Code   RO          159    i.sendUart5Packet   mylluart.o
+    0x08002976   0x08002976   0x00000002   PAD
+    0x08002978   0x08002978   0x0000006c   Code   RO         1131    i.sensorRequest     kanapilot_senscom.o
+    0x080029e4   0x080029e4   0x00000058   Code   RO         1132    i.sensorsRead       kanapilot_senscom.o
+    0x08002a3c   0x08002a3c   0x00000016   Code   RO          930    i.setAccel          backhoe_drive.o
+    0x08002a52   0x08002a52   0x00000002   PAD
+    0x08002a54   0x08002a54   0x00000070   Code   RO          931    i.setArticulate     backhoe_drive.o
+    0x08002ac4   0x08002ac4   0x00000016   Code   RO          932    i.setBrake          backhoe_drive.o
+    0x08002ada   0x08002ada   0x0000001c   Code   RO          276    i.setContinuousSpeed  azd_krd_message.o
+    0x08002af6   0x08002af6   0x00000002   PAD
+    0x08002af8   0x08002af8   0x0000003c   Code   RO          933    i.setDump           backhoe_drive.o
+    0x08002b34   0x08002b34   0x00000054   Code   RO          934    i.setGear           backhoe_drive.o
+    0x08002b88   0x08002b88   0x000000b0   Code   RO          935    i.setHandle         backhoe_drive.o
+    0x08002c38   0x08002c38   0x00000030   Code   RO          278    i.setPosAndReadStatusByDefaultSetting  azd_krd_message.o
+    0x08002c68   0x08002c68   0x00000024   Code   RO          281    i.setRelativePosAndReadStatus  azd_krd_message.o
+    0x08002c8c   0x08002c8c   0x0000001c   Code   RO          936    i.spanChk           backhoe_drive.o
+    0x08002ca8   0x08002ca8   0x0000000c   Code   RO          939    i.stopAllControlAndResetStatus  backhoe_drive.o
+    0x08002cb4   0x08002cb4   0x00000010   Code   RO          161    i.u1RxInterruptEnable  mylluart.o
+    0x08002cc4   0x08002cc4   0x00000010   Code   RO          390    i.u1RxLedOff        mysub.o
+    0x08002cd4   0x08002cd4   0x00000010   Code   RO          391    i.u1RxLedOn         mysub.o
+    0x08002ce4   0x08002ce4   0x00000010   Code   RO          392    i.u1TxDisable       mysub.o
+    0x08002cf4   0x08002cf4   0x00000010   Code   RO          393    i.u1TxEnable        mysub.o
+    0x08002d04   0x08002d04   0x00000010   Code   RO          394    i.u1TxLedOff        mysub.o
+    0x08002d14   0x08002d14   0x00000010   Code   RO          395    i.u1TxLedOn         mysub.o
+    0x08002d24   0x08002d24   0x00000010   Code   RO          163    i.u2RxInterruptEnable  mylluart.o
+    0x08002d34   0x08002d34   0x00000010   Code   RO          396    i.u2RxLedOff        mysub.o
+    0x08002d44   0x08002d44   0x00000010   Code   RO          397    i.u2RxLedOn         mysub.o
+    0x08002d54   0x08002d54   0x00000010   Code   RO          165    i.u4RxInterruptEnable  mylluart.o
+    0x08002d64   0x08002d64   0x00000014   Code   RO          400    i.u4TxDisable       mysub.o
+    0x08002d78   0x08002d78   0x00000014   Code   RO          401    i.u4TxEnable        mysub.o
+    0x08002d8c   0x08002d8c   0x00000014   Code   RO          402    i.u5TxDisable       mysub.o
+    0x08002da0   0x08002da0   0x00000014   Code   RO          403    i.u5TxEnable        mysub.o
+    0x08002db4   0x08002db4   0x00000030   Code   RO          532    i.wait100ms         mywait16mhz.o
+    0x08002de4   0x08002de4   0x0000002c   Code   RO          534    i.wait10ms          mywait16mhz.o
+    0x08002e10   0x08002e10   0x0000000a   Code   RO          535    i.wait10us          mywait16mhz.o
+    0x08002e1a   0x08002e1a   0x0000000c   Code   RO          536    i.wait1ms           mywait16mhz.o
+    0x08002e26   0x08002e26   0x0000002c   Code   RO          537    i.wait1s            mywait16mhz.o
+    0x08002e52   0x08002e52   0x00000019   Data   RO            5    .constdata          system_stm32l0xx.o
+    0x08002e6b   0x08002e6b   0x00000008   Data   RO            6    .constdata          system_stm32l0xx.o
+    0x08002e73   0x08002e73   0x00000001   PAD
+    0x08002e74   0x08002e74   0x00000200   Data   RO          589    .constdata          mycrc16.o
+    0x08003074   0x08003074   0x00000020   Data   RO         1876    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003064, Size: 0x000008b0, Max: 0x00005000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003094, Size: 0x00000970, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08003064   0x00000004   Data   RW            7    .data               system_stm32l0xx.o
-    0x20000004   0x08003068   0x00000014   Data   RW          615    .data               wa30.o
-    0x20000018   0x0800307c   0x00000014   Data   RW          671    .data               acm_incoming.o
-    0x2000002c   0x08003090   0x00000018   Data   RW          726    .data               acm_sensors.o
-    0x20000044   0x080030a8   0x0000005b   Data   RW         1043    .data               cat725_drive.o
-    0x2000009f   0x08003103   0x00000001   PAD
-    0x200000a0        -       0x00000036   Zero   RW          614    .bss                wa30.o
-    0x200000d6        -       0x00000226   Zero   RW          670    .bss                acm_incoming.o
-    0x200002fc        -       0x0000014a   Zero   RW          724    .bss                acm_sensors.o
-    0x20000446        -       0x00000064   Zero   RW         1042    .bss                cat725_drive.o
-    0x200004aa   0x08003103   0x00000006   PAD
-    0x200004b0        -       0x00000400   Zero   RW           59    STACK               startup_stm32l071xx.o
+    0x20000000   0x08003094   0x00000004   Data   RW            7    .data               system_stm32l0xx.o
+    0x20000004   0x08003098   0x00000014   Data   RW          866    .data               kanapilot_bh.o
+    0x20000018   0x080030ac   0x0000005b   Data   RW          941    .data               backhoe_drive.o
+    0x20000073   0x08003107   0x00000001   PAD
+    0x20000074   0x08003108   0x00000014   Data   RW         1085    .data               kanapilot_pccom.o
+    0x20000088   0x0800311c   0x00000040   Data   RW         1134    .data               kanapilot_senscom.o
+    0x200000c8        -       0x00000036   Zero   RW          865    .bss                kanapilot_bh.o
+    0x200000fe        -       0x00000100   Zero   RW          940    .bss                backhoe_drive.o
+    0x200001fe        -       0x00000226   Zero   RW         1084    .bss                kanapilot_pccom.o
+    0x20000424        -       0x0000014a   Zero   RW         1133    .bss                kanapilot_senscom.o
+    0x2000056e   0x0800315c   0x00000002   PAD
+    0x20000570        -       0x00000400   Zero   RW           59    STACK               startup_stm32l071xx.o
 
 
 ==============================================================================
@@ -1328,34 +1331,34 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       414         46          0         20        550      21219   acm_incoming.o
-       576         56          0         24        330       4925   acm_sensors.o
-       536         10          0          0          0       6154   azd_krd_message.o
-      1800        232          0         91        100      10867   cat725_drive.o
-      2996        190          0          0          0     154641   main.o
+       536         10          0          0          0       6166   azd_krd_message.o
+      1826        232          0         91        256      28971   backhoe_drive.o
+       392         42          0         20         54       3836   kanapilot_bh.o
+       388         46          0         20        550       3192   kanapilot_pccom.o
+       692         56          0         64        330       4780   kanapilot_senscom.o
+      2992        190          0          0          0     154745   main.o
         48         10        512          0          0        972   mycrc16.o
-        88         32          0          0          0      17778   myiwdg.o
-       280         36          0          0          0      38420   mylluart.o
-       372         86          0          0          0       8320   mysub.o
-       158          0          0          0          0       2601   mywait16mhz.o
-        28          8        192          0       1024        616   startup_stm32l071xx.o
-       158         28          0          0          0      54695   stm32l0xx_it.o
-       104         12          0          0          0      31976   stm32l0xx_ll_adc.o
+        16          8          0          0          0       3343   myiwdg.o
+       280         36          0          0          0      38448   mylluart.o
+       372         86          0          0          0       8372   mysub.o
+       158          0          0          0          0       2609   mywait16mhz.o
+        28          8        192          0       1024        620   startup_stm32l071xx.o
+       158         28          0          0          0      54711   stm32l0xx_it.o
+       104         12          0          0          0      31992   stm32l0xx_ll_adc.o
        184          6          0          0          0       5563   stm32l0xx_ll_exti.o
-       174          0          0          0          0       7163   stm32l0xx_ll_gpio.o
-       102          0          0          0          0      15210   stm32l0xx_ll_i2c.o
-       452         70          0          0          0      20412   stm32l0xx_ll_rcc.o
-       112          6          0          0          0      15094   stm32l0xx_ll_spi.o
-       100         12          0          0          0      27978   stm32l0xx_ll_tim.o
-       220         26          0          0          0      21500   stm32l0xx_ll_usart.o
-        44         12          0          0          0       2285   stm32l0xx_ll_utils.o
-        84         18         33          4          0     218243   system_stm32l0xx.o
-       384         36          0         20         54       3661   wa30.o
+       174          0          0          0          0       7171   stm32l0xx_ll_gpio.o
+       102          0          0          0          0      15222   stm32l0xx_ll_i2c.o
+       452         70          0          0          0      20440   stm32l0xx_ll_rcc.o
+       112          6          0          0          0      15098   stm32l0xx_ll_spi.o
+       100         12          0          0          0      27982   stm32l0xx_ll_tim.o
+       220         26          0          0          0      21508   stm32l0xx_ll_usart.o
+        44         12          0          0          0       2297   stm32l0xx_ll_utils.o
+        84         18         33          4          0     218247   system_stm32l0xx.o
 
     ----------------------------------------------------------------------
-      9438        932        770        160       2064     690293   Object Totals
+      9486        914        770        200       2216     676285   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        24          0          1          1          6          0   (incl. Padding)
+        24          0          1          1          2          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
@@ -1415,15 +1418,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     11618        972        770        160       2064     686217   Grand Totals
-     11618        972        770        160       2064     686217   ELF Image Totals
-     11618        972        770        160          0          0   ROM Totals
+     11666        954        770        200       2216     672253   Grand Totals
+     11666        954        770        200       2216     672253   ELF Image Totals
+     11666        954        770        200          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                12388 (  12.10kB)
-    Total RW  Size (RW Data + ZI Data)              2224 (   2.17kB)
-    Total ROM Size (Code + RO Data + RW Data)      12548 (  12.25kB)
+    Total RO  Size (Code + RO Data)                12436 (  12.14kB)
+    Total RW  Size (RW Data + ZI Data)              2416 (   2.36kB)
+    Total ROM Size (Code + RO Data + RW Data)      12636 (  12.34kB)
 
 ==============================================================================
 

@@ -183,11 +183,11 @@ void emgSubRelayOff(void);
 bool isTiltStop(void);  //2022.11.10
 bool isTiltSafe(void);  //2022.11.10
 
-void wa30_main(void);
-void wa30Init(void);
+void mainKanaPilotBH(void);
+void initKanaPilotBH(void);
 void initTimers(void);
 void T2_Callback(void);
-void checkAcmIncomming(void);
+void checkPcCom(void);
 
 void cat725GamepadDrive(uint8_t *, uint32_t);
 void cat725DirectServoDrive(uint8_t*);
