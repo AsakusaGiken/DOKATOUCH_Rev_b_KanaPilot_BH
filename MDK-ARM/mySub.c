@@ -95,3 +95,10 @@ void pato3Off(void){
 	GPIOE->BRR |= GPIO_BSRR_BS_15;
 }
 
+void hornOn(void){
+	GPIOE->BSRR |= GPIO_BSRR_BS_14;
+}
+void hornOff(void){
+	GPIOE->BRR |= GPIO_BSRR_BS_14;
+}
+

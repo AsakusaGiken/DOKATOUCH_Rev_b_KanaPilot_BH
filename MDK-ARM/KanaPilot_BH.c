@@ -6,12 +6,16 @@ WA30 ACM
 #include <stdint.h>
 #include <string.h>
 
+//float sens_data[6];
 
-
-float sens_data[6];
-uint32_t DIO;
 uint8_t packetCount;
 extern bool isRearRadarDetected;
+extern uint8_t soundHornTimes;
+uint8_t hornOnOffCnt;
+#define HORN_ON_DUTY 2
+#define HORN_OFF_DUTY 4
+
+bool isEmgStop=false;
 
 void initKanaPilotBH(void){
   u2RxInterruptEnable();
@@ -23,43 +27,151 @@ void initKanaPilotBH(void){
 	
 	//all free
 	//allFreeOn();
+/*	
 	sens_data[0] = 0.0;
 	sens_data[1] = 0.0;
 	sens_data[2] = 0.0;
 	sens_data[3] = 0.0;
 	sens_data[4] = 0.0;
 	sens_data[5] = 0.0;
-	DIO = 0x00000000;
+*/
+//	DIO = 0x00000000;
 	packetCount=0;
 	
 	//set steering speed (port, id, speed)
 	setContinuousSpeed(4, 1, CONT_SPEED);
 }
 
-uint8_t dt[30];
+uint32_t DIO;
+extern float Pitch,Roll,SwingRate,BoomAngle,ArmAngle,BacketAngle,RotationAngle,SensorTemp;
+extern uint16_t BoomLength,ArmLength,BacketLength;
+extern uint8_t IsRotationInit;			//0:no initialised 1:initialized 
+extern uint8_t RotationDirection;  	//0:left 1:right *just previous movement
+
+uint8_t dt[256];
 void sendSensData(void){
 	u2RxLedOn();
-	
-	int i;
+	uint8_t temp[4];
+//	int i;
 	dt[0] = 0xFF;
 	dt[1] = packetCount; packetCount++;
-	for(i=0; i<6; i++){
-		uint8_t temp[4];
-		memcpy(temp, &sens_data[i], sizeof(float));
-		dt[i*4+2] = temp[0];
-		dt[i*4+2+1] = temp[1];
-		dt[i*4+2+2] = temp[2];
-		dt[i*4+2+3] = temp[3];
-	}
+	memcpy(temp, &Pitch, sizeof(float));
+	dt[2] = temp[0];
+	dt[3] = temp[1];
+	dt[4] = temp[2];
+	dt[5] = temp[3];
+	memcpy(temp, &Roll, sizeof(float));
+	dt[6] = temp[0];
+	dt[7] = temp[1];
+	dt[8] = temp[2];
+	dt[9] = temp[3];
+	memcpy(temp, &SwingRate, sizeof(float));
+	dt[10] = temp[0];
+	dt[11] = temp[1];
+	dt[12] = temp[2];
+	dt[13] = temp[3];
+	memcpy(temp, &BoomAngle, sizeof(float));
+	dt[14] = temp[0];
+	dt[15] = temp[1];
+	dt[16] = temp[2];
+	dt[17] = temp[3];
+	memcpy(temp, &ArmAngle, sizeof(float));
+	dt[18] = temp[0];
+	dt[19] = temp[1];
+	dt[20] = temp[2];
+	dt[21] = temp[3];
+	memcpy(temp, &BacketAngle, sizeof(float));
+	dt[22] = temp[0];
+	dt[23] = temp[1];
+	dt[24] = temp[2];
+	dt[25] = temp[3];
+	memcpy(temp, &RotationAngle, sizeof(float));
+	dt[26] = temp[0];
+	dt[27] = temp[1];
+	dt[28] = temp[2];
+	dt[29] = temp[3];
+	memcpy(temp, &SensorTemp, sizeof(float));
+	dt[30] = temp[0];
+	dt[31] = temp[1];
+	dt[32] = temp[2];
+	dt[33] = temp[3];
+	//attachment1
+	dt[34] = 0;
+	dt[35] = 0;
+	dt[36] = 0;
+	dt[37] = 0;
+	//attachment2
+	dt[38] = 0;
+	dt[39] = 0;
+	dt[40] = 0;
+	dt[41] = 0;
+	//backet tilt
+	dt[42] = 0;
+	dt[43] = 0;
+	dt[44] = 0;
+	dt[45] = 0;
+	//backet rotate
+	dt[46] = 0;
+	dt[47] = 0;
+	dt[48] = 0;
+	dt[49] = 0;
+	//haido ban
+	dt[50] = 0;
+	dt[51] = 0;
+	dt[52] = 0;
+	dt[53] = 0;
+	//boom swing
+	dt[54] = 0;
+	dt[55] = 0;
+	dt[56] = 0;
+	dt[57] = 0;
+	//arm swing
+	dt[58] = 0;
+	dt[59] = 0;
+	dt[60] = 0;
+	dt[61] = 0;
+	//reserve
+	dt[62] = 0;
+	dt[63] = 0;
+	dt[64] = 0;
+	dt[65] = 0;
+	//reserve
+	dt[66] = 0;
+	dt[67] = 0;
+	dt[68] = 0;
+	dt[69] = 0;
+	memcpy(temp, &BoomLength, sizeof(uint16_t));
+	dt[70] = temp[0];
+	dt[71] = temp[1];
+	memcpy(temp, &ArmLength, sizeof(uint16_t));
+	dt[72] = temp[0];
+	dt[73] = temp[1];
+	memcpy(temp, &BacketLength, sizeof(uint16_t));
+	dt[74] = temp[0];
+	dt[75] = temp[1];
+	//reserve
+	dt[75]=0;
+	dt[77]=0;
+	//reserve
+	dt[78]=0;
+	dt[79]=0;
 	//digital
-	dt[29]=(uint8_t)((DIO>>24)&0x000000FF);
-	dt[28]=(uint8_t)((DIO>>16)&0x000000FF);
-	dt[27]=(uint8_t)((DIO>>8)&0x000000FF);
-	dt[26]=(uint8_t)(DIO&0x000000FF);
-	
-	sendUart2Packet(dt, 30);
+	DIO=0;
+	if(isEmgStop){
+		DIO += 0x00000001;
+	}
+	if(IsRotationInit==0x01){
+		DIO += 0x00000002;
+	}
+	if(RotationDirection==0x01){
+		DIO += 0x00000004;
+	}
+	dt[80]=(uint8_t)((DIO>>24)&0x000000FF);
+	dt[81]=(uint8_t)((DIO>>16)&0x000000FF);
+	dt[82]=(uint8_t)((DIO>>8)&0x000000FF);
+	dt[83]=(uint8_t)(DIO&0x000000FF);
+	sendUart2Packet(dt, 84);
 	u2RxLedOff();
-	
 }
 
 //T2 100mS interval setting
@@ -118,6 +230,23 @@ void mainKanaPilotBH(void){
 				ledStat=0;
 			}		
 		}
+		
+		//horn check
+		if(soundHornTimes>0){
+			if(hornOnOffCnt<HORN_ON_DUTY){
+				hornOn();
+			}else{
+				if(hornOnOffCnt<HORN_OFF_DUTY){
+					hornOff();
+				}else{
+					//hornOff();
+					soundHornTimes--;
+					hornOnOffCnt=0;
+				}
+			}
+			hornOnOffCnt++;
+		}
+		
 		
 		//sensor value send to PC
 		sendSensData();

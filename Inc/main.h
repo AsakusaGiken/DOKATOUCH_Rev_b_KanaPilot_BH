@@ -201,6 +201,9 @@ void setContinuousSpeed(uint8_t, uint8_t, uint32_t);
 void continuousDrive(uint8_t, uint8_t, int32_t);
 void setRelativePosAndReadStatus(uint8_t, uint8_t, int32_t, uint32_t, uint32_t);
 
+void hornOn(void);
+void hornOff(void);
+
 #define REG_TORQUE 0x00D6
 #define REG_IO_INPUT 0x007D
 #define REG_IO_STATUS 0x007E

@@ -297,7 +297,7 @@ void dumpUp(void){
 #define SPD_LO 6000
 #define SPD_SL 3000
 extern uint32_t DIO;  //CAT725 sensing DIO 0x02=RightLimit 0x04=LeftLimit
-extern float sens_data[6];  //CAT725 sterring angle=sens_data[0]
+float sens_data[6];  //CAT725 sterring angle=sens_data[0]
 float nowAngle;
 float distAngle;
 float dumpAngle;

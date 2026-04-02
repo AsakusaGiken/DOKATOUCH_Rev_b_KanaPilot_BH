@@ -8,6 +8,8 @@ void acmCommandCheck(uint8_t*);
 void excuteEvent(uint8_t*);
 void gamepadDrive(uint8_t*);
 
+uint8_t soundHornTimes=0;
+
 
 uint8_t u2RxBuf[U2_BUFFER_SIZE];  //ring buffer
 uint32_t U2Q=0;
@@ -102,6 +104,10 @@ void checkPcCom(void){
 						}else if(acmPacketBuf[0]==0x22){
 							cat725DirectServoDrive(acmPacketBuf);
 							pato2On();
+							comTimeCnt=0;
+							isCom=true;
+						}else if(acmPacketBuf[0]==0x23){	//+++260402 horn
+							soundHornTimes = acmPacketBuf[2];
 							comTimeCnt=0;
 							isCom=true;
 						}else if(acmPacketBuf[0]==0x3A){  //Nop
