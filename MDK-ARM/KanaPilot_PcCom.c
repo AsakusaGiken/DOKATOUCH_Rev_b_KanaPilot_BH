@@ -96,13 +96,17 @@ void checkPcCom(void){
 					if(u2RxSum != u2RxBuf[myPos]){
 						U2Q=0;
 					}else{
+						/*
 						if(acmPacketBuf[0]==0x21){
 							gamepadDrive(acmPacketBuf);
 							pato2On();
 							comTimeCnt=0;
 							isCom=true;
-						}else if(acmPacketBuf[0]==0x22){
-							cat725DirectServoDrive(acmPacketBuf);
+						}else 
+						*/
+						if(acmPacketBuf[0]==0x22){
+							//cat725DirectServoDrive(acmPacketBuf);
+							backhoeDirectServoDrive(acmPacketBuf);  //+++260414
 							pato2On();
 							comTimeCnt=0;
 							isCom=true;
@@ -136,6 +140,7 @@ void acmCommandCheck(uint8_t* buf){
 	
 }
 
+/*
 void gamepadDrive(uint8_t* inBuf){
 	uint8_t d[30];
 	d[0]=inBuf[2];
@@ -148,109 +153,7 @@ void gamepadDrive(uint8_t* inBuf){
 	acmDio += (uint32_t)inBuf[22];
 	cat725GamepadDrive(d, acmDio);
 }
-
-
-
-//FY2025 Direct Drive command add -> below comment out 
-/*
-extern bool isCom;
-void checkAcmIncomming(void){
-	int i,myPos;
-	int32_t serchLength=0;
-	if(u2RxPos>u2RxPrePos){
-		serchLength = u2RxPos - u2RxPrePos;
-	}else if(u2RxPos < u2RxPrePos){
-		serchLength = (int32_t)(U2_BUFFER_SIZE) - u2RxPrePos + u2RxPos;
-	}
-	myPos = u2RxPrePos;
-	u2RxPrePos = u2RxPos;
-	if(serchLength > 0){
-		resetWDT();
-		//serch main loothine
-		for(i=0; i<serchLength; i++){
-			switch(U2Q){
-				//idle
-				case 0:
-					if(u2RxBuf[myPos]==0xFF){
-						u2RxSum=0xFF;
-						U2Q=1;
-					}break;
-				case 1:
-					u2RxNum = u2RxBuf[myPos];
-				  u2RxSum += u2RxNum;
-				  U2Q=2;
-				  break;
-				case 2:
-					u2RxLen = u2RxBuf[myPos];
-				  u2RxSum += u2RxLen;
-				  u2RxCnt = 0;
-				  acmPacketPos=0;
-				  U2Q=3;
-				  break;
-				case 3:
-					acmPacketBuf[acmPacketPos] = u2RxBuf[myPos];
-				  u2RxSum += acmPacketBuf[acmPacketPos];
-				  acmPacketPos++;
-					if(acmPacketPos>30){
-						U2Q=0;
-					}else{
-						u2RxCnt++;
-						if(u2RxCnt >= (u2RxLen-2)){  //by delimiter and sum
-							U2Q=4;
-						}
-					}
-					break;
-				//delimiter
-				case 4:
-					if(u2RxBuf[myPos] == 0x26){
-						u2RxSum += u2RxBuf[myPos];
-						U2Q=5;
-					}else{
-						U2Q=0;
-					}
-					break;
-				//check sum
-				case 5:
-					if(u2RxSum != u2RxBuf[myPos]){
-						U2Q=0;
-					}else{
-						if(u2RxLen==6){  //event command
-							excuteEvent(acmPacketBuf);
-						}else if(u2RxLen==26){//direct drive command
-							excuteDirectDrive(acmPacketBuf);
-						}
-						pato2On();
-						comTimeCnt=0;
-						isCom=true;
-					}
-					U2Q=0;
-				break;
-			}//switch end
-			myPos++;
-			if(myPos>=U2_BUFFER_SIZE) myPos=0;
-		}//for end
-	}
-}
-
-void excuteEvent(uint8_t* inBuf){
-	eventNum=(uint32_t)inBuf[0]; eventNum = eventNum<<8;
-	eventNum+=(uint32_t)inBuf[1]; eventNum = eventNum<<8;
-	eventNum+=(uint32_t)inBuf[2]; eventNum = eventNum<<8;
-	eventNum+=(uint32_t)inBuf[3];
-}
-
-
-
-void excuteDirectDrive(uint8_t* inBuf){
-	
-	//acmPacketBuf[0] as servo[0] Pos, same as others
-	acmDio = (uint32_t)inBuf[20]; acmDio = acmDio<<8;
-	acmDio += (uint32_t)inBuf[21]; acmDio = acmDio<<8;
-	acmDio += (uint32_t)inBuf[22]; acmDio = acmDio<<8;
-	acmDio += (uint32_t)inBuf[23];
-	cat725Drive(inBuf, acmDio);
-	
-}
-
 */
+
+
 

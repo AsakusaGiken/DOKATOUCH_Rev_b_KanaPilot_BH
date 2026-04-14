@@ -6,105 +6,65 @@ CAT725 Drive based on WA30 Drive
 #include <string.h>
 
 #define POS_OFFSET 150
-#define SVCNT 6  //servo count for CAT725					//+++251120 solved frequentry PCB resets
-#define P4CNT 6  //servo count for port4(U4)			//+++251120 solved frequentry PCB resets
+#define SVCNT 8  //servo count for normal bachhoe
+#define P4CNT 8  //servo count for port4(U4)			//+++251120 solved frequentry PCB resets
 //#define P5CNT 5  //servo count for port5(U5)		//---251120 solved frequentry PCB resets
 #define RETURN_PACKET_SIZE 9  //retrun packet size from servo driver
-#define U4BUF_SIZE 256
+//#define U4BUF_SIZE 256
+#define U4BUF_SIZE 100
 //#define U5BUF_SIZE 256
 
 //servo limit
-//minus value is span value  ++20241108
-#define AC_MAX (2000)  //+
-#define AC_MIN (0)  //-
-#define BL_MAX (22000)  //+
-#define BL_HLF (10000)
-#define BL_MIN (0)  //-
-#define DP_MAX (4500)  //+ DUMP
-#define DP_STP (0)
-#define DP_MIN (3500)  //-
-/*
-#define B2_MAX (1000)  //+
-#define B2_MIN (1000)  //-
-#define B3_MAX (1000)  //+
-#define B3_MIN (1000)  //-
-*/
-
-//key position  ++20241108
-#define KY_OFF 0
-#define KY_ON (-8000)
-#define KY_ST (-12000)
-
-//FR position  ++20241108
-#define FR_P 0
-#define FR_R 4500
-#define FR_N 8000
-#define FR_D 11000
-#define FR_2 14000
-#define FR_1 16800
-
-
-//servo gain
-#define AC_MUX 50
-#define BL_MUX 50
-#define DP_MUX 50
-
-
-//servo gain
-#define STA_MUX 687
+#define LX_IN (-1700)
+#define LX_OUT (+1700)
+#define LY_BACK (-1700)
+#define LY_FRONT (+1700)
+#define RX_IN (+1800)
+#define RX_OUT (-1600)
+#define RY_BACK (+1800)
+#define RY_FRONT (-1600)
+#define RR_FRONT (-3150)
+#define RR_BACK (+3500)
+#define LR_FRONT (+3200)
+#define LR_BACK (-3400)
+#define VL_MAX (-13000)
+#define KY_OF (0)
+#define KY_ON (-8300)
+#define LY_ST (-14200)
 
 //servo ID map
-#define ST_ID 1  //steering
-#define AC_ID 2  //accel
-#define BL_ID 3  //blake
-#define FR_ID 4  //FR lever
-#define DP_ID 5  //backet up and down
-//#define B2_ID 6  //backet right left
-//#define B3_ID 7  //backet sidedump
+#define LX_ID 1  //left lever right&left
+#define LY_ID 2  //left lever front&back
+#define RX_ID 3  //right lever right&left
+#define RY_ID 4  //right lever front&back
+#define RR_ID 5  //right run front&back
+#define LR_ID 6  //left run front&back
+#define VL_ID 7  //volume
 #define KY_ID 8  //engine key
 
 //UART port map (U1,U4,U5 are RS485 ports)
-#define ST_PT 4  //steering
-#define AC_PT 4  //accel
-#define BL_PT 4  //blake
-#define FR_PT 4  //FR lever
-#define DP_PT 4  //backet up and down
-//#define B2_PT 4  //backet right left
-//#define B3_PT 4  //backet sidedump
-#define KY_PT 4  //engine key
-
-//data position in acmPacketBuf[]
-/*
-#define ST_POS 0  //steering
-#define AC_POS 1  //accel
-#define BL_POS 2  //blake
-#define FR_POS 3  //FR lever
-#define B1_POS 4  //backet up and down
-#define B2_POS 5  //backet right left
-#define B3_POS 6  //backet sidedump
-#define KY_POS 7  //engine key
-*/
-#define X_POS 0
-#define Y_POS 1
-#define DP_POS 2
-
-//DIO mask
-#define DIO_KEYON 0x00000002
-#define DIO_KEYST 0x00000004
+#define LX_PT 4
+#define LY_PT 4
+#define RX_PT 4
+#define RY_PT 4
+#define RR_PT 4
+#define LR_PT 4
+#define VL_PT 4
+#define KY_PT 4
 
 
 //error bit mask
 #define ERR_BIT_MSK 0x80
 
 //target step
-int32_t ST;  //staling
-int32_t AC;  //Accel
-int32_t BL;  //Blake
-int32_t FR;  //FNR lever
-int32_t DP;  //Bucket Right
-//int32_t B2;  //Bucket Middle
-//int32_t B3;  //Bucket Left
-int32_t KY;  //Engine key
+int32_t LX;
+int32_t LY;
+int32_t RX;
+int32_t RY;
+int32_t RR;
+int32_t LR;
+int32_t VL;
+int32_t KY;
 
 /*
 uint8_t u5RxBuf[100];
@@ -132,8 +92,9 @@ wait: send data -> retrun data  1cycle length
 //***
 void packetWait(void){
 	resetWDT();
+//	wait1ms();wait1ms();
 	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
-	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
+//	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
 }
 
 void U4RX_Callback(void){
@@ -182,35 +143,6 @@ uint8_t spanChk(uint8_t d){
 	}
 	return result;
 }
-uint8_t spanChk2(uint8_t d){
-	uint8_t result;
-	result = d;
-	if(d<50){
-		result = 50;
-	}
-//	else if((d>147)&& (d<153)){  //like soft filter
-//		result = 150;
-//	}
-	else if(d>250){
-		result = 250;
-	}
-	return result;
-}
-
-uint8_t spanChk3(uint8_t d){
-	uint8_t result;
-	result = d;
-	if(d<50){
-		result = 50;
-	}
-	else if((d>148)&& (d<152)){  //like soft filter
-		result = 150;
-	}
-	else if(d>250){
-		result = 250;
-	}
-	return result;
-}
 
 void allFreeOn(void){
 	queFreeRequest(4,1); packetWait();
@@ -218,8 +150,8 @@ void allFreeOn(void){
 	queFreeRequest(4,3); packetWait();
 	queFreeRequest(4,4); packetWait();
 	queFreeRequest(4,5); packetWait();
-//	queFreeRequest(4,6); packetWait();
-//	queFreeRequest(4,7); packetWait();
+	queFreeRequest(4,6); packetWait();
+	queFreeRequest(4,7); packetWait();
 	queFreeRequest(4,8); packetWait();
 }
 
@@ -229,24 +161,25 @@ void allFreeOff(void){
 	queWriteRegister(4, 3, REG_IO_INPUT, 0x0000); packetWait();
 	queWriteRegister(4, 4, REG_IO_INPUT, 0x0000); packetWait();
 	queWriteRegister(4, 5, REG_IO_INPUT, 0x0000); packetWait();
-//	queWriteRegister(4, 6, REG_IO_INPUT, 0x0000); packetWait();
-//	queWriteRegister(4, 7, REG_IO_INPUT, 0x0000); packetWait();
+	queWriteRegister(4, 6, REG_IO_INPUT, 0x0000); packetWait();
+	queWriteRegister(4, 7, REG_IO_INPUT, 0x0000); packetWait();
 	queWriteRegister(4, 8, REG_IO_INPUT, 0x0000); packetWait();
 }
 
 //all Z-HOME
 void allZhome(void){
-//	queZhomeRequest(4,1); packetWait();  //stalling never go Z-home
+	queZhomeRequest(4,1); packetWait();
 	queZhomeRequest(4,2); packetWait();
 	queZhomeRequest(4,3); packetWait();
 	queZhomeRequest(4,4); packetWait();
 	queZhomeRequest(4,5); packetWait();
-//	queZhomeRequest(4,6); packetWait();
-//	queZhomeRequest(4,7); packetWait();
-//	queZhomeRequest(4,8); packetWait();
+	queZhomeRequest(4,6); packetWait();
+	queZhomeRequest(4,7); packetWait();
+//	queZhomeRequest(4,8); packetWait();  //key don't touch
 	wait1s();wait1s();
 }
 
+/*
 int32_t convToStep(int32_t val, int32_t maxVal, int32_t minVal){
 	int32_t result;
 	if(val > 0){
@@ -258,226 +191,43 @@ int32_t convToStep(int32_t val, int32_t maxVal, int32_t minVal){
 	}
 	return result;
 }
-
-bool isHandleLimit(void){
-	/*
-	//PD13=D0 as right limit sw, PD12=D1 as left limit sw.
-	if(((GPIOD->IDR & GPIO_IDR_ID13) != 0) ||((GPIOD->IDR & GPIO_IDR_ID12) != 0)){
-	    return true;
-	}else{
-	  return false;
-	}
-	*/
-	return false;
-}
-
-void dumpUp(void){
-	setPosAndReadStatusByDefaultSetting(DP_PT, DP_ID, DP_MAX);  //port4 task
-	packetWait();
-	setPosAndReadStatusByDefaultSetting(BL_PT, BL_ID, BL_HLF);  //port4 task
-	packetWait();
-	setPosAndReadStatusByDefaultSetting(AC_PT, AC_ID, AC_MAX);  //port4 task
-	packetWait();
-}
+*/
 
 
-
-
-#define R_LIM_MSK 0x00000002
-#define L_LIM_MSK 0x00000004
-#define DEAD_BAND 1.0
-#define GAP_BIG 8.0
-#define GAP_MID 4.0
-#define GAP_SML 2.0
-//#define SPD_HI 100000  //the higher the hi motor current
-//#define SPD_HI 80000  //the higher the hi motor current
-//#define SPD_HI 70000  //the higher the hi motor current
-#define SPD_HI 30000  //the higher the hi motor current
-#define SPD_MD 10000
-#define SPD_LO 6000
-#define SPD_SL 3000
-extern uint32_t DIO;  //CAT725 sensing DIO 0x02=RightLimit 0x04=LeftLimit
-float sens_data[6];  //CAT725 sterring angle=sens_data[0]
-float nowAngle;
-float distAngle;
-float dumpAngle;
-float distDumpAngle;
-int32_t thisDirection=0;
-bool isDumped=false;
-uint32_t DQ=0;
-
-
-void cat725GamepadDrive(uint8_t *servoPos, uint32_t dio){
-	int i;
-//	int32_t tempVal,tempVal2;
-	resetWDT();
-	
-	//---steering---
-	nowAngle = sens_data[0];
-	float leverPos = ((float)servoPos[0])-150;  //will be +100~-100
-	//distAngle =  leverPos/3.5;  //max=28.5deg
-	//distAngle =  leverPos/2.8;  //max=35.7deg
-	distAngle =  leverPos/2.7;  //max=37.0deg
-	//distAngle =  leverPos/2.6;  //max=38.4deg
-	//direction
-	if((nowAngle+DEAD_BAND)<distAngle){
-		if((DIO & R_LIM_MSK) == 0){  //R-LIMIT check
-		  thisDirection=1;
-		}else{
-			thisDirection=0;  //no move
-		}
-	}else if((nowAngle-DEAD_BAND)>distAngle){
-		if((DIO & L_LIM_MSK) == 0){  //R-LIMIT check
-		  thisDirection=-1;
-		}else{
-			thisDirection=0;  //no move
-		}
-	}else{
-		thisDirection=0;  //no move
-	}
-	//speed
-	if(((nowAngle+GAP_BIG)<distAngle) || ((nowAngle-GAP_BIG)>distAngle)){
-		ST=SPD_HI;
-	}else if(((nowAngle+GAP_MID)<distAngle) || ((nowAngle-GAP_MID)>distAngle)){
-		ST=SPD_MD;
-	}else if(((nowAngle+GAP_SML)<distAngle) || ((nowAngle-GAP_SML)>distAngle)){
-		ST=SPD_LO;
-	}else{
-		ST=SPD_SL;
-	}	
-	int32_t myRelatibePos = 5000*thisDirection;
-	
-	//setRelativePosAndReadStatus(ST_PT, ST_ID, myRelatibePos, ST, ((ST)/2));
-	setRelativePosAndReadStatus(ST_PT, ST_ID, myRelatibePos, ST, ((ST)*2));
-
-  uint8_t dTemp;
-	//FNR and Accel and Blake
-	dTemp= spanChk(servoPos[1]);
-	if(dTemp < 145){
-		AC = (((int32_t)(150-dTemp)))*(AC_MAX/100)/3;
-		FR = FR_R;
-		BL = BL_MIN;
-	}else if(dTemp > 155){
-		AC = (((int32_t)(dTemp-150))*(AC_MAX/100))/2;
-		FR = FR_D;
-		BL = BL_MIN;
-	}else{
-		FR = FR_N;
-		AC = 0;
-		BL = BL_HLF;
-	}
-	
-	//dump
-	dTemp= servoPos[2];
-	dumpAngle = sens_data[2];
-	distDumpAngle = 24.6 + (float)dTemp*0.0136;
-
-	if((FR!=FR_R)&&(FR!=FR_D)){
-		if(dTemp > 155){
-			DP = (dTemp-150)*30;
-			AC = AC_MAX;
-		}else if(dTemp < 145){
-			DP = (dTemp-150)*30;
-		}else{
-			DP = DP_STP;
-		}
-	}else{
-		DP = DP_STP;
-	}
-	
-	//key
-	if((dio & DIO_KEYST) != 0){
-		KY = KY_ST;
-		//emgSubRelayOn();  //foce cellmotor enable
-	}else if((dio & DIO_KEYON) != 0){
-		KY = KY_ON;
-		//emgSubRelayOff();  //normal situation
-	}else{
-		KY = KY_OFF;
-		//emgSubRelayOff();  //normal situation
-	}
-	
-
-	
-	//send position to servos
-	rxBufferPositionReset();
-	//#1
-//	setPosAndReadStatusByDefaultSetting3(ST_PT, ST_ID, ST);  //port4 task
-	//port5 task
-	packetWait();
-	//#2
-	setPosAndReadStatusByDefaultSetting(AC_PT, AC_ID, AC);  //port4 task
-	//port5 task
-	packetWait();
-	//#3
-	setPosAndReadStatusByDefaultSetting(BL_PT, BL_ID, BL);  //port4 task
-	//port5 task
-	packetWait();
-	//#4
-	setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR);  //port4 task
-	//port5 task
-	packetWait();
-	//#5
-	setPosAndReadStatusByDefaultSetting(DP_PT, DP_ID, DP);  //port4 task
-	//port5 task
-	packetWait();
-	//#8
-	setPosAndReadStatusByDefaultSetting(KY_PT, KY_ID, KY);  //port4 task
-	//port5 task
-	packetWait();
-
-	//check servo error
-	for(i=0; i<P4CNT; i++){
-		if(((u4RxBuf[(i*RETURN_PACKET_SIZE)+6]) & ERR_BIT_MSK) != 0){
-			
-			queAlarmReset(4, u4RxBuf[i*RETURN_PACKET_SIZE]);
-			packetWait();
-		}
-		svStatus[u4RxBuf[i*RETURN_PACKET_SIZE]] = u4RxBuf[(i*RETURN_PACKET_SIZE)+6];
-	}
-	/*
-	for(i=0; i<P5CNT; i++){
-		if(((u5RxBuf[(i*RETURN_PACKET_SIZE)+6]) & ERR_BIT_MSK) != 0){
-			queAlarmReset(5, u5RxBuf[i*RETURN_PACKET_SIZE]);
-			packetWait();
-		}
-		svStatus[u5RxBuf[i*RETURN_PACKET_SIZE]] = u5RxBuf[(i*RETURN_PACKET_SIZE)+6];
-	}
-	*/
-}
-
-
+//extern uint32_t DIO;  //CAT725 sensing DIO 0x02=RightLimit 0x04=LeftLimit
 
 void emgStopPosition(void){
 	rxBufferPositionReset();
-	//BL=BL_MAX;
-	BL=BL_HLF;
-	setPosAndReadStatusByDefaultSetting(BL_PT, BL_ID, BL);  //port4	
+	LX=0;
+//	setPosAndReadStatusByDefaultSetting(LX_PT, LX_ID, LX);  //port4	
+	setPositionByDefaultSetting(LX_PT, LX_ID, LX);  //port4	
   packetWait();
-	AC=0;
-	setPosAndReadStatusByDefaultSetting(AC_PT, AC_ID, AC);  //port4	
+	LY=0;
+//	setPosAndReadStatusByDefaultSetting(LY_PT, LY_ID, LY);  //port4	
+	setPositionByDefaultSetting(LY_PT, LY_ID, LY);  //port4	
   packetWait();
-	DP=0;
-	setPosAndReadStatusByDefaultSetting(DP_PT, DP_ID, DP);  //port4
-	packetWait();
-	FR=FR_N;
-	setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR);  //port4
-	/*
-	B2=0;
-	setPosAndReadStatusByDefaultSetting(B2_PT, B2_ID, B2);  //port4
-	packetWait();
-	B3=0;
-	setPosAndReadStatusByDefaultSetting(B3_PT, B3_ID, B3);  //port4
-	packetWait();
-	*/
-	wait1s();wait1s();
-	BL=BL_MAX;
-	setPosAndReadStatusByDefaultSetting(BL_PT, BL_ID, BL);  //port4	
-	wait1s();
-	//FR=FR_P;
-	FR=FR_N;
-	setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR);  //port4
-	packetWait();
+	RX=0;
+//	setPosAndReadStatusByDefaultSetting(RX_PT, RX_ID, RX);  //port4	
+	setPositionByDefaultSetting(RX_PT, RX_ID, RX);  //port4	
+  packetWait();
+	RY=0;
+//	setPosAndReadStatusByDefaultSetting(RY_PT, RY_ID, RY);  //port4	
+	setPositionByDefaultSetting(RY_PT, RY_ID, RY);  //port4
+  packetWait();
+	RR=0;
+//	setPosAndReadStatusByDefaultSetting(RR_PT, RR_ID, RR);  //port4	
+	setPositionByDefaultSetting(RR_PT, RR_ID, RR);  //port4	
+  packetWait();
+	LR=0;
+//	setPosAndReadStatusByDefaultSetting(LR_PT, LR_ID, LR);  //port4	
+	setPositionByDefaultSetting(LR_PT, LR_ID, LR);  //port4
+  packetWait();
+	VL=0;
+//	setPosAndReadStatusByDefaultSetting(VL_PT, VL_ID, VL);  //port4	
+	setPositionByDefaultSetting(VL_PT, VL_ID, VL);  //port4
+  packetWait();
+	//key don't thouch
+
 }
 
 void stopAllControlAndResetStatus(void){
@@ -485,231 +235,91 @@ void stopAllControlAndResetStatus(void){
 	pato2Off();
 }
 
-//pos span 0-100%
-void setBrake(uint8_t pos){
-	uint32_t step=0;
-	step=(BL_MAX/100)*pos;
-	setPosAndReadStatusByDefaultSetting(BL_PT, BL_ID, step);
-	packetWait();
+/*
+Invert the Kanatouch-controller stick value. 
+50=250
+60=190
+..
+150=150
+..
+240=60
+250=50
+*/
+uint8_t invertStickValue(uint8_t d){
+	int32_t temp;
+	temp = (int32_t)d;
+	temp = (250-d)+50;
+	return (uint8_t)temp;
 }
 
-//pos span 0-100%
-void setAccel(uint8_t pos){
-	uint32_t step=0;
-	step=(AC_MAX/100)*pos;
-	setPosAndReadStatusByDefaultSetting(AC_PT, AC_ID, step);
-	packetWait();
-}
 
-//str span 'P','R','N','D','2','1'
-void setGear(uint8_t str){
-	switch(str){
-		case 0x50:  //'P'
-			setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR_P);
-			packetWait();
-			break;
-		case 0x52:  //'R'
-			setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR_R);
-			packetWait();
-			break;
-		case 0x4E:  //'N'
-			setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR_N);
-			packetWait();
-			break;
-		case 0x44:  //'D'
-			setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR_D);
-			packetWait();
-			break;
-		case 0x32:  //'2'
-			setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR_2);
-			packetWait();
-			break;
-		case 0x31:  //'1'
-			setPosAndReadStatusByDefaultSetting(FR_PT, FR_ID, FR_1);
-			packetWait();
-			break;
-	}	
-}
-
-//val span -900deg..+900deg
-#define MOTOR_DEG_PER_PULSE    0.0075f  //1 pulse = 0.075deg as handle move angle
-#define STEER_ARTANGLE_RATE 20  //steering angle / 20 = articulate angle
-int handleStep;
-float nowArt;
-float deltaArt;
-float distArt;
-float targetArt;
-int testFlg=0;
-void setHandle(float val){
-	//articulate limit check
-	nowArt = sens_data[0];  //as articulate angle
-	//if(((nowArt>-35.0)&&(val>0))&&((nowArt<35.0)&&(val<0))){
-	if(((nowArt<-35.0)&&(val<0))||((nowArt>35.0)&&(val>0))){
-		//none - out of articulate
-		testFlg++;
-	}else{
-		testFlg--;
-		deltaArt = val/STEER_ARTANGLE_RATE;
-		distArt = nowArt+deltaArt;
-		if(distArt<-35.0){
-			//targetArt = distArt + 35.0;
-			targetArt = (-35.0) + (nowArt*(-1));
-		}else if(distArt>35.0){
-			//targetArt = distArt - 35.0;
-			targetArt = 35.0 - nowArt;
+int32_t convToStep(int32_t val, int32_t a, int32_t b){
+	int32_t result = 0;
+	if(val>0){
+		if(a>0){
+			result = val * (a/100);
 		}else{
-			targetArt = deltaArt;
+			result = val * (b/100);
 		}
-		
-		float pulses_f = (targetArt*STEER_ARTANGLE_RATE) / MOTOR_DEG_PER_PULSE;
-		handleStep = (int)pulses_f;
-		setRelativePosAndReadStatus(ST_PT, ST_ID, handleStep, SPD_HI, ((SPD_HI)*2));
-		packetWait();
+	}else if(val<0){
+		if(a>0){
+			result = val * (b/100);
+		}else{
+			result = val * (a/100);
+		}
+	}else{
+		result=0;
 	}
-
+	return result;
 }
 
-
-//val span -35.0deg..+35.0deg
-void setArticulate(float val){
-	//articulate limit check
-	nowArt = sens_data[0];  //as articulate angle
-	if(((nowArt<-35.0)&&(val<0))||((nowArt>35.0)&&(val>0))){
-		//none - out of articulate
-	}else{
-		targetArt = val - nowArt;	
-		float pulses_f = (targetArt) / MOTOR_DEG_PER_PULSE * STEER_ARTANGLE_RATE;
-		handleStep = (int)pulses_f;
-		setRelativePosAndReadStatus(ST_PT, ST_ID, handleStep, SPD_HI, ((SPD_HI)*2));
-		packetWait(); 
-	}		
-	
-	/*
-	//---steering---
-	nowAngle = sens_data[0];
-	distAngle = val;
-	if(distAngle>35.0) distAngle=35.0;
-	else if(distAngle<-35.0) distAngle=-35.0;
-	//direction
-	if((nowAngle+DEAD_BAND)<distAngle){
-	  thisDirection=1;
-	}else if((nowAngle-DEAD_BAND)>distAngle){
-		thisDirection=-1;
-	}else{
-		thisDirection=0;  //no move
-	}
-	//speed
-	if(((nowAngle+GAP_BIG)<distAngle) || ((nowAngle-GAP_BIG)>distAngle)){
-		ST=SPD_HI;
-	}else if(((nowAngle+GAP_MID)<distAngle) || ((nowAngle-GAP_MID)>distAngle)){
-		ST=SPD_MD;
-	}else if(((nowAngle+GAP_SML)<distAngle) || ((nowAngle-GAP_SML)>distAngle)){
-		ST=SPD_LO;
-	}else{
-		ST=SPD_SL;
-	}	
-	int32_t myRelatibePos = 5000*thisDirection;
-	setRelativePosAndReadStatus(ST_PT, ST_ID, myRelatibePos, ST, ((ST)*2));
-	*/
-}
-
-
-//val span -100%..0%..+100%
-void setDump(float val){
-	int step;
-	if(val==0){
-		step=DP_STP;
-	}else if(val>0){
-		step=(DP_MAX/100)*val;
-	}else{
-		step=(DP_MIN/100)*val;  //will be minus value
-	}
-	setPosAndReadStatusByDefaultSetting(DP_PT, DP_ID, step);
-	packetWait();
-}
-
-uint8_t dBRAKE;
-float dHANDLE;
-uint8_t dACCEL;
-
+//+++260414
 float tempVal;
-void cat725DirectServoDrive(uint8_t* inBuf){
-	float val;
+void backhoeDirectServoDrive(uint8_t* inBuf){
+	//culcurate command value to step
+	int32_t tempVal;
+	tempVal = (((int32_t)(spanChk(inBuf[2]))) - POS_OFFSET);  //convert to -100 to +100 val
+	RX = convToStep(tempVal, RX_IN, RX_OUT);
+	tempVal = (((int32_t)(spanChk(inBuf[3]))) - POS_OFFSET);  //convert to -100 to +100 val
+	RY	= convToStep(tempVal, RY_FRONT, RY_BACK);
+	tempVal = (((int32_t)(spanChk(inBuf[4]))) - POS_OFFSET);  //convert to -100 to +100 val
+	LX = convToStep(tempVal, LX_IN, LX_OUT);
+	tempVal = (((int32_t)(spanChk(inBuf[5]))) - POS_OFFSET);  //convert to -100 to +100 val
+	LY	= convToStep(tempVal, LY_FRONT, LY_BACK);
+	tempVal = (((int32_t)(spanChk(inBuf[6]))) - POS_OFFSET);  //convert to -100 to +100 val
+	RR	= convToStep(tempVal, RR_FRONT, RR_BACK);
+	tempVal = (((int32_t)(spanChk(inBuf[7]))) - POS_OFFSET);  //convert to -100 to +100 val
+	LR	= convToStep(tempVal, LR_FRONT, LR_BACK);
+	tempVal = (((int32_t)(spanChk(inBuf[8]))) - POS_OFFSET);  //convert to -100 to +100 val
+	VL	= tempVal*(VL_MAX/100);
+	
+	//send position to servos
 	rxBufferPositionReset();  //for servo error check receive   +++251120
-	switch(inBuf[2]){
-		case 1:  //brake set
-			setBrake(inBuf[3]);
-			break;
-		case 2:  //handle set
-			memcpy(&val, &inBuf[3], sizeof(float));
-		  setHandle(val);
-			break;
-		case 3:  //accel set
-			setAccel(inBuf[3]);
-		case 4:  //gear set
-			setGear(inBuf[3]);
-			break;
-		case 5:  //dump set
-			memcpy(&val, &inBuf[3], sizeof(float));
-			setDump(val);
-			break;
-		case 6:  //articulate set
-			memcpy(&val, &inBuf[3], sizeof(float));
-		  setArticulate(val);
-			break;
-		case 10:  //all set(handle control)
-			//brake
-			setBrake(inBuf[3]);
-		  dBRAKE = inBuf[3];  //debug +++251104
-		  //handle
-			memcpy(&val, &inBuf[4], sizeof(float));
-		  tempVal = val;
-		  setHandle(val);
-		  dHANDLE = val;   //debug +++251104
-		  //accel
-			setAccel(inBuf[8]);
-		  dACCEL = inBuf[8];  //debug +++251104
-			//gear
-			setGear(inBuf[9]);
-		  //backet
-		  memcpy(&val, &inBuf[10], sizeof(float));
-			setDump(val);
-			break;
-		case 12:  //all set(articulate control)
-			//brake
-			setBrake(inBuf[3]);
-		  //handle
-			memcpy(&val, &inBuf[4], sizeof(float));
-		  setArticulate(val);
-		  //accel
-			setAccel(inBuf[8]);
-			//gear
-			setGear(inBuf[9]);
-		  //backet
-		  memcpy(&val, &inBuf[10], sizeof(float));
-			setDump(val);
-			break;
-		case 13:  //all set(handle control)
-			//brake
-			setBrake(inBuf[3]);
-		  dBRAKE = inBuf[3];  //debug +++251104
-		  //handle
-			memcpy(&val, &inBuf[4], sizeof(float));
-		  tempVal = val;
-		  setHandle(val);
-		  dHANDLE = val;   //debug +++251104
-		  //accel
-			setAccel(inBuf[8]);
-		  dACCEL = inBuf[8];  //debug +++251104
-			//gear
-			setGear(inBuf[9]);
-		  //backet
-		  memcpy(&val, &inBuf[10], sizeof(float));
-			setDump(val);
-			break;
-	}
+//	setPosAndReadStatusByDefaultSetting(LX_PT, LX_ID, LX);  //port4
+	setPositionByDefaultSetting(LX_PT, LX_ID, LX);  //port4
+	packetWait();
+//	setPosAndReadStatusByDefaultSetting(LY_PT, LY_ID, LY);  //port4
+	setPositionByDefaultSetting(LY_PT, LY_ID, LY);  //port4
+	packetWait();
+//	setPosAndReadStatusByDefaultSetting(RX_PT, RX_ID, RX);  //port4
+	setPositionByDefaultSetting(RX_PT, RX_ID, RX);  //port4
+	packetWait();
+//	setPosAndReadStatusByDefaultSetting(RY_PT, RY_ID, RY);  //port4
+	setPositionByDefaultSetting(RY_PT, RY_ID, RY);  //port4
+	packetWait();
+//	setPosAndReadStatusByDefaultSetting(RR_PT, RR_ID, RR);  //port4
+	setPositionByDefaultSetting(RR_PT, RR_ID, RR);  //port4
+	packetWait();
+//	setPosAndReadStatusByDefaultSetting(LR_PT, LR_ID, LR);  //port4
+	setPositionByDefaultSetting(LR_PT, LR_ID, LR);  //port4
+	packetWait();
+//	setPosAndReadStatusByDefaultSetting(VL_PT, VL_ID, VL);  //port4
+	setPositionByDefaultSetting(VL_PT, VL_ID, VL);  //port4
+	packetWait();
+
 	//check servo error  +++251120
 	int i;
+	/*
 	for(i=0; i<P4CNT; i++){
 		if(((u4RxBuf[(i*RETURN_PACKET_SIZE)+6]) & ERR_BIT_MSK) != 0){
 			
@@ -718,6 +328,7 @@ void cat725DirectServoDrive(uint8_t* inBuf){
 		}
 		svStatus[u4RxBuf[i*RETURN_PACKET_SIZE]] = u4RxBuf[(i*RETURN_PACKET_SIZE)+6];
 	}
+	*/
 	
 }
 

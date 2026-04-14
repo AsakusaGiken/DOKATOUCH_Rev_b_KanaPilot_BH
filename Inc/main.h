@@ -189,8 +189,9 @@ void initTimers(void);
 void T2_Callback(void);
 void checkPcCom(void);
 
-void cat725GamepadDrive(uint8_t *, uint32_t);
-void cat725DirectServoDrive(uint8_t*);
+//void cat725GamepadDrive(uint8_t *, uint32_t);
+//void cat725DirectServoDrive(uint8_t*);
+void backhoeDirectServoDrive(uint8_t*);
 void setPosAndReadStatusByDefaultSetting3(uint8_t, uint8_t, uint32_t);
 void u1TxLedOn(void);
 void u1TxLedOff(void);

@@ -219,7 +219,8 @@ estimate time = 5.5ms
 void setPositionByDefaultSetting(uint8_t port, uint8_t id, uint32_t pos){
 //	setDirectDataDrive(port, id, 0, 0x00000001, pos, 20000, 1000000, 1000000, 1000, 1);  //normal
 //	setDirectDataDrive(port, id, 0, 0x00000001, pos, 20000, 100000, 100000, 1000, 1);  //slow
-	setDirectDataDrive(port, id, 0, 0x00000001, pos, 4000000, 30000000, 30000000, 1000, 1);  //high
+//	setDirectDataDrive(port, id, 0, 0x00000001, pos, 4000000, 30000000, 30000000, 1000, 1);  //high
+	setDirectDataDrive(port, id, 0, 0x00000001, pos, 20000, 150000, 150000, 1000, 1);
 }
 
 /********************
