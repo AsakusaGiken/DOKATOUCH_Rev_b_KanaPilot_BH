@@ -251,9 +251,6 @@ void mainKanaPilotBH(void){
 		//sensor value send to PC
 		sendSensData();
 		
-		//PC message check
-//		checkPcCom();
-		
 		//main com timeout check
 		comTimeCnt++;
 		if(comTimeCnt > COM_TIMEOUT){
@@ -269,6 +266,7 @@ void mainKanaPilotBH(void){
 	
 	//PC message check
 	checkPcCom();
+	
 	//Sensor Read
 	sensorsRead();  //rs485 sensors read request and parse
 	

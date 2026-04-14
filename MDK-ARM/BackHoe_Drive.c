@@ -254,23 +254,13 @@ uint8_t invertStickValue(uint8_t d){
 
 
 int32_t convToStep(int32_t val, int32_t a, int32_t b){
-	int32_t result = 0;
-	if(val>0){
-		if(a>0){
-			result = val * (a/100);
-		}else{
-			result = val * (b/100);
-		}
-	}else if(val<0){
-		if(a>0){
-			result = val * (b/100);
-		}else{
-			result = val * (a/100);
-		}
-	}else{
-		result=0;
-	}
-	return result;
+    int32_t result = 0;
+    if(val > 0){
+        result = val * (a / 100);
+    } else if(val < 0){
+        result = (-val) * (b / 100);
+    }
+    return result;
 }
 
 //+++260414
@@ -279,7 +269,7 @@ void backhoeDirectServoDrive(uint8_t* inBuf){
 	//culcurate command value to step
 	int32_t tempVal;
 	tempVal = (((int32_t)(spanChk(inBuf[2]))) - POS_OFFSET);  //convert to -100 to +100 val
-	RX = convToStep(tempVal, RX_IN, RX_OUT);
+	RX = convToStep(tempVal, RX_OUT, RX_IN);
 	tempVal = (((int32_t)(spanChk(inBuf[3]))) - POS_OFFSET);  //convert to -100 to +100 val
 	RY	= convToStep(tempVal, RY_FRONT, RY_BACK);
 	tempVal = (((int32_t)(spanChk(inBuf[4]))) - POS_OFFSET);  //convert to -100 to +100 val
@@ -318,8 +308,9 @@ void backhoeDirectServoDrive(uint8_t* inBuf){
 	packetWait();
 
 	//check servo error  +++251120
-	int i;
 	/*
+	int i;
+	
 	for(i=0; i<P4CNT; i++){
 		if(((u4RxBuf[(i*RETURN_PACKET_SIZE)+6]) & ERR_BIT_MSK) != 0){
 			

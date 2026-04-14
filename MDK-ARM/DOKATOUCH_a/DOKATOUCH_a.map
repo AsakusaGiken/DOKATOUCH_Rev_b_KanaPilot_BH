@@ -629,64 +629,64 @@ Image Symbol Table
     i.checkPcCom                             0x0800154c   Section        0  kanapilot_pccom.o(i.checkPcCom)
     i.checkSensorIncomming                   0x08001674   Section        0  kanapilot_senscom.o(i.checkSensorIncomming)
     i.convToStep                             0x08001830   Section        0  backhoe_drive.o(i.convToStep)
-    i.emgStopPosition                        0x08001860   Section        0  backhoe_drive.o(i.emgStopPosition)
-    i.hornOff                                0x080018e0   Section        0  mysub.o(i.hornOff)
-    i.hornOn                                 0x080018f4   Section        0  mysub.o(i.hornOn)
-    i.initKanaPilotBH                        0x08001908   Section        0  kanapilot_bh.o(i.initKanaPilotBH)
-    i.initTimers                             0x08001934   Section        0  kanapilot_bh.o(i.initTimers)
-    i.ledOff                                 0x0800195c   Section        0  mysub.o(i.ledOff)
-    i.ledOn                                  0x0800196c   Section        0  mysub.o(i.ledOn)
-    i.main                                   0x0800197c   Section        0  main.o(i.main)
-    i.mainKanaPilotBH                        0x08001a3c   Section        0  kanapilot_bh.o(i.mainKanaPilotBH)
-    i.packetWait                             0x08001b10   Section        0  backhoe_drive.o(i.packetWait)
-    i.pato1Off                               0x08001b30   Section        0  mysub.o(i.pato1Off)
-    i.pato1On                                0x08001b44   Section        0  mysub.o(i.pato1On)
-    i.pato2Off                               0x08001b58   Section        0  mysub.o(i.pato2Off)
-    i.pato2On                                0x08001b6c   Section        0  mysub.o(i.pato2On)
-    i.pato3Off                               0x08001b80   Section        0  mysub.o(i.pato3Off)
-    i.queWriteRegisterSeq                    0x08001b94   Section        0  azd_krd_message.o(i.queWriteRegisterSeq)
-    i.resetWDT                               0x08001bf0   Section        0  myiwdg.o(i.resetWDT)
-    i.rxBufferPositionReset                  0x08001c00   Section        0  backhoe_drive.o(i.rxBufferPositionReset)
-    i.sendQuery                              0x08001c1c   Section        0  azd_krd_message.o(i.sendQuery)
-    i.sendSensData                           0x08001c80   Section        0  kanapilot_bh.o(i.sendSensData)
-    i.sendUart1Byte                          0x08001e44   Section        0  mylluart.o(i.sendUart1Byte)
-    i.sendUart1Packet                        0x08001e60   Section        0  mylluart.o(i.sendUart1Packet)
-    i.sendUart2Byte                          0x08001e80   Section        0  mylluart.o(i.sendUart2Byte)
-    i.sendUart2Packet                        0x08001e9c   Section        0  mylluart.o(i.sendUart2Packet)
-    i.sendUart4Byte                          0x08001ebc   Section        0  mylluart.o(i.sendUart4Byte)
-    i.sendUart4Packet                        0x08001ed8   Section        0  mylluart.o(i.sendUart4Packet)
-    i.sendUart5Byte                          0x08001ef8   Section        0  mylluart.o(i.sendUart5Byte)
-    i.sendUart5Packet                        0x08001f14   Section        0  mylluart.o(i.sendUart5Packet)
-    i.sensorRequest                          0x08001f34   Section        0  kanapilot_senscom.o(i.sensorRequest)
-    i.sensorsRead                            0x08001fa0   Section        0  kanapilot_senscom.o(i.sensorsRead)
-    i.setContinuousSpeed                     0x08001ff8   Section        0  azd_krd_message.o(i.setContinuousSpeed)
-    i.setDirectDataDrive                     0x08002014   Section        0  azd_krd_message.o(i.setDirectDataDrive)
-    i.setPositionByDefaultSetting            0x080020dc   Section        0  azd_krd_message.o(i.setPositionByDefaultSetting)
-    i.spanChk                                0x0800210c   Section        0  backhoe_drive.o(i.spanChk)
-    i.stopAllControlAndResetStatus           0x08002128   Section        0  backhoe_drive.o(i.stopAllControlAndResetStatus)
-    i.u1RxInterruptEnable                    0x08002134   Section        0  mylluart.o(i.u1RxInterruptEnable)
-    i.u1RxLedOff                             0x08002144   Section        0  mysub.o(i.u1RxLedOff)
-    i.u1RxLedOn                              0x08002154   Section        0  mysub.o(i.u1RxLedOn)
-    i.u1TxDisable                            0x08002164   Section        0  mysub.o(i.u1TxDisable)
-    i.u1TxEnable                             0x08002174   Section        0  mysub.o(i.u1TxEnable)
-    i.u1TxLedOff                             0x08002184   Section        0  mysub.o(i.u1TxLedOff)
-    i.u1TxLedOn                              0x08002194   Section        0  mysub.o(i.u1TxLedOn)
-    i.u2RxInterruptEnable                    0x080021a4   Section        0  mylluart.o(i.u2RxInterruptEnable)
-    i.u2RxLedOff                             0x080021b4   Section        0  mysub.o(i.u2RxLedOff)
-    i.u2RxLedOn                              0x080021c4   Section        0  mysub.o(i.u2RxLedOn)
-    i.u4RxInterruptEnable                    0x080021d4   Section        0  mylluart.o(i.u4RxInterruptEnable)
-    i.u4TxDisable                            0x080021e4   Section        0  mysub.o(i.u4TxDisable)
-    i.u4TxEnable                             0x080021f8   Section        0  mysub.o(i.u4TxEnable)
-    i.u5TxDisable                            0x0800220c   Section        0  mysub.o(i.u5TxDisable)
-    i.u5TxEnable                             0x08002220   Section        0  mysub.o(i.u5TxEnable)
-    i.wait100ms                              0x08002234   Section        0  mywait16mhz.o(i.wait100ms)
-    i.wait10ms                               0x08002264   Section        0  mywait16mhz.o(i.wait10ms)
-    i.wait10us                               0x08002290   Section        0  mywait16mhz.o(i.wait10us)
-    i.wait1ms                                0x0800229a   Section        0  mywait16mhz.o(i.wait1ms)
-    .constdata                               0x080022a6   Section       25  system_stm32l0xx.o(.constdata)
-    .constdata                               0x080022bf   Section        8  system_stm32l0xx.o(.constdata)
-    .constdata                               0x080022c8   Section      512  mycrc16.o(.constdata)
-    wCRCTable                                0x080022c8   Data         512  mycrc16.o(.constdata)
+    i.emgStopPosition                        0x0800185c   Section        0  backhoe_drive.o(i.emgStopPosition)
+    i.hornOff                                0x080018dc   Section        0  mysub.o(i.hornOff)
+    i.hornOn                                 0x080018f0   Section        0  mysub.o(i.hornOn)
+    i.initKanaPilotBH                        0x08001904   Section        0  kanapilot_bh.o(i.initKanaPilotBH)
+    i.initTimers                             0x08001930   Section        0  kanapilot_bh.o(i.initTimers)
+    i.ledOff                                 0x08001958   Section        0  mysub.o(i.ledOff)
+    i.ledOn                                  0x08001968   Section        0  mysub.o(i.ledOn)
+    i.main                                   0x08001978   Section        0  main.o(i.main)
+    i.mainKanaPilotBH                        0x08001a38   Section        0  kanapilot_bh.o(i.mainKanaPilotBH)
+    i.packetWait                             0x08001b0c   Section        0  backhoe_drive.o(i.packetWait)
+    i.pato1Off                               0x08001b2c   Section        0  mysub.o(i.pato1Off)
+    i.pato1On                                0x08001b40   Section        0  mysub.o(i.pato1On)
+    i.pato2Off                               0x08001b54   Section        0  mysub.o(i.pato2Off)
+    i.pato2On                                0x08001b68   Section        0  mysub.o(i.pato2On)
+    i.pato3Off                               0x08001b7c   Section        0  mysub.o(i.pato3Off)
+    i.queWriteRegisterSeq                    0x08001b90   Section        0  azd_krd_message.o(i.queWriteRegisterSeq)
+    i.resetWDT                               0x08001bec   Section        0  myiwdg.o(i.resetWDT)
+    i.rxBufferPositionReset                  0x08001bfc   Section        0  backhoe_drive.o(i.rxBufferPositionReset)
+    i.sendQuery                              0x08001c18   Section        0  azd_krd_message.o(i.sendQuery)
+    i.sendSensData                           0x08001c7c   Section        0  kanapilot_bh.o(i.sendSensData)
+    i.sendUart1Byte                          0x08001e40   Section        0  mylluart.o(i.sendUart1Byte)
+    i.sendUart1Packet                        0x08001e5c   Section        0  mylluart.o(i.sendUart1Packet)
+    i.sendUart2Byte                          0x08001e7c   Section        0  mylluart.o(i.sendUart2Byte)
+    i.sendUart2Packet                        0x08001e98   Section        0  mylluart.o(i.sendUart2Packet)
+    i.sendUart4Byte                          0x08001eb8   Section        0  mylluart.o(i.sendUart4Byte)
+    i.sendUart4Packet                        0x08001ed4   Section        0  mylluart.o(i.sendUart4Packet)
+    i.sendUart5Byte                          0x08001ef4   Section        0  mylluart.o(i.sendUart5Byte)
+    i.sendUart5Packet                        0x08001f10   Section        0  mylluart.o(i.sendUart5Packet)
+    i.sensorRequest                          0x08001f30   Section        0  kanapilot_senscom.o(i.sensorRequest)
+    i.sensorsRead                            0x08001f9c   Section        0  kanapilot_senscom.o(i.sensorsRead)
+    i.setContinuousSpeed                     0x08001ff4   Section        0  azd_krd_message.o(i.setContinuousSpeed)
+    i.setDirectDataDrive                     0x08002010   Section        0  azd_krd_message.o(i.setDirectDataDrive)
+    i.setPositionByDefaultSetting            0x080020d8   Section        0  azd_krd_message.o(i.setPositionByDefaultSetting)
+    i.spanChk                                0x08002108   Section        0  backhoe_drive.o(i.spanChk)
+    i.stopAllControlAndResetStatus           0x08002124   Section        0  backhoe_drive.o(i.stopAllControlAndResetStatus)
+    i.u1RxInterruptEnable                    0x08002130   Section        0  mylluart.o(i.u1RxInterruptEnable)
+    i.u1RxLedOff                             0x08002140   Section        0  mysub.o(i.u1RxLedOff)
+    i.u1RxLedOn                              0x08002150   Section        0  mysub.o(i.u1RxLedOn)
+    i.u1TxDisable                            0x08002160   Section        0  mysub.o(i.u1TxDisable)
+    i.u1TxEnable                             0x08002170   Section        0  mysub.o(i.u1TxEnable)
+    i.u1TxLedOff                             0x08002180   Section        0  mysub.o(i.u1TxLedOff)
+    i.u1TxLedOn                              0x08002190   Section        0  mysub.o(i.u1TxLedOn)
+    i.u2RxInterruptEnable                    0x080021a0   Section        0  mylluart.o(i.u2RxInterruptEnable)
+    i.u2RxLedOff                             0x080021b0   Section        0  mysub.o(i.u2RxLedOff)
+    i.u2RxLedOn                              0x080021c0   Section        0  mysub.o(i.u2RxLedOn)
+    i.u4RxInterruptEnable                    0x080021d0   Section        0  mylluart.o(i.u4RxInterruptEnable)
+    i.u4TxDisable                            0x080021e0   Section        0  mysub.o(i.u4TxDisable)
+    i.u4TxEnable                             0x080021f4   Section        0  mysub.o(i.u4TxEnable)
+    i.u5TxDisable                            0x08002208   Section        0  mysub.o(i.u5TxDisable)
+    i.u5TxEnable                             0x0800221c   Section        0  mysub.o(i.u5TxEnable)
+    i.wait100ms                              0x08002230   Section        0  mywait16mhz.o(i.wait100ms)
+    i.wait10ms                               0x08002260   Section        0  mywait16mhz.o(i.wait10ms)
+    i.wait10us                               0x0800228c   Section        0  mywait16mhz.o(i.wait10us)
+    i.wait1ms                                0x08002296   Section        0  mywait16mhz.o(i.wait1ms)
+    .constdata                               0x080022a2   Section       25  system_stm32l0xx.o(.constdata)
+    .constdata                               0x080022bb   Section        8  system_stm32l0xx.o(.constdata)
+    .constdata                               0x080022c4   Section      512  mycrc16.o(.constdata)
+    wCRCTable                                0x080022c4   Data         512  mycrc16.o(.constdata)
     .data                                    0x20000000   Section        4  system_stm32l0xx.o(.data)
     .data                                    0x20000004   Section       24  kanapilot_bh.o(.data)
     .data                                    0x2000001c   Section       32  backhoe_drive.o(.data)
@@ -793,66 +793,66 @@ Image Symbol Table
     blink                                    0x0800152d   Thumb Code    32  mysub.o(i.blink)
     checkPcCom                               0x0800154d   Thumb Code   274  kanapilot_pccom.o(i.checkPcCom)
     checkSensorIncomming                     0x08001675   Thumb Code   430  kanapilot_senscom.o(i.checkSensorIncomming)
-    convToStep                               0x08001831   Thumb Code    46  backhoe_drive.o(i.convToStep)
-    emgStopPosition                          0x08001861   Thumb Code   124  backhoe_drive.o(i.emgStopPosition)
-    hornOff                                  0x080018e1   Thumb Code    14  mysub.o(i.hornOff)
-    hornOn                                   0x080018f5   Thumb Code    14  mysub.o(i.hornOn)
-    initKanaPilotBH                          0x08001909   Thumb Code    36  kanapilot_bh.o(i.initKanaPilotBH)
-    initTimers                               0x08001935   Thumb Code    34  kanapilot_bh.o(i.initTimers)
-    ledOff                                   0x0800195d   Thumb Code    12  mysub.o(i.ledOff)
-    ledOn                                    0x0800196d   Thumb Code    12  mysub.o(i.ledOn)
-    main                                     0x0800197d   Thumb Code   180  main.o(i.main)
-    mainKanaPilotBH                          0x08001a3d   Thumb Code   200  kanapilot_bh.o(i.mainKanaPilotBH)
-    packetWait                               0x08001b11   Thumb Code    32  backhoe_drive.o(i.packetWait)
-    pato1Off                                 0x08001b31   Thumb Code    14  mysub.o(i.pato1Off)
-    pato1On                                  0x08001b45   Thumb Code    14  mysub.o(i.pato1On)
-    pato2Off                                 0x08001b59   Thumb Code    14  mysub.o(i.pato2Off)
-    pato2On                                  0x08001b6d   Thumb Code    14  mysub.o(i.pato2On)
-    pato3Off                                 0x08001b81   Thumb Code    14  mysub.o(i.pato3Off)
-    queWriteRegisterSeq                      0x08001b95   Thumb Code    90  azd_krd_message.o(i.queWriteRegisterSeq)
-    resetWDT                                 0x08001bf1   Thumb Code     8  myiwdg.o(i.resetWDT)
-    rxBufferPositionReset                    0x08001c01   Thumb Code    20  backhoe_drive.o(i.rxBufferPositionReset)
-    sendQuery                                0x08001c1d   Thumb Code    98  azd_krd_message.o(i.sendQuery)
-    sendSensData                             0x08001c81   Thumb Code   392  kanapilot_bh.o(i.sendSensData)
-    sendUart1Byte                            0x08001e45   Thumb Code    22  mylluart.o(i.sendUart1Byte)
-    sendUart1Packet                          0x08001e61   Thumb Code    30  mylluart.o(i.sendUart1Packet)
-    sendUart2Byte                            0x08001e81   Thumb Code    22  mylluart.o(i.sendUart2Byte)
-    sendUart2Packet                          0x08001e9d   Thumb Code    30  mylluart.o(i.sendUart2Packet)
-    sendUart4Byte                            0x08001ebd   Thumb Code    22  mylluart.o(i.sendUart4Byte)
-    sendUart4Packet                          0x08001ed9   Thumb Code    30  mylluart.o(i.sendUart4Packet)
-    sendUart5Byte                            0x08001ef9   Thumb Code    22  mylluart.o(i.sendUart5Byte)
-    sendUart5Packet                          0x08001f15   Thumb Code    30  mylluart.o(i.sendUart5Packet)
-    sensorRequest                            0x08001f35   Thumb Code   104  kanapilot_senscom.o(i.sensorRequest)
-    sensorsRead                              0x08001fa1   Thumb Code    82  kanapilot_senscom.o(i.sensorsRead)
-    setContinuousSpeed                       0x08001ff9   Thumb Code    28  azd_krd_message.o(i.setContinuousSpeed)
-    setDirectDataDrive                       0x08002015   Thumb Code   198  azd_krd_message.o(i.setDirectDataDrive)
-    setPositionByDefaultSetting              0x080020dd   Thumb Code    38  azd_krd_message.o(i.setPositionByDefaultSetting)
-    spanChk                                  0x0800210d   Thumb Code    28  backhoe_drive.o(i.spanChk)
-    stopAllControlAndResetStatus             0x08002129   Thumb Code    12  backhoe_drive.o(i.stopAllControlAndResetStatus)
-    u1RxInterruptEnable                      0x08002135   Thumb Code    12  mylluart.o(i.u1RxInterruptEnable)
-    u1RxLedOff                               0x08002145   Thumb Code    12  mysub.o(i.u1RxLedOff)
-    u1RxLedOn                                0x08002155   Thumb Code    12  mysub.o(i.u1RxLedOn)
-    u1TxDisable                              0x08002165   Thumb Code    16  mysub.o(i.u1TxDisable)
-    u1TxEnable                               0x08002175   Thumb Code    16  mysub.o(i.u1TxEnable)
-    u1TxLedOff                               0x08002185   Thumb Code    12  mysub.o(i.u1TxLedOff)
-    u1TxLedOn                                0x08002195   Thumb Code    12  mysub.o(i.u1TxLedOn)
-    u2RxInterruptEnable                      0x080021a5   Thumb Code    12  mylluart.o(i.u2RxInterruptEnable)
-    u2RxLedOff                               0x080021b5   Thumb Code    12  mysub.o(i.u2RxLedOff)
-    u2RxLedOn                                0x080021c5   Thumb Code    12  mysub.o(i.u2RxLedOn)
-    u4RxInterruptEnable                      0x080021d5   Thumb Code    12  mylluart.o(i.u4RxInterruptEnable)
-    u4TxDisable                              0x080021e5   Thumb Code    14  mysub.o(i.u4TxDisable)
-    u4TxEnable                               0x080021f9   Thumb Code    14  mysub.o(i.u4TxEnable)
-    u5TxDisable                              0x0800220d   Thumb Code    14  mysub.o(i.u5TxDisable)
-    u5TxEnable                               0x08002221   Thumb Code    14  mysub.o(i.u5TxEnable)
-    wait100ms                                0x08002235   Thumb Code    48  mywait16mhz.o(i.wait100ms)
-    wait10ms                                 0x08002265   Thumb Code    44  mywait16mhz.o(i.wait10ms)
-    wait10us                                 0x08002291   Thumb Code    10  mywait16mhz.o(i.wait10us)
-    wait1ms                                  0x0800229b   Thumb Code    12  mywait16mhz.o(i.wait1ms)
-    AHBPrescTable                            0x080022a6   Data          16  system_stm32l0xx.o(.constdata)
-    PLLMulTable                              0x080022b6   Data           9  system_stm32l0xx.o(.constdata)
-    APBPrescTable                            0x080022bf   Data           8  system_stm32l0xx.o(.constdata)
-    Region$$Table$$Base                      0x080024c8   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080024e8   Number         0  anon$$obj.o(Region$$Table)
+    convToStep                               0x08001831   Thumb Code    42  backhoe_drive.o(i.convToStep)
+    emgStopPosition                          0x0800185d   Thumb Code   124  backhoe_drive.o(i.emgStopPosition)
+    hornOff                                  0x080018dd   Thumb Code    14  mysub.o(i.hornOff)
+    hornOn                                   0x080018f1   Thumb Code    14  mysub.o(i.hornOn)
+    initKanaPilotBH                          0x08001905   Thumb Code    36  kanapilot_bh.o(i.initKanaPilotBH)
+    initTimers                               0x08001931   Thumb Code    34  kanapilot_bh.o(i.initTimers)
+    ledOff                                   0x08001959   Thumb Code    12  mysub.o(i.ledOff)
+    ledOn                                    0x08001969   Thumb Code    12  mysub.o(i.ledOn)
+    main                                     0x08001979   Thumb Code   180  main.o(i.main)
+    mainKanaPilotBH                          0x08001a39   Thumb Code   200  kanapilot_bh.o(i.mainKanaPilotBH)
+    packetWait                               0x08001b0d   Thumb Code    32  backhoe_drive.o(i.packetWait)
+    pato1Off                                 0x08001b2d   Thumb Code    14  mysub.o(i.pato1Off)
+    pato1On                                  0x08001b41   Thumb Code    14  mysub.o(i.pato1On)
+    pato2Off                                 0x08001b55   Thumb Code    14  mysub.o(i.pato2Off)
+    pato2On                                  0x08001b69   Thumb Code    14  mysub.o(i.pato2On)
+    pato3Off                                 0x08001b7d   Thumb Code    14  mysub.o(i.pato3Off)
+    queWriteRegisterSeq                      0x08001b91   Thumb Code    90  azd_krd_message.o(i.queWriteRegisterSeq)
+    resetWDT                                 0x08001bed   Thumb Code     8  myiwdg.o(i.resetWDT)
+    rxBufferPositionReset                    0x08001bfd   Thumb Code    20  backhoe_drive.o(i.rxBufferPositionReset)
+    sendQuery                                0x08001c19   Thumb Code    98  azd_krd_message.o(i.sendQuery)
+    sendSensData                             0x08001c7d   Thumb Code   392  kanapilot_bh.o(i.sendSensData)
+    sendUart1Byte                            0x08001e41   Thumb Code    22  mylluart.o(i.sendUart1Byte)
+    sendUart1Packet                          0x08001e5d   Thumb Code    30  mylluart.o(i.sendUart1Packet)
+    sendUart2Byte                            0x08001e7d   Thumb Code    22  mylluart.o(i.sendUart2Byte)
+    sendUart2Packet                          0x08001e99   Thumb Code    30  mylluart.o(i.sendUart2Packet)
+    sendUart4Byte                            0x08001eb9   Thumb Code    22  mylluart.o(i.sendUart4Byte)
+    sendUart4Packet                          0x08001ed5   Thumb Code    30  mylluart.o(i.sendUart4Packet)
+    sendUart5Byte                            0x08001ef5   Thumb Code    22  mylluart.o(i.sendUart5Byte)
+    sendUart5Packet                          0x08001f11   Thumb Code    30  mylluart.o(i.sendUart5Packet)
+    sensorRequest                            0x08001f31   Thumb Code   104  kanapilot_senscom.o(i.sensorRequest)
+    sensorsRead                              0x08001f9d   Thumb Code    82  kanapilot_senscom.o(i.sensorsRead)
+    setContinuousSpeed                       0x08001ff5   Thumb Code    28  azd_krd_message.o(i.setContinuousSpeed)
+    setDirectDataDrive                       0x08002011   Thumb Code   198  azd_krd_message.o(i.setDirectDataDrive)
+    setPositionByDefaultSetting              0x080020d9   Thumb Code    38  azd_krd_message.o(i.setPositionByDefaultSetting)
+    spanChk                                  0x08002109   Thumb Code    28  backhoe_drive.o(i.spanChk)
+    stopAllControlAndResetStatus             0x08002125   Thumb Code    12  backhoe_drive.o(i.stopAllControlAndResetStatus)
+    u1RxInterruptEnable                      0x08002131   Thumb Code    12  mylluart.o(i.u1RxInterruptEnable)
+    u1RxLedOff                               0x08002141   Thumb Code    12  mysub.o(i.u1RxLedOff)
+    u1RxLedOn                                0x08002151   Thumb Code    12  mysub.o(i.u1RxLedOn)
+    u1TxDisable                              0x08002161   Thumb Code    16  mysub.o(i.u1TxDisable)
+    u1TxEnable                               0x08002171   Thumb Code    16  mysub.o(i.u1TxEnable)
+    u1TxLedOff                               0x08002181   Thumb Code    12  mysub.o(i.u1TxLedOff)
+    u1TxLedOn                                0x08002191   Thumb Code    12  mysub.o(i.u1TxLedOn)
+    u2RxInterruptEnable                      0x080021a1   Thumb Code    12  mylluart.o(i.u2RxInterruptEnable)
+    u2RxLedOff                               0x080021b1   Thumb Code    12  mysub.o(i.u2RxLedOff)
+    u2RxLedOn                                0x080021c1   Thumb Code    12  mysub.o(i.u2RxLedOn)
+    u4RxInterruptEnable                      0x080021d1   Thumb Code    12  mylluart.o(i.u4RxInterruptEnable)
+    u4TxDisable                              0x080021e1   Thumb Code    14  mysub.o(i.u4TxDisable)
+    u4TxEnable                               0x080021f5   Thumb Code    14  mysub.o(i.u4TxEnable)
+    u5TxDisable                              0x08002209   Thumb Code    14  mysub.o(i.u5TxDisable)
+    u5TxEnable                               0x0800221d   Thumb Code    14  mysub.o(i.u5TxEnable)
+    wait100ms                                0x08002231   Thumb Code    48  mywait16mhz.o(i.wait100ms)
+    wait10ms                                 0x08002261   Thumb Code    44  mywait16mhz.o(i.wait10ms)
+    wait10us                                 0x0800228d   Thumb Code    10  mywait16mhz.o(i.wait10us)
+    wait1ms                                  0x08002297   Thumb Code    12  mywait16mhz.o(i.wait1ms)
+    AHBPrescTable                            0x080022a2   Data          16  system_stm32l0xx.o(.constdata)
+    PLLMulTable                              0x080022b2   Data           9  system_stm32l0xx.o(.constdata)
+    APBPrescTable                            0x080022bb   Data           8  system_stm32l0xx.o(.constdata)
+    Region$$Table$$Base                      0x080024c4   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080024e4   Number         0  anon$$obj.o(Region$$Table)
     SystemCoreClock                          0x20000000   Data           4  system_stm32l0xx.o(.data)
     isEmgStop                                0x20000004   Data           1  kanapilot_bh.o(.data)
     isCom                                    0x20000005   Data           1  kanapilot_bh.o(.data)
@@ -921,48 +921,48 @@ Memory Map of the image
 
   Image Entry point : 0x080000c1
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00002578, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00002574, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000024e8, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000024e4, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x08000000   0x08000000   0x000000c0   Data   RO           61    RESET               startup_stm32l071xx.o
-    0x080000c0   0x080000c0   0x00000000   Code   RO         1757  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x080000c0   0x080000c0   0x00000004   Code   RO         1764    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
-    0x080000c4   0x080000c4   0x00000004   Code   RO         1767    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x080000c8   0x080000c8   0x00000000   Code   RO         1769    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x080000c8   0x080000c8   0x00000000   Code   RO         1771    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x080000c8   0x080000c8   0x00000008   Code   RO         1772    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x080000d0   0x080000d0   0x00000000   Code   RO         1774    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
-    0x080000d0   0x080000d0   0x00000000   Code   RO         1776    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
-    0x080000d0   0x080000d0   0x00000004   Code   RO         1765    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x080000c0   0x080000c0   0x00000000   Code   RO         1756  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x080000c0   0x080000c0   0x00000004   Code   RO         1763    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x080000c4   0x080000c4   0x00000004   Code   RO         1766    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x080000c8   0x080000c8   0x00000000   Code   RO         1768    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x080000c8   0x080000c8   0x00000000   Code   RO         1770    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x080000c8   0x080000c8   0x00000008   Code   RO         1771    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x080000d0   0x080000d0   0x00000000   Code   RO         1773    .ARM.Collect$$$$0000000D  mc_p.l(entry10a.o)
+    0x080000d0   0x080000d0   0x00000000   Code   RO         1775    .ARM.Collect$$$$0000000F  mc_p.l(entry11a.o)
+    0x080000d0   0x080000d0   0x00000004   Code   RO         1764    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
     0x080000d4   0x080000d4   0x0000001c   Code   RO           62    .text               startup_stm32l071xx.o
-    0x080000f0   0x080000f0   0x0000002c   Code   RO         1760    .text               mc_p.l(uidiv.o)
-    0x0800011c   0x0800011c   0x00000028   Code   RO         1762    .text               mc_p.l(idiv.o)
-    0x08000144   0x08000144   0x00000024   Code   RO         1778    .text               mc_p.l(init.o)
+    0x080000f0   0x080000f0   0x0000002c   Code   RO         1759    .text               mc_p.l(uidiv.o)
+    0x0800011c   0x0800011c   0x00000028   Code   RO         1761    .text               mc_p.l(idiv.o)
+    0x08000144   0x08000144   0x00000024   Code   RO         1777    .text               mc_p.l(init.o)
     0x08000168   0x08000168   0x00000030   Code   RO          600    i.CRC16             mycrc16.o
     0x08000198   0x08000198   0x0000001c   Code   RO          792    i.HardFault_Handler  stm32l0xx_it.o
-    0x080001b4   0x080001b4   0x00000030   Code   RO         1274    i.LL_ADC_Init       stm32l0xx_ll_adc.o
-    0x080001e4   0x080001e4   0x00000038   Code   RO         1275    i.LL_ADC_REG_Init   stm32l0xx_ll_adc.o
+    0x080001b4   0x080001b4   0x00000030   Code   RO         1273    i.LL_ADC_Init       stm32l0xx_ll_adc.o
+    0x080001e4   0x080001e4   0x00000038   Code   RO         1274    i.LL_ADC_REG_Init   stm32l0xx_ll_adc.o
     0x0800021c   0x0800021c   0x00000018   Code   RO          621    i.LL_APB1_GRP1_EnableClock  main.o
     0x08000234   0x08000234   0x00000018   Code   RO          622    i.LL_APB2_GRP1_EnableClock  main.o
-    0x0800024c   0x0800024c   0x000000b8   Code   RO         1198    i.LL_EXTI_Init      stm32l0xx_ll_exti.o
-    0x08000304   0x08000304   0x000000ae   Code   RO         1233    i.LL_GPIO_Init      stm32l0xx_ll_gpio.o
+    0x0800024c   0x0800024c   0x000000b8   Code   RO         1197    i.LL_EXTI_Init      stm32l0xx_ll_exti.o
+    0x08000304   0x08000304   0x000000ae   Code   RO         1232    i.LL_GPIO_Init      stm32l0xx_ll_gpio.o
     0x080003b2   0x080003b2   0x00000014   Code   RO          623    i.LL_GPIO_SetPinMode  main.o
     0x080003c6   0x080003c6   0x00000014   Code   RO          624    i.LL_GPIO_SetPinPull  main.o
-    0x080003da   0x080003da   0x00000066   Code   RO         1399    i.LL_I2C_Init       stm32l0xx_ll_i2c.o
+    0x080003da   0x080003da   0x00000066   Code   RO         1398    i.LL_I2C_Init       stm32l0xx_ll_i2c.o
     0x08000440   0x08000440   0x00000018   Code   RO          625    i.LL_IOP_GRP1_EnableClock  main.o
-    0x08000458   0x08000458   0x00000020   Code   RO         1121    i.LL_Init1msTick    stm32l0xx_ll_utils.o
-    0x08000478   0x08000478   0x00000020   Code   RO         1680    i.LL_RCC_GetSystemClocksFreq  stm32l0xx_ll_rcc.o
-    0x08000498   0x08000498   0x000000b4   Code   RO         1681    i.LL_RCC_GetUSARTClockFreq  stm32l0xx_ll_rcc.o
+    0x08000458   0x08000458   0x00000020   Code   RO         1120    i.LL_Init1msTick    stm32l0xx_ll_utils.o
+    0x08000478   0x08000478   0x00000020   Code   RO         1679    i.LL_RCC_GetSystemClocksFreq  stm32l0xx_ll_rcc.o
+    0x08000498   0x08000498   0x000000b4   Code   RO         1680    i.LL_RCC_GetUSARTClockFreq  stm32l0xx_ll_rcc.o
     0x0800054c   0x0800054c   0x00000014   Code   RO          626    i.LL_RCC_SetUSARTClockSource  main.o
-    0x08000560   0x08000560   0x00000070   Code   RO         1441    i.LL_SPI_Init       stm32l0xx_ll_spi.o
+    0x08000560   0x08000560   0x00000070   Code   RO         1440    i.LL_SPI_Init       stm32l0xx_ll_spi.o
     0x080005d0   0x080005d0   0x00000020   Code   RO          627    i.LL_SYSCFG_SetEXTISource  main.o
-    0x080005f0   0x080005f0   0x0000000c   Code   RO         1124    i.LL_SetSystemCoreClock  stm32l0xx_ll_utils.o
-    0x080005fc   0x080005fc   0x00000064   Code   RO         1527    i.LL_TIM_Init       stm32l0xx_ll_tim.o
+    0x080005f0   0x080005f0   0x0000000c   Code   RO         1123    i.LL_SetSystemCoreClock  stm32l0xx_ll_utils.o
+    0x080005fc   0x080005fc   0x00000064   Code   RO         1526    i.LL_TIM_Init       stm32l0xx_ll_tim.o
     0x08000660   0x08000660   0x00000014   Code   RO          628    i.LL_USART_ConfigAsyncMode  main.o
-    0x08000674   0x08000674   0x000000dc   Code   RO         1632    i.LL_USART_Init     stm32l0xx_ll_usart.o
+    0x08000674   0x08000674   0x000000dc   Code   RO         1631    i.LL_USART_Init     stm32l0xx_ll_usart.o
     0x08000750   0x08000750   0x00000144   Code   RO          629    i.MX_ADC_Init       main.o
     0x08000894   0x08000894   0x00000398   Code   RO          630    i.MX_GPIO_Init      main.o
     0x08000c2c   0x08000c2c   0x00000094   Code   RO          631    i.MX_I2C1_Init      main.o
@@ -979,11 +979,11 @@ Memory Map of the image
     0x08001078   0x08001078   0x00000044   Code   RO          640    i.NVIC_SetPriority  main.o
     0x080010bc   0x080010bc   0x00000002   Code   RO          794    i.PendSV_Handler    stm32l0xx_it.o
     0x080010be   0x080010be   0x00000002   PAD
-    0x080010c0   0x080010c0   0x0000001c   Code   RO         1682    i.RCC_GetHCLKClockFreq  stm32l0xx_ll_rcc.o
-    0x080010dc   0x080010dc   0x0000001c   Code   RO         1683    i.RCC_GetPCLK1ClockFreq  stm32l0xx_ll_rcc.o
-    0x080010f8   0x080010f8   0x0000001c   Code   RO         1684    i.RCC_GetPCLK2ClockFreq  stm32l0xx_ll_rcc.o
-    0x08001114   0x08001114   0x00000054   Code   RO         1685    i.RCC_GetSystemClockFreq  stm32l0xx_ll_rcc.o
-    0x08001168   0x08001168   0x00000048   Code   RO         1686    i.RCC_PLL_GetFreqDomain_SYS  stm32l0xx_ll_rcc.o
+    0x080010c0   0x080010c0   0x0000001c   Code   RO         1681    i.RCC_GetHCLKClockFreq  stm32l0xx_ll_rcc.o
+    0x080010dc   0x080010dc   0x0000001c   Code   RO         1682    i.RCC_GetPCLK1ClockFreq  stm32l0xx_ll_rcc.o
+    0x080010f8   0x080010f8   0x0000001c   Code   RO         1683    i.RCC_GetPCLK2ClockFreq  stm32l0xx_ll_rcc.o
+    0x08001114   0x08001114   0x00000054   Code   RO         1684    i.RCC_GetSystemClockFreq  stm32l0xx_ll_rcc.o
+    0x08001168   0x08001168   0x00000048   Code   RO         1685    i.RCC_PLL_GetFreqDomain_SYS  stm32l0xx_ll_rcc.o
     0x080011b0   0x080011b0   0x00000002   Code   RO          795    i.SVC_Handler       stm32l0xx_it.o
     0x080011b2   0x080011b2   0x00000002   Code   RO          796    i.SysTick_Handler   stm32l0xx_it.o
     0x080011b4   0x080011b4   0x000000d0   Code   RO          641    i.SystemClock_Config  main.o
@@ -991,104 +991,104 @@ Memory Map of the image
     0x080012d8   0x080012d8   0x0000000c   Code   RO          872    i.T2_Callback       kanapilot_bh.o
     0x080012e4   0x080012e4   0x0000001a   Code   RO          797    i.TIM2_IRQHandler   stm32l0xx_it.o
     0x080012fe   0x080012fe   0x00000002   PAD
-    0x08001300   0x08001300   0x00000034   Code   RO         1078    i.U1RX_Callback     kanapilot_senscom.o
-    0x08001334   0x08001334   0x00000034   Code   RO         1032    i.U2RX_Callback     kanapilot_pccom.o
+    0x08001300   0x08001300   0x00000034   Code   RO         1077    i.U1RX_Callback     kanapilot_senscom.o
+    0x08001334   0x08001334   0x00000034   Code   RO         1031    i.U2RX_Callback     kanapilot_pccom.o
     0x08001368   0x08001368   0x00000020   Code   RO          930    i.U4RX_Callback     backhoe_drive.o
     0x08001388   0x08001388   0x00000020   Code   RO          798    i.USART1_IRQHandler  stm32l0xx_it.o
     0x080013a8   0x080013a8   0x00000020   Code   RO          799    i.USART2_IRQHandler  stm32l0xx_it.o
     0x080013c8   0x080013c8   0x00000020   Code   RO          800    i.USART4_5_IRQHandler  stm32l0xx_it.o
-    0x080013e8   0x080013e8   0x0000001a   Code   RO         1070    i.__ARM_common_switch8  kanapilot_pccom.o
-    0x08001402   0x08001402   0x0000000e   Code   RO         1782    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x08001410   0x08001410   0x00000002   Code   RO         1783    i.__scatterload_null  mc_p.l(handlers.o)
-    0x08001412   0x08001412   0x0000000e   Code   RO         1784    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x080013e8   0x080013e8   0x0000001a   Code   RO         1069    i.__ARM_common_switch8  kanapilot_pccom.o
+    0x08001402   0x08001402   0x0000000e   Code   RO         1781    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x08001410   0x08001410   0x00000002   Code   RO         1782    i.__scatterload_null  mc_p.l(handlers.o)
+    0x08001412   0x08001412   0x0000000e   Code   RO         1783    i.__scatterload_zeroinit  mc_p.l(handlers.o)
     0x08001420   0x08001420   0x0000010c   Code   RO          934    i.backhoeDirectServoDrive  backhoe_drive.o
     0x0800152c   0x0800152c   0x00000020   Code   RO          381    i.blink             mysub.o
-    0x0800154c   0x0800154c   0x00000128   Code   RO         1034    i.checkPcCom        kanapilot_pccom.o
-    0x08001674   0x08001674   0x000001bc   Code   RO         1079    i.checkSensorIncomming  kanapilot_senscom.o
-    0x08001830   0x08001830   0x0000002e   Code   RO          935    i.convToStep        backhoe_drive.o
-    0x0800185e   0x0800185e   0x00000002   PAD
-    0x08001860   0x08001860   0x00000080   Code   RO          936    i.emgStopPosition   backhoe_drive.o
-    0x080018e0   0x080018e0   0x00000014   Code   RO          382    i.hornOff           mysub.o
-    0x080018f4   0x080018f4   0x00000014   Code   RO          383    i.hornOn            mysub.o
-    0x08001908   0x08001908   0x0000002c   Code   RO          873    i.initKanaPilotBH   kanapilot_bh.o
-    0x08001934   0x08001934   0x00000028   Code   RO          874    i.initTimers        kanapilot_bh.o
-    0x0800195c   0x0800195c   0x00000010   Code   RO          384    i.ledOff            mysub.o
-    0x0800196c   0x0800196c   0x00000010   Code   RO          385    i.ledOn             mysub.o
-    0x0800197c   0x0800197c   0x000000c0   Code   RO          643    i.main              main.o
-    0x08001a3c   0x08001a3c   0x000000d4   Code   RO          875    i.mainKanaPilotBH   kanapilot_bh.o
-    0x08001b10   0x08001b10   0x00000020   Code   RO          938    i.packetWait        backhoe_drive.o
-    0x08001b30   0x08001b30   0x00000014   Code   RO          386    i.pato1Off          mysub.o
-    0x08001b44   0x08001b44   0x00000014   Code   RO          387    i.pato1On           mysub.o
-    0x08001b58   0x08001b58   0x00000014   Code   RO          388    i.pato2Off          mysub.o
-    0x08001b6c   0x08001b6c   0x00000014   Code   RO          389    i.pato2On           mysub.o
-    0x08001b80   0x08001b80   0x00000014   Code   RO          390    i.pato3Off          mysub.o
-    0x08001b94   0x08001b94   0x0000005a   Code   RO          273    i.queWriteRegisterSeq  azd_krd_message.o
-    0x08001bee   0x08001bee   0x00000002   PAD
-    0x08001bf0   0x08001bf0   0x00000010   Code   RO           69    i.resetWDT          myiwdg.o
-    0x08001c00   0x08001c00   0x0000001c   Code   RO          939    i.rxBufferPositionReset  backhoe_drive.o
-    0x08001c1c   0x08001c1c   0x00000062   Code   RO          275    i.sendQuery         azd_krd_message.o
-    0x08001c7e   0x08001c7e   0x00000002   PAD
-    0x08001c80   0x08001c80   0x000001c4   Code   RO          876    i.sendSensData      kanapilot_bh.o
-    0x08001e44   0x08001e44   0x0000001c   Code   RO          152    i.sendUart1Byte     mylluart.o
-    0x08001e60   0x08001e60   0x0000001e   Code   RO          153    i.sendUart1Packet   mylluart.o
-    0x08001e7e   0x08001e7e   0x00000002   PAD
-    0x08001e80   0x08001e80   0x0000001c   Code   RO          154    i.sendUart2Byte     mylluart.o
-    0x08001e9c   0x08001e9c   0x0000001e   Code   RO          155    i.sendUart2Packet   mylluart.o
-    0x08001eba   0x08001eba   0x00000002   PAD
-    0x08001ebc   0x08001ebc   0x0000001c   Code   RO          156    i.sendUart4Byte     mylluart.o
-    0x08001ed8   0x08001ed8   0x0000001e   Code   RO          157    i.sendUart4Packet   mylluart.o
-    0x08001ef6   0x08001ef6   0x00000002   PAD
-    0x08001ef8   0x08001ef8   0x0000001c   Code   RO          158    i.sendUart5Byte     mylluart.o
-    0x08001f14   0x08001f14   0x0000001e   Code   RO          159    i.sendUart5Packet   mylluart.o
-    0x08001f32   0x08001f32   0x00000002   PAD
-    0x08001f34   0x08001f34   0x0000006c   Code   RO         1080    i.sensorRequest     kanapilot_senscom.o
-    0x08001fa0   0x08001fa0   0x00000058   Code   RO         1081    i.sensorsRead       kanapilot_senscom.o
-    0x08001ff8   0x08001ff8   0x0000001c   Code   RO          276    i.setContinuousSpeed  azd_krd_message.o
-    0x08002014   0x08002014   0x000000c6   Code   RO          277    i.setDirectDataDrive  azd_krd_message.o
-    0x080020da   0x080020da   0x00000002   PAD
-    0x080020dc   0x080020dc   0x00000030   Code   RO          280    i.setPositionByDefaultSetting  azd_krd_message.o
-    0x0800210c   0x0800210c   0x0000001c   Code   RO          940    i.spanChk           backhoe_drive.o
-    0x08002128   0x08002128   0x0000000c   Code   RO          941    i.stopAllControlAndResetStatus  backhoe_drive.o
-    0x08002134   0x08002134   0x00000010   Code   RO          161    i.u1RxInterruptEnable  mylluart.o
-    0x08002144   0x08002144   0x00000010   Code   RO          392    i.u1RxLedOff        mysub.o
-    0x08002154   0x08002154   0x00000010   Code   RO          393    i.u1RxLedOn         mysub.o
-    0x08002164   0x08002164   0x00000010   Code   RO          394    i.u1TxDisable       mysub.o
-    0x08002174   0x08002174   0x00000010   Code   RO          395    i.u1TxEnable        mysub.o
-    0x08002184   0x08002184   0x00000010   Code   RO          396    i.u1TxLedOff        mysub.o
-    0x08002194   0x08002194   0x00000010   Code   RO          397    i.u1TxLedOn         mysub.o
-    0x080021a4   0x080021a4   0x00000010   Code   RO          163    i.u2RxInterruptEnable  mylluart.o
-    0x080021b4   0x080021b4   0x00000010   Code   RO          398    i.u2RxLedOff        mysub.o
-    0x080021c4   0x080021c4   0x00000010   Code   RO          399    i.u2RxLedOn         mysub.o
-    0x080021d4   0x080021d4   0x00000010   Code   RO          165    i.u4RxInterruptEnable  mylluart.o
-    0x080021e4   0x080021e4   0x00000014   Code   RO          402    i.u4TxDisable       mysub.o
-    0x080021f8   0x080021f8   0x00000014   Code   RO          403    i.u4TxEnable        mysub.o
-    0x0800220c   0x0800220c   0x00000014   Code   RO          404    i.u5TxDisable       mysub.o
-    0x08002220   0x08002220   0x00000014   Code   RO          405    i.u5TxEnable        mysub.o
-    0x08002234   0x08002234   0x00000030   Code   RO          544    i.wait100ms         mywait16mhz.o
-    0x08002264   0x08002264   0x0000002c   Code   RO          546    i.wait10ms          mywait16mhz.o
-    0x08002290   0x08002290   0x0000000a   Code   RO          547    i.wait10us          mywait16mhz.o
-    0x0800229a   0x0800229a   0x0000000c   Code   RO          548    i.wait1ms           mywait16mhz.o
-    0x080022a6   0x080022a6   0x00000019   Data   RO            5    .constdata          system_stm32l0xx.o
-    0x080022bf   0x080022bf   0x00000008   Data   RO            6    .constdata          system_stm32l0xx.o
-    0x080022c7   0x080022c7   0x00000001   PAD
-    0x080022c8   0x080022c8   0x00000200   Data   RO          601    .constdata          mycrc16.o
-    0x080024c8   0x080024c8   0x00000020   Data   RO         1780    Region$$Table       anon$$obj.o
+    0x0800154c   0x0800154c   0x00000128   Code   RO         1033    i.checkPcCom        kanapilot_pccom.o
+    0x08001674   0x08001674   0x000001bc   Code   RO         1078    i.checkSensorIncomming  kanapilot_senscom.o
+    0x08001830   0x08001830   0x0000002a   Code   RO          935    i.convToStep        backhoe_drive.o
+    0x0800185a   0x0800185a   0x00000002   PAD
+    0x0800185c   0x0800185c   0x00000080   Code   RO          936    i.emgStopPosition   backhoe_drive.o
+    0x080018dc   0x080018dc   0x00000014   Code   RO          382    i.hornOff           mysub.o
+    0x080018f0   0x080018f0   0x00000014   Code   RO          383    i.hornOn            mysub.o
+    0x08001904   0x08001904   0x0000002c   Code   RO          873    i.initKanaPilotBH   kanapilot_bh.o
+    0x08001930   0x08001930   0x00000028   Code   RO          874    i.initTimers        kanapilot_bh.o
+    0x08001958   0x08001958   0x00000010   Code   RO          384    i.ledOff            mysub.o
+    0x08001968   0x08001968   0x00000010   Code   RO          385    i.ledOn             mysub.o
+    0x08001978   0x08001978   0x000000c0   Code   RO          643    i.main              main.o
+    0x08001a38   0x08001a38   0x000000d4   Code   RO          875    i.mainKanaPilotBH   kanapilot_bh.o
+    0x08001b0c   0x08001b0c   0x00000020   Code   RO          938    i.packetWait        backhoe_drive.o
+    0x08001b2c   0x08001b2c   0x00000014   Code   RO          386    i.pato1Off          mysub.o
+    0x08001b40   0x08001b40   0x00000014   Code   RO          387    i.pato1On           mysub.o
+    0x08001b54   0x08001b54   0x00000014   Code   RO          388    i.pato2Off          mysub.o
+    0x08001b68   0x08001b68   0x00000014   Code   RO          389    i.pato2On           mysub.o
+    0x08001b7c   0x08001b7c   0x00000014   Code   RO          390    i.pato3Off          mysub.o
+    0x08001b90   0x08001b90   0x0000005a   Code   RO          273    i.queWriteRegisterSeq  azd_krd_message.o
+    0x08001bea   0x08001bea   0x00000002   PAD
+    0x08001bec   0x08001bec   0x00000010   Code   RO           69    i.resetWDT          myiwdg.o
+    0x08001bfc   0x08001bfc   0x0000001c   Code   RO          939    i.rxBufferPositionReset  backhoe_drive.o
+    0x08001c18   0x08001c18   0x00000062   Code   RO          275    i.sendQuery         azd_krd_message.o
+    0x08001c7a   0x08001c7a   0x00000002   PAD
+    0x08001c7c   0x08001c7c   0x000001c4   Code   RO          876    i.sendSensData      kanapilot_bh.o
+    0x08001e40   0x08001e40   0x0000001c   Code   RO          152    i.sendUart1Byte     mylluart.o
+    0x08001e5c   0x08001e5c   0x0000001e   Code   RO          153    i.sendUart1Packet   mylluart.o
+    0x08001e7a   0x08001e7a   0x00000002   PAD
+    0x08001e7c   0x08001e7c   0x0000001c   Code   RO          154    i.sendUart2Byte     mylluart.o
+    0x08001e98   0x08001e98   0x0000001e   Code   RO          155    i.sendUart2Packet   mylluart.o
+    0x08001eb6   0x08001eb6   0x00000002   PAD
+    0x08001eb8   0x08001eb8   0x0000001c   Code   RO          156    i.sendUart4Byte     mylluart.o
+    0x08001ed4   0x08001ed4   0x0000001e   Code   RO          157    i.sendUart4Packet   mylluart.o
+    0x08001ef2   0x08001ef2   0x00000002   PAD
+    0x08001ef4   0x08001ef4   0x0000001c   Code   RO          158    i.sendUart5Byte     mylluart.o
+    0x08001f10   0x08001f10   0x0000001e   Code   RO          159    i.sendUart5Packet   mylluart.o
+    0x08001f2e   0x08001f2e   0x00000002   PAD
+    0x08001f30   0x08001f30   0x0000006c   Code   RO         1079    i.sensorRequest     kanapilot_senscom.o
+    0x08001f9c   0x08001f9c   0x00000058   Code   RO         1080    i.sensorsRead       kanapilot_senscom.o
+    0x08001ff4   0x08001ff4   0x0000001c   Code   RO          276    i.setContinuousSpeed  azd_krd_message.o
+    0x08002010   0x08002010   0x000000c6   Code   RO          277    i.setDirectDataDrive  azd_krd_message.o
+    0x080020d6   0x080020d6   0x00000002   PAD
+    0x080020d8   0x080020d8   0x00000030   Code   RO          280    i.setPositionByDefaultSetting  azd_krd_message.o
+    0x08002108   0x08002108   0x0000001c   Code   RO          940    i.spanChk           backhoe_drive.o
+    0x08002124   0x08002124   0x0000000c   Code   RO          941    i.stopAllControlAndResetStatus  backhoe_drive.o
+    0x08002130   0x08002130   0x00000010   Code   RO          161    i.u1RxInterruptEnable  mylluart.o
+    0x08002140   0x08002140   0x00000010   Code   RO          392    i.u1RxLedOff        mysub.o
+    0x08002150   0x08002150   0x00000010   Code   RO          393    i.u1RxLedOn         mysub.o
+    0x08002160   0x08002160   0x00000010   Code   RO          394    i.u1TxDisable       mysub.o
+    0x08002170   0x08002170   0x00000010   Code   RO          395    i.u1TxEnable        mysub.o
+    0x08002180   0x08002180   0x00000010   Code   RO          396    i.u1TxLedOff        mysub.o
+    0x08002190   0x08002190   0x00000010   Code   RO          397    i.u1TxLedOn         mysub.o
+    0x080021a0   0x080021a0   0x00000010   Code   RO          163    i.u2RxInterruptEnable  mylluart.o
+    0x080021b0   0x080021b0   0x00000010   Code   RO          398    i.u2RxLedOff        mysub.o
+    0x080021c0   0x080021c0   0x00000010   Code   RO          399    i.u2RxLedOn         mysub.o
+    0x080021d0   0x080021d0   0x00000010   Code   RO          165    i.u4RxInterruptEnable  mylluart.o
+    0x080021e0   0x080021e0   0x00000014   Code   RO          402    i.u4TxDisable       mysub.o
+    0x080021f4   0x080021f4   0x00000014   Code   RO          403    i.u4TxEnable        mysub.o
+    0x08002208   0x08002208   0x00000014   Code   RO          404    i.u5TxDisable       mysub.o
+    0x0800221c   0x0800221c   0x00000014   Code   RO          405    i.u5TxEnable        mysub.o
+    0x08002230   0x08002230   0x00000030   Code   RO          544    i.wait100ms         mywait16mhz.o
+    0x08002260   0x08002260   0x0000002c   Code   RO          546    i.wait10ms          mywait16mhz.o
+    0x0800228c   0x0800228c   0x0000000a   Code   RO          547    i.wait10us          mywait16mhz.o
+    0x08002296   0x08002296   0x0000000c   Code   RO          548    i.wait1ms           mywait16mhz.o
+    0x080022a2   0x080022a2   0x00000019   Data   RO            5    .constdata          system_stm32l0xx.o
+    0x080022bb   0x080022bb   0x00000008   Data   RO            6    .constdata          system_stm32l0xx.o
+    0x080022c3   0x080022c3   0x00000001   PAD
+    0x080022c4   0x080022c4   0x00000200   Data   RO          601    .constdata          mycrc16.o
+    0x080024c4   0x080024c4   0x00000020   Data   RO         1779    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080024e8, Size: 0x00000968, Max: 0x00005000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080024e4, Size: 0x00000968, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x080024e8   0x00000004   Data   RW            7    .data               system_stm32l0xx.o
-    0x20000004   0x080024ec   0x00000018   Data   RW          878    .data               kanapilot_bh.o
-    0x2000001c   0x08002504   0x00000020   Data   RW          944    .data               backhoe_drive.o
-    0x2000003c   0x08002524   0x00000014   Data   RW         1036    .data               kanapilot_pccom.o
-    0x20000050   0x08002538   0x00000040   Data   RW         1083    .data               kanapilot_senscom.o
+    0x20000000   0x080024e4   0x00000004   Data   RW            7    .data               system_stm32l0xx.o
+    0x20000004   0x080024e8   0x00000018   Data   RW          878    .data               kanapilot_bh.o
+    0x2000001c   0x08002500   0x00000020   Data   RW          944    .data               backhoe_drive.o
+    0x2000003c   0x08002520   0x00000014   Data   RW         1035    .data               kanapilot_pccom.o
+    0x20000050   0x08002534   0x00000040   Data   RW         1082    .data               kanapilot_senscom.o
     0x20000090        -       0x00000100   Zero   RW          877    .bss                kanapilot_bh.o
     0x20000190        -       0x00000064   Zero   RW          942    .bss                backhoe_drive.o
-    0x200001f4        -       0x00000226   Zero   RW         1035    .bss                kanapilot_pccom.o
-    0x2000041a        -       0x0000014a   Zero   RW         1082    .bss                kanapilot_senscom.o
-    0x20000564   0x08002578   0x00000004   PAD
+    0x200001f4        -       0x00000226   Zero   RW         1034    .bss                kanapilot_pccom.o
+    0x2000041a        -       0x0000014a   Zero   RW         1081    .bss                kanapilot_senscom.o
+    0x20000564   0x08002574   0x00000004   PAD
     0x20000568        -       0x00000400   Zero   RW           59    STACK               startup_stm32l071xx.o
 
 
@@ -1100,7 +1100,7 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
        462         10          0          0          0       4138   azd_krd_message.o
-       574         48          0         32        100      24140   backhoe_drive.o
+       570         48          0         32        100      24126   backhoe_drive.o
        760         90          0         24        256       4588   kanapilot_bh.o
        374         42          0         20        550       2740   kanapilot_pccom.o
        692         56          0         64        330       4780   kanapilot_senscom.o
@@ -1124,7 +1124,7 @@ Image component sizes
         84         18         33          4          0     218247   system_stm32l0xx.o
 
     ----------------------------------------------------------------------
-      8508        786        770        144       2264     670040   Object Totals
+      8504        786        770        144       2264     670026   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         22          0          1          0          4          0   (incl. Padding)
 
@@ -1165,15 +1165,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      8678        802        770        144       2264     665740   Grand Totals
-      8678        802        770        144       2264     665740   ELF Image Totals
-      8678        802        770        144          0          0   ROM Totals
+      8674        802        770        144       2264     665726   Grand Totals
+      8674        802        770        144       2264     665726   ELF Image Totals
+      8674        802        770        144          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 9448 (   9.23kB)
+    Total RO  Size (Code + RO Data)                 9444 (   9.22kB)
     Total RW  Size (RW Data + ZI Data)              2408 (   2.35kB)
-    Total ROM Size (Code + RO Data + RW Data)       9592 (   9.37kB)
+    Total ROM Size (Code + RO Data + RW Data)       9588 (   9.36kB)
 
 ==============================================================================
 
