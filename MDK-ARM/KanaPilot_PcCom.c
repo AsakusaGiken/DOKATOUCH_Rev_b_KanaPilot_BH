@@ -1,6 +1,5 @@
 #include "main.h"
 
-//#define U2_BUFFER_SIZE 200
 #define U2_BUFFER_SIZE 500  //+++251104
 
 extern uint32_t comTimeCnt;
@@ -29,7 +28,6 @@ int32_t u2rxCnt=0;
 uint8_t u2rxLen=0;
 uint8_t u2CheckSum;
 uint8_t u2LastByte;
-//uint8_t u2RxCounter;
 void U2RX_Callback(void){
 	u2RxLedOn();
 	uint8_t rxData = LL_USART_ReceiveData8(USART2);
@@ -96,14 +94,6 @@ void checkPcCom(void){
 					if(u2RxSum != u2RxBuf[myPos]){
 						U2Q=0;
 					}else{
-						/*
-						if(acmPacketBuf[0]==0x21){
-							gamepadDrive(acmPacketBuf);
-							pato2On();
-							comTimeCnt=0;
-							isCom=true;
-						}else 
-						*/
 						if(acmPacketBuf[0]==0x22){
 							//cat725DirectServoDrive(acmPacketBuf);
 							backhoeDirectServoDrive(acmPacketBuf);  //+++260414
@@ -139,21 +129,4 @@ void acmCommandCheck(uint8_t* buf){
 	}
 	
 }
-
-/*
-void gamepadDrive(uint8_t* inBuf){
-	uint8_t d[30];
-	d[0]=inBuf[2];
-	d[1]=inBuf[3];
-	d[2]=inBuf[4];
-	//acmPacketBuf[0] as servo[0] Pos, same as others
-	acmDio = (uint32_t)inBuf[19]; acmDio = acmDio<<8;
-	acmDio += (uint32_t)inBuf[20]; acmDio = acmDio<<8;
-	acmDio += (uint32_t)inBuf[21]; acmDio = acmDio<<8;
-	acmDio += (uint32_t)inBuf[22];
-	cat725GamepadDrive(d, acmDio);
-}
-*/
-
-
 

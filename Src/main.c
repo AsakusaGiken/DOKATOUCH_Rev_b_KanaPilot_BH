@@ -126,7 +126,7 @@ int main(void)
 	u1RxInterruptEnable();
 	
 	initTimers();
-//	initIwdg();
+	initIwdg();
 
 	initKanaPilotBH();
 	
@@ -145,8 +145,6 @@ int main(void)
 		
 		resetWDT();
 		mainKanaPilotBH();
-		
-		//backhoe_1_main();
 
 		
   /* USER CODE END WHILE */

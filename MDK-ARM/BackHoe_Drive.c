@@ -7,12 +7,8 @@ CAT725 Drive based on WA30 Drive
 
 #define POS_OFFSET 150
 #define SVCNT 8  //servo count for normal bachhoe
-#define P4CNT 8  //servo count for port4(U4)			//+++251120 solved frequentry PCB resets
-//#define P5CNT 5  //servo count for port5(U5)		//---251120 solved frequentry PCB resets
 #define RETURN_PACKET_SIZE 9  //retrun packet size from servo driver
-//#define U4BUF_SIZE 256
-#define U4BUF_SIZE 100
-//#define U5BUF_SIZE 256
+#define U4BUF_SIZE 16
 
 //servo limit
 #define LX_IN (-1700)
@@ -52,9 +48,10 @@ CAT725 Drive based on WA30 Drive
 #define VL_PT 4
 #define KY_PT 4
 
-
 //error bit mask
 #define ERR_BIT_MSK 0x80
+
+#define ACTIVE_SERVO_COUNT 7 
 
 //target step
 int32_t LX;
@@ -66,16 +63,6 @@ int32_t LR;
 int32_t VL;
 int32_t KY;
 
-/*
-uint8_t u5RxBuf[100];
-uint32_t U5Q;
-int32_t u5rxPos=0;
-int32_t u5rxCnt=0;
-uint8_t u5rxLen=0;
-uint8_t u5CheckSum;
-uint8_t u5LastByte;
-*/
-
 uint8_t u4RxBuf[U4BUF_SIZE];
 uint32_t U4Q;
 int32_t u4rxPos=0;
@@ -86,43 +73,35 @@ uint8_t u4LastByte;
 
 uint8_t svStatus[SVCNT+1];  //servo status: svStatus[0] no use
 
+static uint8_t statusCheckIdx = 0;  //0-6 rotation
+
+void packetWait(void){
+	resetWDT();
+	wait1ms();wait1ms();wait1ms();wait1ms();
+}
 /*
 wait: send data -> retrun data  1cycle length
 */
-//***
-void packetWait(void){
+void packetWaitLong(void){
 	resetWDT();
-//	wait1ms();wait1ms();
+	wait1ms();wait1ms();
 	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
-//	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
+	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
 }
+
 
 void U4RX_Callback(void){
 	uint8_t rxData = LL_USART_ReceiveData8(USART4);
-	u4RxBuf[u4rxPos] = rxData;
-	u4rxPos++;
+	if(u4rxPos < U4BUF_SIZE){  //not over run?
+			u4RxBuf[u4rxPos] = rxData;
+			u4rxPos++;
+	}	
 }
-
-/*
-void U5RX_Callback(void){
-	uint8_t rxData = LL_USART_ReceiveData8(USART5);
-	u5RxBuf[u5rxPos] = rxData;
-	u5rxPos++;	
-}
-*/
 
 //buffer position reset
 void rxBufferPositionReset(void){
-	int i;
-//	u1rxPos = 0;
-//	u5rxPos = 0;
 	u4rxPos = 0;
-	for(i=0; i<U4BUF_SIZE; i++){
-		u4RxBuf[i] = 0;
-	}
-//	for(i=0; i<U5BUF_SIZE; i++){
-//		u5RxBuf[i] = 0;
-//	}
+	memset(u4RxBuf, 0, U4BUF_SIZE);
 }
 
 
@@ -178,23 +157,6 @@ void allZhome(void){
 //	queZhomeRequest(4,8); packetWait();  //key don't touch
 	wait1s();wait1s();
 }
-
-/*
-int32_t convToStep(int32_t val, int32_t maxVal, int32_t minVal){
-	int32_t result;
-	if(val > 0){
-		result = (int32_t)((float)val * ((float)maxVal/(float)100));
-	}else if(val<0){
-		result = (int32_t)((float)val * ((float)minVal/(float)100));
-	}else{
-		result = 0;
-	}
-	return result;
-}
-*/
-
-
-//extern uint32_t DIO;  //CAT725 sensing DIO 0x02=RightLimit 0x04=LeftLimit
 
 void emgStopPosition(void){
 	rxBufferPositionReset();
@@ -283,43 +245,42 @@ void backhoeDirectServoDrive(uint8_t* inBuf){
 	tempVal = (((int32_t)(spanChk(inBuf[8]))) - POS_OFFSET);  //convert to -100 to +100 val
 	VL	= tempVal*(VL_MAX/100);
 	
-	//send position to servos
-	rxBufferPositionReset();  //for servo error check receive   +++251120
-//	setPosAndReadStatusByDefaultSetting(LX_PT, LX_ID, LX);  //port4
-	setPositionByDefaultSetting(LX_PT, LX_ID, LX);  //port4
-	packetWait();
-//	setPosAndReadStatusByDefaultSetting(LY_PT, LY_ID, LY);  //port4
-	setPositionByDefaultSetting(LY_PT, LY_ID, LY);  //port4
-	packetWait();
-//	setPosAndReadStatusByDefaultSetting(RX_PT, RX_ID, RX);  //port4
-	setPositionByDefaultSetting(RX_PT, RX_ID, RX);  //port4
-	packetWait();
-//	setPosAndReadStatusByDefaultSetting(RY_PT, RY_ID, RY);  //port4
-	setPositionByDefaultSetting(RY_PT, RY_ID, RY);  //port4
-	packetWait();
-//	setPosAndReadStatusByDefaultSetting(RR_PT, RR_ID, RR);  //port4
-	setPositionByDefaultSetting(RR_PT, RR_ID, RR);  //port4
-	packetWait();
-//	setPosAndReadStatusByDefaultSetting(LR_PT, LR_ID, LR);  //port4
-	setPositionByDefaultSetting(LR_PT, LR_ID, LR);  //port4
-	packetWait();
-//	setPosAndReadStatusByDefaultSetting(VL_PT, VL_ID, VL);  //port4
-	setPositionByDefaultSetting(VL_PT, VL_ID, VL);  //port4
-	packetWait();
+	const uint8_t svPt[ACTIVE_SERVO_COUNT] = {LX_PT, LY_PT, RX_PT, RY_PT, RR_PT, LR_PT, VL_PT};
+	const uint8_t svId[ACTIVE_SERVO_COUNT] = {LX_ID, LY_ID, RX_ID, RY_ID, RR_ID, LR_ID, VL_ID};
+	int32_t svPos[ACTIVE_SERVO_COUNT]      = {LX,    LY,    RX,    RY,    RR,    LR,    VL};
 
-	//check servo error  +++251120
-	/*
+	//send step val to servos
 	int i;
-	
-	for(i=0; i<P4CNT; i++){
-		if(((u4RxBuf[(i*RETURN_PACKET_SIZE)+6]) & ERR_BIT_MSK) != 0){
-			
-			queAlarmReset(4, u4RxBuf[i*RETURN_PACKET_SIZE]);
-			packetWait();
+	rxBufferPositionReset();  //for servo error check receive   +++251120
+	for(i = 0; i < ACTIVE_SERVO_COUNT; i++){
+		//status check servo(1/7times)
+		if(i == statusCheckIdx){
+					rxBufferPositionReset();
+					setPosAndReadStatusByDefaultSetting(svPt[i], svId[i], svPos[i]);
+					packetWaitLong();  // long wait for response
+
+					// response read
+					if(u4rxPos >= RETURN_PACKET_SIZE){
+							uint8_t st = u4RxBuf[6];  // status byte
+							svStatus[svId[i]] = st;
+							if((st & ERR_BIT_MSK) != 0){
+									// alerm rset
+									queAlarmReset(svPt[i], svId[i]);
+									packetWait();
+							}
+					}
+					rxBufferPositionReset();  // clear for the next
 		}
-		svStatus[u4RxBuf[i*RETURN_PACKET_SIZE]] = u4RxBuf[(i*RETURN_PACKET_SIZE)+6];
+		//no check other 6 servos
+		else {
+					setPositionByDefaultSetting(svPt[i], svId[i], svPos[i]);
+					packetWait();  //short wait
+			}
 	}
-	*/
-	
+
+	// next check servo set
+	statusCheckIdx++;
+	if(statusCheckIdx >= ACTIVE_SERVO_COUNT) statusCheckIdx = 0;
+
 }
 
