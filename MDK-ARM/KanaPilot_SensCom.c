@@ -64,6 +64,11 @@ void sensorRequest(uint8_t id){
 	u1TxLedOff();
 }
 
+//sensor value span check
+static inline bool isReasonableFloat(float v){
+    return (v > -1000.0f) && (v < 1000.0f);
+}
+
 /*******************
 sensor read
 *******************/
@@ -118,63 +123,40 @@ void checkSensorIncomming(void){
 					break;
 				case 4:
 					if(u1RxSum == u1RxBuf[myPos]){
-						//command check
 						if(sensBuf[0]==COM_SENSREQ){
-							uint8_t temp[10];
-							temp[0]=sensBuf[3]; temp[1]=sensBuf[4];
-							temp[2]=sensBuf[5]; temp[3]=sensBuf[6];
-							//id check
-							//Syatai Angle
+							float tmp;
 							if(sensBuf[2]==ID_SYATAI){
-								memcpy(&Pitch, temp, sizeof(float));
-								temp[0]=sensBuf[7]; temp[1]=sensBuf[8];temp[2]=sensBuf[9]; temp[3]=sensBuf[10];
-								memcpy(&Roll, temp, sizeof(float));
-								temp[0]=sensBuf[11]; temp[1]=sensBuf[12];temp[2]=sensBuf[13]; temp[3]=sensBuf[14];
-								memcpy(&SwingRate, temp, sizeof(float));
-								temp[0]=sensBuf[15]; temp[1]=sensBuf[16];temp[2]=sensBuf[17]; temp[3]=sensBuf[18];
-								memcpy(&SensorTemp, temp, sizeof(float));
+									memcpy(&tmp, &sensBuf[3],  4); if(isReasonableFloat(tmp)) Pitch     = tmp;
+									memcpy(&tmp, &sensBuf[7],  4); if(isReasonableFloat(tmp)) Roll      = tmp;
+									memcpy(&tmp, &sensBuf[11], 4); if(isReasonableFloat(tmp)) SwingRate = tmp;
+									memcpy(&tmp, &sensBuf[15], 4); if(isReasonableFloat(tmp)) SensorTemp= tmp;
 							}
-							//Boom Angle
 							else if(sensBuf[2]==ID_BOOM){
-								memcpy(&BoomAngle, temp, sizeof(float));
+									memcpy(&tmp, &sensBuf[3], 4); if(isReasonableFloat(tmp)) BoomAngle  = tmp;
 							}
-							//Arm Angle
 							else if(sensBuf[2]==ID_ARM){
-								memcpy(&ArmAngle, temp, sizeof(float));
+									memcpy(&tmp, &sensBuf[3], 4); if(isReasonableFloat(tmp)) ArmAngle   = tmp;
 							}
-							//Backet Angle
 							else if(sensBuf[2]==ID_BACKET){
-								memcpy(&BacketAngle, temp, sizeof(float));						
+									memcpy(&tmp, &sensBuf[3], 4); if(isReasonableFloat(tmp)) BacketAngle= tmp;
 							}
-							//Rotation Angle
 							else if(sensBuf[2]==ID_ROTATION){
-								memcpy(&RotationAngle, temp, sizeof(float));
-								IsRotationInit = sensBuf[7];
-								RotationDirection = sensBuf[8];
+									memcpy(&tmp, &sensBuf[3], 4); if(isReasonableFloat(tmp)) RotationAngle = tmp;
+									IsRotationInit    = sensBuf[7];
+									RotationDirection = sensBuf[8];
 							}
-							//Boom Length
 							else if(sensBuf[2]==ID_BOOM_LEN){
-								BoomLength = ((uint16_t)(sensBuf[4])<<8)+(uint16_t)(sensBuf[3]);
+									BoomLength = ((uint16_t)(sensBuf[4])<<8) + (uint16_t)(sensBuf[3]);
 							}
-							//Arm Length
 							else if(sensBuf[2]==ID_ARM_LEN){
-								ArmLength = ((uint16_t)(sensBuf[4])<<8)+(uint16_t)(sensBuf[3]);
+									ArmLength  = ((uint16_t)(sensBuf[4])<<8) + (uint16_t)(sensBuf[3]);
 							}
-							//Backet Length
 							else if(sensBuf[2]==ID_BACKET_LEN){
-								BacketLength = ((uint16_t)(sensBuf[4])<<8)+(uint16_t)(sensBuf[3]);
+									BacketLength = ((uint16_t)(sensBuf[4])<<8) + (uint16_t)(sensBuf[3]);
 							}
-							//Radar
 							else if(sensBuf[2]==ID_RADAR){
-								if(sensBuf[3]==0x00){
-									isRearRadarDetected=false;
-								}else{
-									isRearRadarDetected=true;
-								}
+									isRearRadarDetected = (sensBuf[3] != 0x00);
 							}
-							
-						}else{
-							U1Q=0;
 						}
 					}
 					U1Q=0;

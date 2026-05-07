@@ -309,11 +309,6 @@ void mainKanaPilotBH(void){
 		isEmgStopRequested=false;
 	}
 	
-	wait10ms();
-//	wait10ms();
-//	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
-//	wait1ms();wait1ms();wait1ms();
-	
-
+	wait10ms();  //need wait for sensor reading interval: shorter will be crashed the buffer
 	
 }

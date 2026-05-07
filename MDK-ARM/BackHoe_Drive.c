@@ -75,18 +75,39 @@ uint8_t svStatus[SVCNT+1];  //servo status: svStatus[0] no use
 
 static uint8_t statusCheckIdx = 0;  //0-6 rotation
 
+extern void sensorsRead(void); //prototype   //+++260507
+
+  //+++260507
+//wait and sensor request when servo driving
+static uint32_t bgSensorTick = 0;
+static void wait1ms_bg(void){
+    wait1ms();
+    bgSensorTick++;
+    if(bgSensorTick >= 10){
+        bgSensorTick = 0;
+        sensorsRead();   //sensor request and parse
+    }
+}
+
 void packetWait(void){
 	resetWDT();
-	wait1ms();wait1ms();wait1ms();wait1ms();
+	//wait1ms();wait1ms();wait1ms();wait1ms();
+	wait1ms_bg();wait1ms_bg();wait1ms_bg();wait1ms_bg();  //+++260507
 }
 /*
 wait: send data -> retrun data  1cycle length
 */
 void packetWaitLong(void){
 	resetWDT();
+	int i;
+	for(i = 0; i < 14; i++){
+		wait1ms_bg();  //+++260507
+	}
+	/*
 	wait1ms();wait1ms();
 	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
 	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
+	*/
 }
 
 
