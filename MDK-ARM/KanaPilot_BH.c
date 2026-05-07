@@ -211,6 +211,7 @@ bool preCom=false;
 bool isEmgStopRequested=false;
 uint32_t rearRadarDetectCnt=0;
 uint8_t RQ=0;
+uint32_t sendIntCnt=0;
 void mainKanaPilotBH(void){
 	
 	//100msInterval
@@ -249,7 +250,11 @@ void mainKanaPilotBH(void){
 		
 		
 		//sensor value send to PC
-		sendSensData();
+		sendIntCnt++;
+		if(sendIntCnt>=1){
+			sendSensData();
+			sendIntCnt=0;
+		}
 		
 		//main com timeout check
 		comTimeCnt++;
