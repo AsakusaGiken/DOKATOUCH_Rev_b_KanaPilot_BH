@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 #define U2_BUFFER_SIZE 500  //+++251104
 
@@ -6,6 +7,8 @@ extern uint32_t comTimeCnt;
 void acmCommandCheck(uint8_t*);
 void excuteEvent(uint8_t*);
 void gamepadDrive(uint8_t*);
+volatile bool hasNewServoCmd = false;  //+++260507
+uint8_t latestServoCmd[50];  //+++260507
 
 uint8_t soundHornTimes=0;
 
@@ -42,6 +45,7 @@ extern bool isCom;  //for keepalive in wa30_main()
 void checkPcCom(void){
 	int i,myPos;
 	int32_t serchLength=0;
+	
 	if(u2RxPos>u2RxPrePos){
 		serchLength = u2RxPos - u2RxPrePos;
 	}else if(u2RxPos < u2RxPrePos){
@@ -95,8 +99,9 @@ void checkPcCom(void){
 						U2Q=0;
 					}else{
 						if(acmPacketBuf[0]==0x22){
-							//cat725DirectServoDrive(acmPacketBuf);
-							backhoeDirectServoDrive(acmPacketBuf);  //+++260414
+							//backhoeDirectServoDrive(acmPacketBuf);  //+++260414
+							memcpy(latestServoCmd, acmPacketBuf, 30);;  //+++260507
+							hasNewServoCmd = true;            // old command ignore ;  //+++260507
 							pato2On();
 							comTimeCnt=0;
 							isCom=true;

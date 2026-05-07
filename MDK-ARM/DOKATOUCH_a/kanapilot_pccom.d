@@ -25,3 +25,4 @@ dokatouch_a\kanapilot_pccom.o: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_
 dokatouch_a\kanapilot_pccom.o: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_usart.h
 dokatouch_a\kanapilot_pccom.o: ../Drivers/STM32L0xx_HAL_Driver/Inc/stm32l0xx_ll_gpio.h
 dokatouch_a\kanapilot_pccom.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u6\Bin\..\include\stdbool.h
+dokatouch_a\kanapilot_pccom.o: C:\Keil_v5\ARM\ARM_Compiler_5.06u6\Bin\..\include\string.h

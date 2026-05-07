@@ -211,13 +211,21 @@ bool preCom=false;
 bool isEmgStopRequested=false;
 uint32_t rearRadarDetectCnt=0;
 uint8_t RQ=0;
-uint32_t sendIntCnt=0;
+//uint32_t sendIntCnt=0;
+extern volatile bool hasNewServoCmd;  //+++260507
+extern uint8_t latestServoCmd[50];  //+++260507
 void mainKanaPilotBH(void){
 	
 	//100msInterval
 	if(is100msInterval){
 		is100msInterval = false;
 		resetWDT();
+		
+		//+++260507  servo drive don't run in the interrupt rutine, so moved to here
+		if(hasNewServoCmd){
+			hasNewServoCmd = false;
+			backhoeDirectServoDrive(latestServoCmd);  //<<==excute in this main routine
+		}
 		
 		//led blink
 		ledBlinkcounter++;
@@ -250,11 +258,11 @@ void mainKanaPilotBH(void){
 		
 		
 		//sensor value send to PC
-		sendIntCnt++;
-		if(sendIntCnt>=1){
+//		sendIntCnt++;
+//		if(sendIntCnt>=1){
 			sendSensData();
-			sendIntCnt=0;
-		}
+//			sendIntCnt=0;
+//		}
 		
 		//main com timeout check
 		comTimeCnt++;
@@ -302,7 +310,10 @@ void mainKanaPilotBH(void){
 	}
 	
 	wait10ms();
-	wait10ms();
+//	wait10ms();
+//	wait1ms();wait1ms();wait1ms();wait1ms();wait1ms();
+//	wait1ms();wait1ms();wait1ms();
+	
 
 	
 }
